@@ -6,6 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>@yield('title', 'Dasbor Operasional') - {{ config('app.name', 'Katara Laundry') }}</title>
+    <link rel="icon" type="image/jpeg" href="{{ asset('images/logo.katara.jpg') }}">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,9 +69,10 @@
 
     <div class="flex flex-1 min-h-screen">
 <aside class="w-64 bg-white text-slate-800 flex flex-col shrink-0 border-r border-slate-200 z-30 shadow-sm">
-<div class="p-5 border-b border-slate-200 flex items-center gap-3">
+            <div class="p-5 border-b border-slate-200 flex items-center gap-3">
+                <img src="{{ asset('images/logo.katara.jpg') }}" alt="Katara Laundry Logo" class="w-10 h-10 rounded-xl object-cover shadow-sm border border-slate-200 shrink-0">
                 <div class="overflow-hidden">
-                    <h1 class="font-extrabold text-lg tracking-tight text-slate-800 leading-tight">KATARA LAUNDRY</h1>
+                    <h1 class="font-extrabold text-base tracking-tight text-slate-800 leading-tight">KATARA LAUNDRY</h1>
                     <p class="text-xs text-brand-500 font-medium truncate flex items-center gap-1.5 mt-1">
                         <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                         Gerai Dinoyo Malang

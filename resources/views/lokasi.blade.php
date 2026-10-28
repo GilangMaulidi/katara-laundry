@@ -4,7 +4,7 @@
 @section('meta_description', 'Alamat lengkap gerai Katara Laundry di Jl. MT Haryono Dinoyo Malang. Jam buka operasional Senin-Minggu, nomor WhatsApp, peta Google Maps, dan area kurir antar-jemput.')
 
 @section('content')
-<div class="space-y-12 sm:space-y-16 pb-16">
+<div class="space-y-12 sm:space-y-16 lg:space-y-20 pb-12 sm:pb-16 lg:pb-20">
 
 <section class="relative bg-gradient-to-b from-sky-950 via-[#0a1b38] to-[#08152b] text-white py-14 sm:py-20 border-b border-sky-900/60 overflow-hidden">
         <div class="absolute -top-24 -left-24 w-96 h-96 bg-rose-500/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -35,7 +35,7 @@
         </div>
     </section>
 
-<section class="site-container space-y-12">
+<section class="site-container space-y-12 sm:space-y-16 lg:space-y-20">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             
 <div class="lg:col-span-7 bg-white rounded-2xl border border-slate-200/80 p-6 sm:p-8 space-y-6 shadow-sm">
@@ -104,14 +104,10 @@
                     </div>
                 </div>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <div class="pt-2">
                     <a href="https://maps.google.com/?q=Dinoyo+Lowokwaru+Malang" target="_blank" class="w-full py-3.5 px-4 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-xs transition-colors flex items-center justify-center gap-2 shadow-xs">
                         <i class="fa-solid fa-diamond-turn-right text-xs"></i>
                         <span>Buka Petunjuk di Google Maps</span>
-                    </a>
-                    <a href="https://wa.me/6281234567890?text=Halo%20Katara%20Laundry%20Dinoyo,%20posisi%20gerai%20sebelah%20mana%20ya?" target="_blank" class="w-full py-3.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs transition-colors flex items-center justify-center gap-2 shadow-md">
-                        <i class="fa-brands fa-whatsapp text-sm"></i>
-                        <span>Tanya Rute ke Kasir WA</span>
                     </a>
                 </div>
             </div>

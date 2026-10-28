@@ -6,6 +6,7 @@ use App\Models\Customer;
 use App\Models\Transaction;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Hash;
 use Tests\TestCase;
 
 class ExampleTest extends TestCase
@@ -60,6 +61,83 @@ class ExampleTest extends TestCase
     }
 
     /**
+     * Uji validasi bahwa nama/email dan password wajib dimasukkan.
+     */
+    public function test_login_wajib_memasukkan_nama_dan_password(): void
+    {
+        $response = $this->post('/login', [
+            'nama' => '',
+            'password' => '',
+        ]);
+
+        $response->assertSessionHasErrors(['nama', 'password']);
+        $this->assertGuest();
+    }
+
+    /**
+     * Uji login berhasil dengan memasukkan nama staf dan password.
+     */
+    public function test_login_berhasil_dengan_nama_staf_dan_password(): void
+    {
+        $user = User::factory()->create([
+            'nama' => 'Budi Kasir Dinoyo',
+            'email' => 'budi@kataralaundry.com',
+            'password' => Hash::make('rahasia123'),
+            'aktif' => true,
+        ]);
+
+        $response = $this->post('/login', [
+            'nama' => 'Budi Kasir Dinoyo',
+            'password' => 'rahasia123',
+        ]);
+
+        $response->assertRedirect('/dashboard');
+        $this->assertAuthenticatedAs($user);
+    }
+
+    /**
+     * Uji login berhasil dengan memasukkan email dan password.
+     */
+    public function test_login_berhasil_dengan_email_dan_password(): void
+    {
+        $user = User::factory()->create([
+            'nama' => 'Siti Kasir',
+            'email' => 'siti@kataralaundry.com',
+            'password' => Hash::make('rahasia123'),
+            'aktif' => true,
+        ]);
+
+        $response = $this->post('/login', [
+            'nama' => 'siti@kataralaundry.com',
+            'password' => 'rahasia123',
+        ]);
+
+        $response->assertRedirect('/dashboard');
+        $this->assertAuthenticatedAs($user);
+    }
+
+    /**
+     * Uji login gagal jika password salah.
+     */
+    public function test_login_gagal_jika_password_salah(): void
+    {
+        User::factory()->create([
+            'nama' => 'Agus Operator',
+            'email' => 'agus@kataralaundry.com',
+            'password' => Hash::make('rahasia123'),
+            'aktif' => true,
+        ]);
+
+        $response = $this->post('/login', [
+            'nama' => 'Agus Operator',
+            'password' => 'passwordsalah',
+        ]);
+
+        $response->assertSessionHasErrors(['nama']);
+        $this->assertGuest();
+    }
+
+    /**
      * Uji pelacakan publik dengan nomor nota.
      */
     public function test_pelacakan_publik_dengan_nomor_nota(): void
@@ -86,6 +164,67 @@ class ExampleTest extends TestCase
         $response->assertSee('KTR-TEST-0001');
         $response->assertSee('Fauzi Test');
         $response->assertSee('Sedang Dicuci');
+    }
+
+    /**
+     * Uji endpoint pelacakan asynchronous JSON untuk modal pop-up publik.
+     */
+    public function test_pelacakan_publik_via_api_json_pop_up(): void
+    {
+        $cust = Customer::create([
+            'nama' => 'Rina PopUp',
+            'nomor_telepon' => '089988776655',
+        ]);
+
+        Transaction::create([
+            'nomor_nota' => 'KTR-POP-0001',
+            'pelanggan_id' => $cust->id,
+            'status' => 'siap_diambil',
+            'status_pembayaran' => 'lunas',
+            'metode_pembayaran' => 'tunai',
+            'total_harga' => 25000,
+            'jumlah_dibayar' => 25000,
+            'tanggal_masuk' => now(),
+        ]);
+
+        // Uji pencarian nomor nota
+        $responseNota = $this->postJson('/lacak/cari', [
+            'invoice_number' => 'KTR-POP-0001',
+        ]);
+
+        $responseNota->assertStatus(200);
+        $responseNota->assertJson([
+            'success' => true,
+            'data' => [
+                'invoice_number' => 'KTR-POP-0001',
+                'customer_name' => 'Rina PopUp',
+                'status' => 'siap_diambil',
+                'is_paid' => true,
+            ],
+        ]);
+
+        // Uji pencarian via nomor WhatsApp
+        $responseWa = $this->postJson('/lacak/cari', [
+            'invoice_number' => '089988776655',
+        ]);
+
+        $responseWa->assertStatus(200);
+        $responseWa->assertJson([
+            'success' => true,
+            'data' => [
+                'invoice_number' => 'KTR-POP-0001',
+            ],
+        ]);
+
+        // Uji pencarian nota tidak ditemukan
+        $responseNotFound = $this->postJson('/lacak/cari', [
+            'invoice_number' => 'KTR-NOT-FOUND-999',
+        ]);
+
+        $responseNotFound->assertStatus(404);
+        $responseNotFound->assertJson([
+            'success' => false,
+        ]);
     }
 
     /**

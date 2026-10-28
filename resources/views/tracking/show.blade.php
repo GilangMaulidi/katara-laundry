@@ -3,7 +3,7 @@
 @section('title', 'Status Cucian Nota #' . $transaction->invoice_number)
 
 @section('content')
-<div class="max-w-4xl mx-auto px-4 sm:px-6 py-10 space-y-6">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-14 lg:py-16 space-y-8 sm:space-y-10 lg:space-y-12 pb-12 sm:pb-16 lg:pb-20">
 
 <div class="flex items-center justify-between gap-3">
         <a href="{{ route('tracking.index') }}" class="inline-flex items-center gap-2 text-xs font-bold text-slate-300 hover:text-white bg-[#0b1d3a] px-3.5 py-2 rounded-xl border border-sky-800/60 shadow-xs transition-colors">
@@ -30,14 +30,15 @@
                 </p>
             </div>
 
-<div class="sm:text-right">
-                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Status Pengerjaan Saat Ini</span>
-                <span class="inline-block px-3.5 py-1.5 rounded-xl border text-xs sm:text-sm font-black {{ $transaction->status === 'siap_diambil' ? 'bg-emerald-950 text-emerald-300 border-emerald-800/60 ring-2 ring-emerald-400/20' : 'bg-sky-950 text-sky-300 border-sky-800/60' }}">
-                    {{ $transaction->status_label }}
+            <div class="flex flex-col sm:items-end justify-center gap-2 shrink-0">
+                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-0.5 sm:text-right">Status Pengerjaan Saat Ini</span>
+                <span class="w-full sm:w-52 h-8 rounded-xl border text-xs font-black flex items-center justify-center gap-1.5 px-3 shadow-2xs {{ $transaction->status === 'siap_diambil' ? 'bg-emerald-950 text-emerald-300 border-emerald-800/60 ring-2 ring-emerald-400/20' : 'bg-sky-950 text-sky-300 border-sky-800/60' }}">
+                    <span class="w-1.5 h-1.5 rounded-full {{ $transaction->status === 'siap_diambil' ? 'bg-emerald-400 animate-pulse' : 'bg-sky-400' }} shrink-0"></span>
+                    <span>{{ $transaction->status_label }}</span>
                 </span>
                 @if($transaction->rackSlot)
-                    <div class="mt-2 text-xs font-bold text-sky-300 bg-[#071326] border border-sky-800/60 px-3 py-1 rounded-lg inline-flex items-center gap-1.5">
-                        <i class="fa-solid fa-cubes-stacked text-sky-400"></i>
+                    <div class="w-full sm:w-52 h-8 rounded-xl text-xs font-bold text-sky-300 bg-[#071326] border border-sky-800/60 flex items-center justify-center gap-1.5 px-3 shadow-2xs">
+                        <i class="fa-solid fa-boxes-stacked text-sky-400 text-xs shrink-0"></i>
                         <span>Posisi Rak: <strong class="text-white">{{ $transaction->rackSlot->code }}</strong></span>
                     </div>
                 @endif

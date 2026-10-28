@@ -4,7 +4,7 @@
 @section('meta_description', 'Daftar harga resmi Katara Laundry Dinoyo Malang. Cuci kiloan reguler, kilat 24 jam, express 6 jam, cuci satuan bedcover, jas, sepatu sneakers. Higienis 1 mesin 1 pelanggan.')
 
 @section('content')
-<div class="space-y-12 sm:space-y-16 pb-16">
+<div class="space-y-12 sm:space-y-16 lg:space-y-20 pb-12 sm:pb-16 lg:pb-20">
 
 <section class="relative bg-gradient-to-b from-sky-950 via-[#0a1b38] to-[#08152b] text-white py-14 sm:py-20 border-b border-sky-900/60 overflow-hidden">
 <div class="absolute -top-24 -left-24 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -54,7 +54,7 @@
         </div>
     </section>
 
-<section class="site-container space-y-10">
+<section class="site-container space-y-12 sm:space-y-16 lg:space-y-20">
 <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-slate-200 pb-5">
             <div>
                 <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900">
@@ -148,17 +148,11 @@
                             </span>
                         </div>
 
-<div class="grid grid-cols-2 gap-2 pt-1">
+                        <div class="pt-1">
                             <a href="{{ route('public.kalkulator') }}?service={{ $svc->id }}" 
-                               class="w-full py-2.5 min-h-[44px] rounded-xl bg-slate-50 hover:bg-sky-50 text-slate-700 hover:text-sky-700 border border-slate-200 font-bold text-xs transition-colors flex items-center justify-center gap-1.5">
-                                <i class="fa-solid fa-calculator text-[11px]"></i>
-                                <span>Simulasi</span>
-                            </a>
-                            <a href="https://wa.me/6281234567890?text={{ urlencode('Halo Katara Laundry Dinoyo, saya tertarik memesan layanan: ' . $svc->name . ' (Rp ' . number_format($svc->price, 0, ',', '.') . '/' . $svc->unit . '). Mohon info penjemputan.') }}" 
-                               target="_blank"
-                               class="w-full py-2.5 min-h-[44px] rounded-xl {{ $isPopular ? 'bg-brand-600 hover:bg-brand-500 text-white shadow-xs' : 'bg-emerald-600 hover:bg-emerald-500 text-white' }} font-bold text-xs transition-colors flex items-center justify-center gap-1.5">
-                                <i class="fa-brands fa-whatsapp text-sm"></i>
-                                <span>Order WA</span>
+                               class="w-full py-2.5 min-h-[44px] rounded-xl bg-slate-50 hover:bg-sky-50 text-slate-700 hover:text-sky-700 border border-slate-200 font-bold text-xs transition-colors flex items-center justify-center gap-1.5 shadow-2xs">
+                                <i class="fa-solid fa-calculator text-[11px] text-sky-600"></i>
+                                <span>Hitung Estimasi Biaya</span>
                             </a>
                         </div>
                     </div>

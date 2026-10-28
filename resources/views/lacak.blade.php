@@ -4,7 +4,7 @@
 @section('meta_description', 'Pantau status pengerjaan laundry kiloan & satuan Anda secara real-time di Katara Laundry Dinoyo Malang. Cek nomor nota atau nomor WhatsApp sekarang.')
 
 @section('content')
-<div class="space-y-12 sm:space-y-16 pb-20">
+<div class="space-y-12 sm:space-y-16 lg:space-y-20 pb-12 sm:pb-16 lg:pb-20">
 
 <section class="relative bg-gradient-to-b from-sky-950 via-[#0a1b38] to-[#08152b] text-white py-14 sm:py-20 border-b border-sky-900/60 overflow-hidden">
         <div class="absolute -top-24 -left-24 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -118,7 +118,7 @@
         </div>
     </section>
 
-<section class="site-container space-y-8">
+<section class="site-container space-y-12 sm:space-y-16 lg:space-y-20">
         <div class="text-center max-w-2xl mx-auto space-y-2">
             <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">Tahapan Pengerjaan</span>
             <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Alur Produksi yang Anda Pantau</h2>
@@ -178,7 +178,7 @@
         </div>
     </section>
 
-<section class="site-container space-y-10">
+<section class="site-container space-y-12 sm:space-y-16 lg:space-y-20">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 items-start">
             
 <div class="bg-gradient-to-br from-sky-950 to-[#0b1d3a] text-white rounded-3xl p-6 sm:p-7 space-y-4 border border-sky-800/80 shadow-xl">

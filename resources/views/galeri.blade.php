@@ -4,7 +4,7 @@
 @section('meta_description', 'Dokumentasi foto fasilitas gerai Katara Laundry Dinoyo Malang: deretan mesin cuci komersial, rak 45 slot, setrika uap boiler, dan hasil pengerjaan rapi.')
 
 @section('content')
-<div class="space-y-12 sm:space-y-16 pb-16">
+<div class="space-y-12 sm:space-y-16 lg:space-y-20 pb-12 sm:pb-16 lg:pb-20">
 
 <section class="relative bg-gradient-to-b from-sky-950 via-[#0a1b38] to-[#08152b] text-white py-14 sm:py-20 border-b border-sky-900/60 overflow-hidden">
         <div class="absolute -top-24 -left-24 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -35,7 +35,7 @@
         </div>
     </section>
 
-<section class="site-container space-y-10">
+<section class="site-container space-y-12 sm:space-y-16 lg:space-y-20">
         
 <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-slate-200 pb-5">
             <div>

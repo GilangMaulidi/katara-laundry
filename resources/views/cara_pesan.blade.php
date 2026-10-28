@@ -4,7 +4,7 @@
 @section('meta_description', 'Panduan cara pesan laundry kiloan & satuan di Katara Laundry Dinoyo. 5 langkah mudah dari drop/jemput, timbang, cuci 1 mesin sendiri, pengering gas, hingga setrika uap rak.')
 
 @section('content')
-<div class="space-y-12 sm:space-y-16 pb-16">
+<div class="space-y-12 sm:space-y-16 lg:space-y-20 pb-12 sm:pb-16 lg:pb-20">
 
 <section class="relative bg-gradient-to-b from-sky-950 via-[#0a1b38] to-[#08152b] text-white py-14 sm:py-20 border-b border-sky-900/60 overflow-hidden">
         <div class="absolute -top-24 -left-24 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -35,7 +35,7 @@
         </div>
     </section>
 
-<section class="site-container space-y-10">
+<section class="site-container space-y-12 sm:space-y-16 lg:space-y-20">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 items-stretch">
             
 <div class="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group">

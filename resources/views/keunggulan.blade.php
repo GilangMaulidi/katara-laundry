@@ -4,7 +4,7 @@
 @section('meta_description', '6 keunggulan utama Katara Laundry Dinoyo Malang: 1 mesin 1 nota tanpa campur, setrika uap boiler industri, 45 slot rak fisik terintegrasi, dan garansi cuci ulang 100%.')
 
 @section('content')
-<div class="space-y-12 sm:space-y-16 pb-16">
+<div class="space-y-12 sm:space-y-16 lg:space-y-20 pb-12 sm:pb-16 lg:pb-20">
 
 <section class="relative bg-gradient-to-b from-sky-950 via-[#0a1b38] to-[#08152b] text-white py-14 sm:py-20 border-b border-sky-900/60 overflow-hidden">
         <div class="absolute -top-24 -left-24 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -22,158 +22,173 @@
 
             <div class="space-y-3">
                 <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-900/70 text-sky-300 text-xs font-bold uppercase tracking-wider border border-sky-700/50 shadow-xs">
-                    <i class="fa-solid fa-shield-halved text-sky-400"></i>
-                    <span>Standar Mutu & Higienitas</span>
+                    <i class="fa-solid fa-clipboard-check text-sky-400"></i>
+                    <span>SOP Gerai Dinoyo Malang</span>
                 </span>
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white leading-tight">
                     Mengapa Memilih Katara Laundry?
                 </h1>
                 <p class="text-sm sm:text-base text-slate-300 leading-relaxed font-normal max-w-2xl mx-auto">
-                    Banyak laundry mencampur cucian dari beberapa pelanggan demi menekan biaya. Di Katara Laundry Dinoyo, kami menerapkan SOP ketat dengan prinsip <strong class="text-white">1 Mesin 1 Nota</strong> demi kebersihan, kenyamanan, dan rasa tenang Anda.
+                    Standar operasional nyata di gerai Katara Laundry Dinoyo Malang: 1 pelanggan 1 drum mesin, pengering gas suhu terukur anti jemur luar, timbangan kasir digital akurat, setrika uap boiler industri, dan sistem 45 slot rak bernomor.
                 </p>
             </div>
         </div>
     </section>
 
-<section class="site-container space-y-12">
+    <section class="site-container space-y-12 sm:space-y-16 lg:space-y-20">
         <div class="text-center max-w-2xl mx-auto space-y-2">
-            <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">Komitmen Pelayanan</span>
+            <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">Operasional Gerai Katara Laundry Dinoyo</span>
             <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
                 6 Standar Unggulan Tanpa Kompromi
             </h2>
             <p class="text-xs sm:text-sm text-slate-600">
-                Setiap helai pakaian Anda kami perlakukan layaknya pakaian kami sendiri.
+                Semua tahapan pengerjaan pakaian dicatat dan diproses secara terstandarisasi demi kebersihan dan keamanan pakaian Anda.
             </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             
-<div class="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group">
+            <!-- 1. 1 Pelanggan 1 Mesin -->
+            <div class="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group h-full">
                 <div class="space-y-4">
                     <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-100 relative">
-                        <img src="{{ asset('images/laundry-washers.jpg') }}" alt="1 Mesin 1 Pelanggan Katara Laundry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-wider shadow-sm">
-                            SOP Inti
+                        <img src="{{ asset('images/laundry-washers.jpg') }}" alt="Mesin Cuci Front Loading Katara Laundry Dinoyo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-slate-900/90 text-white text-[10px] font-bold uppercase tracking-wider shadow-sm">
+                            Higienis
                         </span>
                     </div>
                     <div class="space-y-2">
-                        <h3 class="text-base sm:text-lg font-extrabold text-slate-900 group-hover:text-sky-600 transition-colors">
-                            1 Drum Mesin 1 Pelanggan
+                        <h3 class="text-base sm:text-lg font-extrabold text-slate-900 group-hover:text-sky-700 transition-colors">
+                            1 Pelanggan 1 Mesin
                         </h3>
                         <p class="text-xs text-slate-600 leading-relaxed font-normal">
-                            Cucian Anda tidak pernah dicampur dengan pakaian orang lain meski hanya 1 kg. Menjamin privasi, higienitas maksimal, dan mencegah risiko pakaian tertukar atau hilang.
+                            Setiap nota dicuci mandiri dalam drum mesin terpisah meskipun hanya 1–2 kg. Menjaga privasi, mencegah risiko pakaian tertukar, luntur, atau tertular kotoran cucian lain.
                         </p>
                     </div>
                 </div>
-                <div class="pt-3 border-t border-slate-100 text-xs font-bold text-emerald-600 flex items-center gap-1.5">
-                    <i class="fa-solid fa-check-circle"></i> 100% Anti Campur
+                <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-slate-700 flex items-center gap-1.5">
+                    <i class="fa-solid fa-check text-emerald-600 text-xs"></i> <span>Drum dibersihkan berkala</span>
                 </div>
             </div>
 
-<div class="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group">
+            <!-- 2. Gas Dryer Suhu Terukur -->
+            <div class="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group h-full">
+                <div class="space-y-4">
+                    <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-100 relative">
+                        <img src="{{ asset('images/laundry-folded.jpg') }}" alt="Pengering Gas Dryer Katara Laundry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-slate-900/90 text-white text-[10px] font-bold uppercase tracking-wider shadow-sm">
+                            100% Kering
+                        </span>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-base sm:text-lg font-extrabold text-slate-900 group-hover:text-sky-700 transition-colors">
+                            Gas Dryer Suhu Terukur
+                        </h3>
+                        <p class="text-xs text-slate-600 leading-relaxed font-normal">
+                            Pengeringan menggunakan mesin gas komersial bersuhu 65–70°C. Pakaian kering tuntas, steril dari kuman dan tungau, serta bebas dari debu jalanan Dinoyo dan bau apek musim hujan.
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-slate-700 flex items-center gap-1.5">
+                    <i class="fa-solid fa-check text-emerald-600 text-xs"></i> <span>Kering tuntas &amp; wangi awet</span>
+                </div>
+            </div>
+
+            <!-- 3. Timbangan Kasir Digital -->
+            <div class="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group h-full">
+                <div class="space-y-4">
+                    <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-100 relative">
+                        <img src="{{ asset('images/service-kiloan.jpg') }}" alt="Timbangan Digital Transparan Katara Laundry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-slate-900/90 text-white text-[10px] font-bold uppercase tracking-wider shadow-sm">
+                            Akurasi 0,01 Kg
+                        </span>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-base sm:text-lg font-extrabold text-slate-900 group-hover:text-sky-700 transition-colors">
+                            Timbangan Kasir Digital
+                        </h3>
+                        <p class="text-xs text-slate-600 leading-relaxed font-normal">
+                            Berat pakaian ditimbang di hadapan Anda dengan timbangan digital 2 desimal. Nilai yang tertera di layar timbangan adalah nilai yang tercatat di nota fisik maupun sistem digital.
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-slate-700 flex items-center gap-1.5">
+                    <i class="fa-solid fa-check text-emerald-600 text-xs"></i> <span>Tanpa pembulatan sepihak</span>
+                </div>
+            </div>
+
+            <!-- 4. Rak Fisik & Notifikasi WA -->
+            <div class="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group h-full">
+                <div class="space-y-4">
+                    <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-100 relative">
+                        <img src="{{ asset('images/laundry-delivery.jpg') }}" alt="Notifikasi WhatsApp & Slot Rak Katara Laundry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-slate-900/90 text-white text-[10px] font-bold uppercase tracking-wider shadow-sm">
+                            Rak A1 - E9
+                        </span>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-base sm:text-lg font-extrabold text-slate-900 group-hover:text-sky-700 transition-colors">
+                            Rak Fisik &amp; Notifikasi WA
+                        </h3>
+                        <p class="text-xs text-slate-600 leading-relaxed font-normal">
+                            Pakaian yang selesai dipacking langsung disimpan di 45 slot rak bernomor. Sistem otomatis mengirim pesan WhatsApp dengan info slot rak sehingga pengambilan di gerai sangat cepat.
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-slate-700 flex items-center gap-1.5">
+                    <i class="fa-solid fa-check text-emerald-600 text-xs"></i> <span>Tidak ditumpuk di meja kasir</span>
+                </div>
+            </div>
+
+            <!-- 5. Setrika Uap Boiler Industri -->
+            <div class="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group h-full">
                 <div class="space-y-4">
                     <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-100 relative">
                         <img src="{{ asset('images/laundry-ironing.jpg') }}" alt="Setrika Uap Boiler Katara Laundry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-sky-600 text-white text-[10px] font-bold uppercase tracking-wider shadow-sm">
-                            Aman Serat
+                        <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-slate-900/90 text-white text-[10px] font-bold uppercase tracking-wider shadow-sm">
+                            Uap Murni
                         </span>
                     </div>
                     <div class="space-y-2">
-                        <h3 class="text-base sm:text-lg font-extrabold text-slate-900 group-hover:text-sky-600 transition-colors">
+                        <h3 class="text-base sm:text-lg font-extrabold text-slate-900 group-hover:text-sky-700 transition-colors">
                             Setrika Uap Boiler Industri
                         </h3>
                         <p class="text-xs text-slate-600 leading-relaxed font-normal">
-                            Menggunakan uap bertekanan tinggi dari boiler komersial. Pakaian menjadi licin sempurna tanpa risiko kain terbakar, mengkilap, atau melar seperti menggunakan setrika listrik konvensional.
+                            Menggunakan boiler uap bertekanan tinggi. Panas merata melicinkan serat pakaian tanpa risiko gosong, mengkilap (*shiny effect*), atau merusak sablon dan bahan pakaian sensitif.
                         </p>
                     </div>
                 </div>
-                <div class="pt-3 border-t border-slate-100 text-xs font-bold text-sky-600 flex items-center gap-1.5">
-                    <i class="fa-solid fa-check-circle"></i> Bebas Risiko Mengkilap
+                <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-slate-700 flex items-center gap-1.5">
+                    <i class="fa-solid fa-check text-emerald-600 text-xs"></i> <span>Aman untuk katun, wol &amp; jersey</span>
                 </div>
             </div>
 
-<div class="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group">
+            <!-- 6. Layanan Express 6 Jam -->
+            <div class="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group h-full">
                 <div class="space-y-4">
                     <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-100 relative">
-                        <img src="{{ asset('images/laundry-folded.jpg') }}" alt="45 Slot Rak Fisik Katara Laundry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-purple-600 text-white text-[10px] font-bold uppercase tracking-wider shadow-sm">
-                            Tertata Rapi
+                        <img src="{{ asset('images/service-express.jpg') }}" alt="Express 6 Jam Katara Laundry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-slate-900/90 text-white text-[10px] font-bold uppercase tracking-wider shadow-sm">
+                            Jalur Prioritas
                         </span>
                     </div>
                     <div class="space-y-2">
-                        <h3 class="text-base sm:text-lg font-extrabold text-slate-900 group-hover:text-sky-600 transition-colors">
-                            45 Slot Rak Fisik Bernomor
+                        <h3 class="text-base sm:text-lg font-extrabold text-slate-900 group-hover:text-sky-700 transition-colors">
+                            Layanan Express 6 Jam
                         </h3>
                         <p class="text-xs text-slate-600 leading-relaxed font-normal">
-                            Pakaian yang sudah selesai disetrika dan dipacking langsung ditempatkan di rak berkode (A-01 s/d E-09). Posisi rak tercatat di sistem POS kasir dan web pelacakan nota.
+                            Untuk pakaian yang segera dipakai sidang skripsi, rapat, atau bepergian. Masuk antrean prioritas mesin cuci dan setrika, selesai dalam 6 jam dengan standar kerapian terjaga.
                         </p>
                     </div>
                 </div>
-                <div class="pt-3 border-t border-slate-100 text-xs font-bold text-purple-600 flex items-center gap-1.5">
-                    <i class="fa-solid fa-check-circle"></i> Cepat Ditemukan Saat Ambil
-                </div>
-            </div>
-
-<div class="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group">
-                <div class="space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 border border-sky-100 flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-droplet"></i>
-                    </div>
-                    <div class="space-y-2">
-                        <h3 class="text-base sm:text-lg font-extrabold text-slate-900 group-hover:text-sky-600 transition-colors">
-                            Air Multi-Filtrasi & Deterjen Enzim
-                        </h3>
-                        <p class="text-xs text-slate-600 leading-relaxed font-normal">
-                            Air pencucian melewati filter penyaring endapan zat kapur dan karat sehingga pakaian putih tetap cerah. Deterjen cair formula enzim ampuh mengangkat noda membandel tanpa merusak tekstur serat baju.
-                        </p>
-                    </div>
-                </div>
-                <div class="pt-3 border-t border-slate-100 text-xs font-bold text-sky-600 flex items-center gap-1.5">
-                    <i class="fa-solid fa-check-circle"></i> Pakaian Putih Tidak Menguning
-                </div>
-            </div>
-
-<div class="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group">
-                <div class="space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 border border-purple-100 flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-spray-can"></i>
-                    </div>
-                    <div class="space-y-2">
-                        <h3 class="text-base sm:text-lg font-extrabold text-slate-900 group-hover:text-sky-600 transition-colors">
-                            5 Pilihan Parfum Grade Premium
-                        </h3>
-                        <p class="text-xs text-slate-600 leading-relaxed font-normal">
-                            Bebas pilih varian aroma sesuai selera: Selera Segar, Sakura Blossom, Ocean Fresh, Lavender Relax, atau Baby Sweet. Wangi awet hingga berminggu-minggu saat tersimpan di lemari.
-                        </p>
-                    </div>
-                </div>
-                <div class="pt-3 border-t border-slate-100 text-xs font-bold text-purple-600 flex items-center gap-1.5">
-                    <i class="fa-solid fa-check-circle"></i> Gratis Termasuk Paket
-                </div>
-            </div>
-
-<div class="bg-white rounded-2xl border border-slate-200/80 p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group">
-                <div class="space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-100 flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-award"></i>
-                    </div>
-                    <div class="space-y-2">
-                        <h3 class="text-base sm:text-lg font-extrabold text-slate-900 group-hover:text-sky-600 transition-colors">
-                            Garansi Cuci Ulang 100% Gratis
-                        </h3>
-                        <p class="text-xs text-slate-600 leading-relaxed font-normal">
-                            Jika pakaian yang Anda terima dirasa masih ada noda yang terlewat atau setrikaan kurang rapi, hubungi kami dalam 1x24 jam. Kami cuci ulang seketika tanpa dipungut biaya tambahan.
-                        </p>
-                    </div>
-                </div>
-                <div class="pt-3 border-t border-slate-100 text-xs font-bold text-emerald-600 flex items-center gap-1.5">
-                    <i class="fa-solid fa-check-circle"></i> Jaminan Kepuasan Pelanggan
+                <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-slate-700 flex items-center gap-1.5">
+                    <i class="fa-solid fa-check text-emerald-600 text-xs"></i> <span>Tepat waktu terkonfirmasi</span>
                 </div>
             </div>
 
         </div>
 
-<div class="rounded-2xl border border-slate-200/80 bg-white p-6 sm:p-8 space-y-6 shadow-sm">
+        <div class="rounded-2xl border border-slate-200/90 bg-white p-6 sm:p-8 space-y-6 shadow-sm">
             <div class="text-center max-w-xl mx-auto space-y-1">
                 <h3 class="text-lg sm:text-xl font-extrabold text-slate-900">
                     Perbandingan Layanan: Katara vs Laundry Biasa
@@ -195,38 +210,84 @@
                     <tbody class="divide-y divide-slate-100 text-slate-700">
                         <tr class="hover:bg-slate-50/60 transition-colors">
                             <td class="p-3.5 sm:p-4 font-semibold text-slate-900">Pemisahan Cucian Pelanggan</td>
-                            <td class="p-3.5 sm:p-4 text-emerald-700 font-bold bg-emerald-50/30 flex items-center gap-1.5">
-                                <i class="fa-solid fa-check-circle text-emerald-600"></i> 1 drum mesin untuk 1 nota (tidak dicampur)
+                            <td class="p-3.5 sm:p-4 text-emerald-700 font-bold bg-emerald-50/30">
+                                <div class="flex items-center gap-1.5">
+                                    <i class="fa-solid fa-check-circle text-emerald-600"></i> <span>1 drum mesin untuk 1 nota (tidak dicampur)</span>
+                                </div>
                             </td>
                             <td class="p-3.5 sm:p-4 text-slate-500">Sering dicampur beberapa pelanggan sekaligus</td>
                         </tr>
                         <tr class="hover:bg-slate-50/60 transition-colors">
+                            <td class="p-3.5 sm:p-4 font-semibold text-slate-900">Proses Pengeringan &amp; Aroma</td>
+                            <td class="p-3.5 sm:p-4 text-emerald-700 font-bold bg-emerald-50/30">
+                                <div class="flex items-center gap-1.5">
+                                    <i class="fa-solid fa-check-circle text-emerald-600"></i> <span>Gas dryer suhu optimal (100% kering anti bau apek)</span>
+                                </div>
+                            </td>
+                            <td class="p-3.5 sm:p-4 text-slate-500">Dijemur di pinggir jalan (rawan bau apek &amp; debu)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition-colors">
+                            <td class="p-3.5 sm:p-4 font-semibold text-slate-900">Ketelitian Timbangan</td>
+                            <td class="p-3.5 sm:p-4 text-emerald-700 font-bold bg-emerald-50/30">
+                                <div class="flex items-center gap-1.5">
+                                    <i class="fa-solid fa-check-circle text-emerald-600"></i> <span>Timbangan digital akurasi 0.01 kg di depan pelanggan</span>
+                                </div>
+                            </td>
+                            <td class="p-3.5 sm:p-4 text-slate-500">Timbangan jarum manual / dibulatkan sepihak</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition-colors">
                             <td class="p-3.5 sm:p-4 font-semibold text-slate-900">Metode Penyetrikaan</td>
                             <td class="p-3.5 sm:p-4 text-emerald-700 font-bold bg-emerald-50/30">
-                                <i class="fa-solid fa-check-circle text-emerald-600"></i> Setrika Uap Boiler Industri (aman serat)
+                                <div class="flex items-center gap-1.5">
+                                    <i class="fa-solid fa-check-circle text-emerald-600"></i> <span>Setrika Uap Boiler Industri (aman serat kain)</span>
+                                </div>
                             </td>
                             <td class="p-3.5 sm:p-4 text-slate-500">Setrika listrik biasa (rawan gosong/mengkilap)</td>
                         </tr>
                         <tr class="hover:bg-slate-50/60 transition-colors">
                             <td class="p-3.5 sm:p-4 font-semibold text-slate-900">Sistem Penyimpanan Nota Jadi</td>
                             <td class="p-3.5 sm:p-4 text-emerald-700 font-bold bg-emerald-50/30">
-                                <i class="fa-solid fa-check-circle text-emerald-600"></i> 45 Slot Rak Fisik tercatat di web sistem
+                                <div class="flex items-center gap-1.5">
+                                    <i class="fa-solid fa-check-circle text-emerald-600"></i> <span>45 Slot Rak Fisik tercatat di web &amp; notif WA</span>
+                                </div>
                             </td>
                             <td class="p-3.5 sm:p-4 text-slate-500">Ditumpuk manual di meja / lantai</td>
                         </tr>
                         <tr class="hover:bg-slate-50/60 transition-colors">
-                            <td class="p-3.5 sm:p-4 font-semibold text-slate-900">Pilihan Varian Parfum</td>
-                            <td class="p-3.5 sm:p-4 text-emerald-700 font-bold bg-emerald-50/30">
-                                <i class="fa-solid fa-check-circle text-emerald-600"></i> Bebas pilih 5 aroma parfum premium gratis
-                            </td>
-                            <td class="p-3.5 sm:p-4 text-slate-500">Aroma seragam / opsi parfum berbayar</td>
-                        </tr>
-                        <tr class="hover:bg-slate-50/60 transition-colors">
                             <td class="p-3.5 sm:p-4 font-semibold text-slate-900">Pelacakan Status Pesanan</td>
                             <td class="p-3.5 sm:p-4 text-emerald-700 font-bold bg-emerald-50/30">
-                                <i class="fa-solid fa-check-circle text-emerald-600"></i> Cek mandiri online real-time via nomor nota / WA
+                                <div class="flex items-center gap-1.5">
+                                    <i class="fa-solid fa-check-circle text-emerald-600"></i> <span>Notifikasi WhatsApp otomatis + cek web real-time</span>
+                                </div>
                             </td>
-                            <td class="p-3.5 sm:p-4 text-slate-500">Harus telepon / tanya manual via chat</td>
+                            <td class="p-3.5 sm:p-4 text-slate-500">Harus telepon / tanya manual via chat berulang kali</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition-colors">
+                            <td class="p-3.5 sm:p-4 font-semibold text-slate-900">Garansi Kualitas Hasil</td>
+                            <td class="p-3.5 sm:p-4 text-emerald-700 font-bold bg-emerald-50/30">
+                                <div class="flex items-center gap-1.5">
+                                    <i class="fa-solid fa-check-circle text-emerald-600"></i> <span>Garansi cuci &amp; setrika ulang 100% gratis 1x24 jam</span>
+                                </div>
+                            </td>
+                            <td class="p-3.5 sm:p-4 text-slate-500">Tidak ada garansi / risiko ditanggung pelanggan</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition-colors">
+                            <td class="p-3.5 sm:p-4 font-semibold text-slate-900">Layanan Kilat (Express 6 Jam)</td>
+                            <td class="p-3.5 sm:p-4 text-emerald-700 font-bold bg-emerald-50/30">
+                                <div class="flex items-center gap-1.5">
+                                    <i class="fa-solid fa-check-circle text-emerald-600"></i> <span>Jalur mesin prioritas, selesai tepat waktu terjamin</span>
+                                </div>
+                            </td>
+                            <td class="p-3.5 sm:p-4 text-slate-500">Sering molor tanpa kejelasan jadwal</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/60 transition-colors">
+                            <td class="p-3.5 sm:p-4 font-semibold text-slate-900">Fasilitas Antar-Jemput</td>
+                            <td class="p-3.5 sm:p-4 text-emerald-700 font-bold bg-emerald-50/30">
+                                <div class="flex items-center gap-1.5">
+                                    <i class="fa-solid fa-check-circle text-emerald-600"></i> <span>Gratis antar-jemput radius Dinoyo &amp; kawasan kampus</span>
+                                </div>
+                            </td>
+                            <td class="p-3.5 sm:p-4 text-slate-500">Wajib antar dan ambil sendiri ke lokasi toko</td>
                         </tr>
                     </tbody>
                 </table>

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nota Kasir #{{ $transaction->invoice_number }} - Katara Laundry</title>
+    <link rel="icon" type="image/jpeg" href="{{ asset('images/logo.katara.jpg') }}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,6 +56,7 @@
 <div class="thermal-receipt thermal-font w-full max-w-[80mm] sm:max-w-[76mm] bg-white p-5 border border-slate-300 rounded-xl shadow-lg text-xs leading-tight">
         
 <div class="text-center pb-3 border-b border-dashed border-slate-400">
+            <img src="{{ asset('images/logo.katara.jpg') }}" alt="Katara Laundry Logo" class="w-12 h-12 mx-auto mb-1.5 rounded-lg object-cover">
             <h2 class="font-bold text-sm tracking-wider uppercase">KATARA LAUNDRY</h2>
             <p class="text-[10px] text-slate-600 font-sans mt-0.5">Gerai Dinoyo &bull; Lowokwaru, Malang</p>
             <p class="text-[10px] text-slate-600 font-sans">Kawasan Kampus UB, UM, Polinema</p>
