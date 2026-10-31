@@ -1,4 +1,4 @@
-@extends('layouts.public')
+@extends('layouts.publik')
 
 @section('title', 'Lokasi Gerai Dinoyo & Jam Buka - Katara Laundry Dinoyo Malang')
 @section('meta_description', 'Alamat lengkap gerai Katara Laundry di Jl. MT Haryono Dinoyo Malang. Jam buka operasional Senin-Minggu, nomor WhatsApp, peta Google Maps, dan area kurir antar-jemput.')

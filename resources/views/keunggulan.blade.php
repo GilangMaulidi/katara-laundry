@@ -1,10 +1,10 @@
-@extends('layouts.public')
+@extends('layouts.publik')
 
 @section('title', 'Keunggulan & SOP Standar Kebersihan - Katara Laundry Dinoyo Malang')
 @section('meta_description', '6 keunggulan utama Katara Laundry Dinoyo Malang: 1 mesin 1 nota tanpa campur, setrika uap boiler industri, 45 slot rak fisik terintegrasi, dan garansi cuci ulang 100%.')
 
 @section('content')
-<div class="space-y-12 sm:space-y-16 lg:space-y-20 pb-12 sm:pb-16 lg:pb-20">
+<div class="space-y-14 sm:space-y-20 lg:space-y-24 pb-16 sm:pb-24">
 
 <section class="relative bg-gradient-to-b from-sky-950 via-[#0a1b38] to-[#08152b] text-white py-14 sm:py-20 border-b border-sky-900/60 overflow-hidden">
         <div class="absolute -top-24 -left-24 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -21,10 +21,6 @@
             </nav>
 
             <div class="space-y-3">
-                <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-900/70 text-sky-300 text-xs font-bold uppercase tracking-wider border border-sky-700/50 shadow-xs">
-                    <i class="fa-solid fa-clipboard-check text-sky-400"></i>
-                    <span>SOP Gerai Dinoyo Malang</span>
-                </span>
                 <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white leading-tight">
                     Mengapa Memilih Katara Laundry?
                 </h1>
@@ -35,7 +31,7 @@
         </div>
     </section>
 
-    <section class="site-container space-y-12 sm:space-y-16 lg:space-y-20">
+    <section class="site-container space-y-12 sm:space-y-16 lg:space-y-20 !mt-12 sm:!mt-16 lg:!mt-20">
         <div class="text-center max-w-2xl mx-auto space-y-2">
             <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">Operasional Gerai Katara Laundry Dinoyo</span>
             <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
@@ -47,8 +43,6 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            
-            <!-- 1. 1 Pelanggan 1 Mesin -->
             <div class="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group h-full">
                 <div class="space-y-4">
                     <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-100 relative">
@@ -71,7 +65,6 @@
                 </div>
             </div>
 
-            <!-- 2. Gas Dryer Suhu Terukur -->
             <div class="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group h-full">
                 <div class="space-y-4">
                     <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-100 relative">
@@ -94,7 +87,6 @@
                 </div>
             </div>
 
-            <!-- 3. Timbangan Kasir Digital -->
             <div class="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group h-full">
                 <div class="space-y-4">
                     <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-100 relative">
@@ -117,7 +109,6 @@
                 </div>
             </div>
 
-            <!-- 4. Rak Fisik & Notifikasi WA -->
             <div class="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group h-full">
                 <div class="space-y-4">
                     <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-100 relative">
@@ -140,7 +131,6 @@
                 </div>
             </div>
 
-            <!-- 5. Setrika Uap Boiler Industri -->
             <div class="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group h-full">
                 <div class="space-y-4">
                     <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-100 relative">
@@ -163,7 +153,6 @@
                 </div>
             </div>
 
-            <!-- 6. Layanan Express 6 Jam -->
             <div class="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 space-y-4 shadow-sm hover:shadow-md hover:border-sky-300 transition-all flex flex-col justify-between group h-full">
                 <div class="space-y-4">
                     <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-100 relative">

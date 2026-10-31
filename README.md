@@ -1,58 +1,104 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# KATARA LAUNDRY - SISTEM INFORMASI OPERASIONAL & KASIR POS
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sistem manajemen operasional laundry modern berbasis web untuk **Katara Laundry Dinoyo Malang**. Dibangun dengan arsitektur **Laravel 12 (PHP 8.3)**, **Tailwind CSS**, dan **Alpine.js**, sistem ini dirancang dengan seluruh nama komponen, controller, model, tampilan (views), dan rute dalam **Bahasa Indonesia**.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🌟 Fitur Utama Sistem
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+1. **Portal Publik & Pelacakan Mandiri (`PelacakanController`)**
+   - Halaman Beranda interaktif dengan informasi gerai Dinoyo Malang.
+   - Pelacakan status cucian mandiri berdasarkan nomor nota/invoice secara real-time.
+   - Katalog layanan & kalkulator estimasi tarif.
+   - Informasi 5 varian aroma parfum tahan lama, lokasi & jam operasional gerai, serta halaman tanya jawab (FAQ).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+2. **Point of Sale (POS) & Transaksi Kasir (`KasirController` & `TransaksiController`)**
+   - Transaksi cepat kasir dengan pintasan keyboard (F2).
+   - Registrasi pelanggan baru instan dari modal kasir.
+   - Perhitungan otomatis subtotal, diskon pelanggan reguler, dan kalkulasi kembalian.
+   - Cetak struk termal ukuran standar 58mm & 80mm.
+   - Dukungan pelunasan piutang/nota belum lunas (DP).
 
-## Learning Laravel
+3. **Manajemen Slot Rak Fisik (`RakController`)**
+   - Visualisasi tata letak 45 slot rak fisik (Blok A, Blok B, Blok C).
+   - Penempatan cucian matang/siap ambil langsung ke nomor slot rak.
+   - Pengosongan rak otomatis saat cucian diserahkan ke pelanggan.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+4. **Buku Pelanggan (`PelangganController`)**
+   - Manajemen basis data pelanggan (nama, WhatsApp, alamat, catatan khusus).
+   - Penghitungan total transaksi dan loyalitas pelanggan.
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+5. **Katalog Layanan & Aroma Parfum (`LayananController`)**
+   - Pengelolaan daftar tarif layanan (kiloan, satuan, bed cover, express).
+   - Pengelolaan 5 varian parfum eksklusif.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+6. **Stok & Bahan Baku Inventaris (`InventarisController`)**
+   - Pencatatan stok deterjen, softener, plastik packing, gas pengering, dll.
+   - Peringatan dini stok menipis (*low stock indicator*).
 
-## Agentic Development
+7. **Laporan & Analitik Keuangan (`LaporanController`)**
+   - Rekap omzet harian, mingguan, dan bulanan.
+   - Grafik performa layanan paling laris dan status pelunasan.
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+---
 
-```bash
-composer require laravel/boost --dev
+## 📂 Struktur Berkas Proyek (100% Bahasa Indonesia)
 
-php artisan boost:install
-```
+### 1. Model Data (`app/Models/`)
+- [`Pengguna.php`](file:///c:/laragon/www/katara-laundry/app/Models/Pengguna.php) - Entitas autentikasi staf dan hak akses (pemilik/kasir).
+- [`Pelanggan.php`](file:///c:/laragon/www/katara-laundry/app/Models/Pelanggan.php) - Data pelanggan dan riwayat transaksi.
+- [`Layanan.php`](file:///c:/laragon/www/katara-laundry/app/Models/Layanan.php) - Katalog tarif dan jenis pengerjaan laundry.
+- [`Parfum.php`](file:///c:/laragon/www/katara-laundry/app/Models/Parfum.php) - Varian wangi parfum cucian.
+- [`SlotRak.php`](file:///c:/laragon/www/katara-laundry/app/Models/SlotRak.php) - Posisi penyimpanan fisik pakaian jadi (45 slot).
+- [`Transaksi.php`](file:///c:/laragon/www/katara-laundry/app/Models/Transaksi.php) - Header nota transaksi dan alur status pengerjaan.
+- [`DetailTransaksi.php`](file:///c:/laragon/www/katara-laundry/app/Models/DetailTransaksi.php) - Rincian item cucian pada nota.
+- [`BarangInventaris.php`](file:///c:/laragon/www/katara-laundry/app/Models/BarangInventaris.php) - Bahan baku operasional gerai.
+- [`LogWhatsapp.php`](file:///c:/laragon/www/katara-laundry/app/Models/LogWhatsapp.php) - Riwayat pesan notifikasi WhatsApp.
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+### 2. Pengendali / Controller (`app/Http/Controllers/`)
+- [`AutentikasiController.php`](file:///c:/laragon/www/katara-laundry/app/Http/Controllers/AutentikasiController.php) - Log masuk, keluar, dan akun demo staf.
+- [`DasborController.php`](file:///c:/laragon/www/katara-laundry/app/Http/Controllers/DasborController.php) - Rangkuman metrik dasbor utama staf.
+- [`KasirController.php`](file:///c:/laragon/www/katara-laundry/app/Http/Controllers/KasirController.php) - Operasional POS kasir baru.
+- [`TransaksiController.php`](file:///c:/laragon/www/katara-laundry/app/Http/Controllers/TransaksiController.php) - Riwayat alur pengerjaan, status nota, dan cetak struk.
+- [`RakController.php`](file:///c:/laragon/www/katara-laundry/app/Http/Controllers/RakController.php) - Manajemen penempatan slot rak.
+- [`PelangganController.php`](file:///c:/laragon/www/katara-laundry/app/Http/Controllers/PelangganController.php) - Manajemen buku pelanggan gerai.
+- [`LayananController.php`](file:///c:/laragon/www/katara-laundry/app/Http/Controllers/LayananController.php) - Tarif layanan & varian aroma.
+- [`InventarisController.php`](file:///c:/laragon/www/katara-laundry/app/Http/Controllers/InventarisController.php) - Manajemen stok bahan operasional.
+- [`LaporanController.php`](file:///c:/laragon/www/katara-laundry/app/Http/Controllers/LaporanController.php) - Laporan rekap omzet & keuangan.
+- [`PelacakanController.php`](file:///c:/laragon/www/katara-laundry/app/Http/Controllers/PelacakanController.php) - Halaman publik dan pelacakan mandiri.
 
-## Contributing
+### 3. Tampilan Blade (`resources/views/`)
+- `layouts/aplikasi.blade.php` - Tata letak dasbor staf internal.
+- `layouts/publik.blade.php` - Tata letak portal pelanggan umum.
+- `autentikasi/masuk.blade.php` - Halaman login staf.
+- `dasbor/index.blade.php` - Dasbor utama operasional.
+- `kasir/index.blade.php` - Tampilan Point of Sale (POS) kasir.
+- `transaksi/` (`index.blade.php`, `detail.blade.php`, `struk.blade.php`) - Pengelolaan transaksi dan cetak nota.
+- `rak/` (`index.blade.php`, `_kartu_slot.blade.php`) - Visualisasi rak penyimpanan 45 slot.
+- `pelanggan/index.blade.php` - Manajemen buku pelanggan.
+- `layanan/index.blade.php` - Katalog tarif layanan.
+- `inventaris/index.blade.php` - Pemantauan stok bahan baku.
+- `laporan/index.blade.php` - Rekap dan grafik laporan keuangan.
+- `pelacakan/` (`index.blade.php`, `detail.blade.php`) - Hasil pelacakan nota publik.
+- Halaman Publik Lainnya: `cara_pesan.blade.php`, `galeri.blade.php`, `kalkulator.blade.php`, `keunggulan.blade.php`, `lacak.blade.php`, `layanan.blade.php`, `lokasi.blade.php`, `parfum.blade.php`, `tanya_jawab.blade.php`.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🚀 Panduan Menjalankan Aplikasi di Laragon
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1. Buka **Laragon**, pastikan layanan **Apache/Nginx** dan **MySQL** aktif.
+2. Buka terminal proyek (`c:\laragon\www\katara-laundry`).
+3. Jalankan migrasi dan seeder awal jika diperlukan:
+   ```bash
+   php artisan migrate
+   php artisan db:seed
+   ```
+4. Verifikasi seluruh rute aktif:
+   ```bash
+   php artisan route:list
+   ```
+5. Akses sistem melalui peramban:
+   - **Portal Publik**: `http://katara-laundry.test/` atau `http://localhost:8000/`
+   - **Login Staf**: `http://katara-laundry.test/masuk` atau `http://katara-laundry.test/login`
+     - Kasir: `kasir@kataralaundry.id` / `password`
+     - Pemilik: `owner@kataralaundry.id` / `password`

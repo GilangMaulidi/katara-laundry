@@ -2,13 +2,13 @@
 
 namespace Database\Seeders;
 
-use App\Models\Customer;
-use App\Models\InventoryItem;
-use App\Models\Perfume;
-use App\Models\RackSlot;
-use App\Models\Service;
-use App\Models\Transaction;
-use App\Models\User;
+use App\Models\BarangInventaris;
+use App\Models\Layanan;
+use App\Models\Parfum;
+use App\Models\Pelanggan;
+use App\Models\Pengguna;
+use App\Models\SlotRak;
+use App\Models\Transaksi;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
 {
 public function run(): void
     {
-        User::updateOrCreate(
+        Pengguna::updateOrCreate(
             ['email' => 'admin@kataralaundry.com'],
             [
                 'nama' => 'Owner Katara Laundry',
@@ -27,7 +27,7 @@ public function run(): void
             ]
         );
 
-        User::updateOrCreate(
+        Pengguna::updateOrCreate(
             ['email' => 'kasir@kataralaundry.com'],
             [
                 'nama' => 'Kasir Gerai Dinoyo',
@@ -38,7 +38,7 @@ public function run(): void
             ]
         );
 
-        User::updateOrCreate(
+        Pengguna::updateOrCreate(
             ['email' => 'operator@kataralaundry.com'],
             [
                 'nama' => 'Petugas Cuci & Setrika',
@@ -83,14 +83,14 @@ public function run(): void
         ];
 
         foreach ($perfumes as $perfume) {
-            Perfume::firstOrCreate(['nama' => $perfume['nama']], $perfume);
+            Parfum::firstOrCreate(['nama' => $perfume['nama']], $perfume);
         }
 
         $racks = ['A' => 'Rak Sayap Kiri', 'B' => 'Rak Bagian Tengah', 'C' => 'Rak Sayap Kanan'];
         foreach ($racks as $rackCode => $rackDescription) {
             for ($slot = 1; $slot <= 15; $slot++) {
                 $formattedSlot = str_pad((string) $slot, 2, '0', STR_PAD_LEFT);
-                RackSlot::firstOrCreate(
+                SlotRak::firstOrCreate(
                     ['kode' => "{$rackCode}-{$formattedSlot}"],
                     [
                         'kode_rak' => $rackCode,
@@ -227,7 +227,7 @@ public function run(): void
         ];
 
         foreach ($services as $service) {
-            Service::firstOrCreate(['nama' => $service['nama']], $service);
+            Layanan::firstOrCreate(['nama' => $service['nama']], $service);
         }
 
         $inventories = [
@@ -297,7 +297,7 @@ public function run(): void
         ];
 
         foreach ($inventories as $inv) {
-            InventoryItem::firstOrCreate(['nama' => $inv['nama']], $inv);
+            BarangInventaris::firstOrCreate(['nama' => $inv['nama']], $inv);
         }
 
         $customers = [
@@ -332,29 +332,29 @@ public function run(): void
         ];
 
         foreach ($customers as $cust) {
-            Customer::firstOrCreate(['nomor_telepon' => $cust['nomor_telepon']], $cust);
+            Pelanggan::firstOrCreate(['nomor_telepon' => $cust['nomor_telepon']], $cust);
         }
 
-        $kasir = User::where('peran', 'kasir')->first() ?? User::where('role', 'kasir')->first();
-        $sakura = Perfume::where('nama', 'Sakura Blossom')->first() ?? Perfume::where('name', 'Sakura Blossom')->first();
-        $ocean = Perfume::where('nama', 'Ocean Fresh')->first() ?? Perfume::where('name', 'Ocean Fresh')->first();
-        $baby = Perfume::where('nama', 'Baby Cuddle')->first() ?? Perfume::where('name', 'Baby Cuddle')->first();
-        $snappy = Perfume::where('nama', 'Snappy Luxury')->first() ?? Perfume::where('name', 'Snappy Luxury')->first();
-        $lavender = Perfume::where('nama', 'Lavender Breeze')->first() ?? Perfume::where('name', 'Lavender Breeze')->first();
+        $kasir = Pengguna::where('peran', 'kasir')->first() ?? Pengguna::where('role', 'kasir')->first();
+        $sakura = Parfum::where('nama', 'Sakura Blossom')->first() ?? Parfum::where('name', 'Sakura Blossom')->first();
+        $ocean = Parfum::where('nama', 'Ocean Fresh')->first() ?? Parfum::where('name', 'Ocean Fresh')->first();
+        $baby = Parfum::where('nama', 'Baby Cuddle')->first() ?? Parfum::where('name', 'Baby Cuddle')->first();
+        $snappy = Parfum::where('nama', 'Snappy Luxury')->first() ?? Parfum::where('name', 'Snappy Luxury')->first();
+        $lavender = Parfum::where('nama', 'Lavender Breeze')->first() ?? Parfum::where('name', 'Lavender Breeze')->first();
 
-        $slotA1 = RackSlot::where('kode', 'A-01')->first() ?? RackSlot::where('code', 'A-01')->first();
-        $slotB4 = RackSlot::where('kode', 'B-04')->first() ?? RackSlot::where('code', 'B-04')->first();
-        $slotC9 = RackSlot::where('kode', 'C-09')->first() ?? RackSlot::where('code', 'C-09')->first();
+        $slotA1 = SlotRak::where('kode', 'A-01')->first() ?? SlotRak::where('code', 'A-01')->first();
+        $slotB4 = SlotRak::where('kode', 'B-04')->first() ?? SlotRak::where('code', 'B-04')->first();
+        $slotC9 = SlotRak::where('kode', 'C-09')->first() ?? SlotRak::where('code', 'C-09')->first();
 
-        $svcCuciSetrika = Service::where('nama', 'like', '%Cuci Kering Setrika Reguler%')->first() ?? Service::where('name', 'like', '%Cuci Kering Setrika Reguler%')->first();
-        $svcKilat = Service::where('nama', 'like', '%Cuci Kering Setrika Kilat%')->first() ?? Service::where('name', 'like', '%Cuci Kering Setrika Kilat%')->first();
-        $svcLipat = Service::where('nama', 'like', '%Cuci Kering Lipat%')->first() ?? Service::where('name', 'like', '%Cuci Kering Lipat%')->first();
-        $svcSepatu = Service::where('nama', 'like', '%Sepatu%')->first() ?? Service::where('name', 'like', '%Sepatu%')->first();
-        $svcBedcover = Service::where('nama', 'like', '%Bedcover Jumbo%')->first() ?? Service::where('name', 'like', '%Bedcover Jumbo%')->first();
-        $svcJas = Service::where('nama', 'like', '%Jas%')->first() ?? Service::where('name', 'like', '%Jas%')->first();
+        $svcCuciSetrika = Layanan::where('nama', 'like', '%Cuci Kering Setrika Reguler%')->first() ?? Layanan::where('name', 'like', '%Cuci Kering Setrika Reguler%')->first();
+        $svcKilat = Layanan::where('nama', 'like', '%Cuci Kering Setrika Kilat%')->first() ?? Layanan::where('name', 'like', '%Cuci Kering Setrika Kilat%')->first();
+        $svcLipat = Layanan::where('nama', 'like', '%Cuci Kering Lipat%')->first() ?? Layanan::where('name', 'like', '%Cuci Kering Lipat%')->first();
+        $svcSepatu = Layanan::where('nama', 'like', '%Sepatu%')->first() ?? Layanan::where('name', 'like', '%Sepatu%')->first();
+        $svcBedcover = Layanan::where('nama', 'like', '%Bedcover Jumbo%')->first() ?? Layanan::where('name', 'like', '%Bedcover Jumbo%')->first();
+        $svcJas = Layanan::where('nama', 'like', '%Jas%')->first() ?? Layanan::where('name', 'like', '%Jas%')->first();
 
-        $cust1 = Customer::where('nama', 'like', '%Ahmad Fauzi%')->first() ?? Customer::where('name', 'like', '%Ahmad Fauzi%')->first();
-        $t1 = Transaction::firstOrCreate(
+        $cust1 = Pelanggan::where('nama', 'like', '%Ahmad Fauzi%')->first() ?? Pelanggan::where('name', 'like', '%Ahmad Fauzi%')->first();
+        $t1 = Transaksi::firstOrCreate(
             ['nomor_nota' => 'KTR-20260906-0001'],
             [
                 'pelanggan_id' => $cust1->id,
@@ -386,8 +386,8 @@ public function run(): void
         }
         $slotA1->update(['status' => 'terisi']);
 
-        $cust2 = Customer::where('nama', 'like', '%Nabila Putri%')->first() ?? Customer::where('name', 'like', '%Nabila Putri%')->first();
-        $t2 = Transaction::firstOrCreate(
+        $cust2 = Pelanggan::where('nama', 'like', '%Nabila Putri%')->first() ?? Pelanggan::where('name', 'like', '%Nabila Putri%')->first();
+        $t2 = Transaksi::firstOrCreate(
             ['nomor_nota' => 'KTR-20260906-0002'],
             [
                 'pelanggan_id' => $cust2->id,
@@ -415,8 +415,8 @@ public function run(): void
             ]);
         }
 
-        $cust3 = Customer::where('nama', 'like', '%Bagas Prasetyo%')->first() ?? Customer::where('name', 'like', '%Bagas Prasetyo%')->first();
-        $t3 = Transaction::firstOrCreate(
+        $cust3 = Pelanggan::where('nama', 'like', '%Bagas Prasetyo%')->first() ?? Pelanggan::where('name', 'like', '%Bagas Prasetyo%')->first();
+        $t3 = Transaksi::firstOrCreate(
             ['nomor_nota' => 'KTR-20260906-0003'],
             [
                 'pelanggan_id' => $cust3->id,
@@ -454,8 +454,8 @@ public function run(): void
         }
         $slotB4->update(['status' => 'terisi']);
 
-        $cust4 = Customer::where('nama', 'like', '%Ratna Dewi%')->first() ?? Customer::where('name', 'like', '%Ratna Dewi%')->first();
-        $t4 = Transaction::firstOrCreate(
+        $cust4 = Pelanggan::where('nama', 'like', '%Ratna Dewi%')->first() ?? Pelanggan::where('name', 'like', '%Ratna Dewi%')->first();
+        $t4 = Transaksi::firstOrCreate(
             ['nomor_nota' => 'KTR-20260906-0004'],
             [
                 'pelanggan_id' => $cust4->id,
@@ -489,7 +489,7 @@ public function run(): void
             ]);
         }
 
-        $t5 = Transaction::firstOrCreate(
+        $t5 = Transaksi::firstOrCreate(
             ['nomor_nota' => 'KTR-20260906-0005'],
             [
                 'pelanggan_id' => $cust1->id,
@@ -519,6 +519,7 @@ public function run(): void
                 'subtotal' => 30000,
             ]);
         }
+        $slotC9->update(['status' => 'terisi']);
         $slotC9->update(['status' => 'terisi']);
     }
 }

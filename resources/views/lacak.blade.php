@@ -1,4 +1,4 @@
-@extends('layouts.public')
+@extends('layouts.publik')
 
 @section('title', 'Lacak Status Nota Cucian & Slot Rak Fisik - Katara Laundry Dinoyo Malang')
 @section('meta_description', 'Pantau status pengerjaan laundry kiloan & satuan Anda secara real-time di Katara Laundry Dinoyo Malang. Cek nomor nota atau nomor WhatsApp sekarang.')

@@ -10,9 +10,9 @@ public function up(): void
     {
         Schema::create('slot_rak', function (Blueprint $table) {
             $table->id();
-            $table->string('kode_rak', 10); // A, B, C
-            $table->unsignedInteger('nomor_slot'); // 1 s/d 15
-            $table->string('kode', 20)->unique(); // A-01, A-02, s/d C-15
+            $table->string('kode_rak', 10);
+            $table->unsignedInteger('nomor_slot');
+            $table->string('kode', 20)->unique();
             $table->enum('status', ['tersedia', 'terisi'])->default('tersedia');
             $table->text('catatan')->nullable();
             $table->timestamps();

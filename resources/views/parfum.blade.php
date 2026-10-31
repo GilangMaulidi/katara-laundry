@@ -1,4 +1,4 @@
-@extends('layouts.public')
+@extends('layouts.publik')
 
 @section('title', '5 Varian Aroma Parfum Premium Pakaian - Katara Laundry Dinoyo Malang')
 @section('meta_description', 'Koleksi 5 aroma parfum premium Katara Laundry Dinoyo: Selera Segar, Sakura Blossom, Ocean Fresh, Lavender Relax, dan Baby Sweet. Tahan 14 hari tanpa noda minyak.')

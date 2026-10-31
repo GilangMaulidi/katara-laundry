@@ -10,9 +10,9 @@ public function up(): void
     {
         Schema::create('transaksi', function (Blueprint $table) {
             $table->id();
-            $table->string('nomor_nota', 50)->unique(); // KTR-20260906-0001
+            $table->string('nomor_nota', 50)->unique();
             $table->foreignId('pelanggan_id')->constrained('pelanggan')->cascadeOnDelete();
-            $table->foreignId('pengguna_id')->nullable()->constrained('pengguna')->nullOnDelete(); // Kasir pembuat nota
+            $table->foreignId('pengguna_id')->nullable()->constrained('pengguna')->nullOnDelete();
             $table->foreignId('parfum_id')->nullable()->constrained('parfum')->nullOnDelete();
             $table->foreignId('slot_rak_id')->nullable()->constrained('slot_rak')->nullOnDelete();
 
@@ -32,7 +32,7 @@ public function up(): void
             $table->decimal('total_harga', 12, 2)->default(0);
             $table->decimal('jumlah_dibayar', 12, 2)->default(0);
             $table->decimal('diskon', 12, 2)->default(0);
-            $table->decimal('sisa_tagihan', 12, 2)->default(0); // Piutang jika DP
+            $table->decimal('sisa_tagihan', 12, 2)->default(0);
 
             $table->text('catatan')->nullable();
             $table->timestamp('tanggal_masuk')->useCurrent();

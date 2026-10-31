@@ -1,4 +1,4 @@
-@extends('layouts.public')
+@extends('layouts.publik')
 
 @section('title', 'Cara Pesan & 5 Langkah Alur Pengerjaan - Katara Laundry Dinoyo Malang')
 @section('meta_description', 'Panduan cara pesan laundry kiloan & satuan di Katara Laundry Dinoyo. 5 langkah mudah dari drop/jemput, timbang, cuci 1 mesin sendiri, pengering gas, hingga setrika uap rak.')

@@ -12,7 +12,7 @@ public function up(): void
             $table->id();
             $table->foreignId('transaksi_id')->constrained('transaksi')->cascadeOnDelete();
             $table->foreignId('layanan_id')->constrained('layanan')->cascadeOnDelete();
-            $table->decimal('kuantitas', 8, 2); // berat kg atau jumlah pcs
+            $table->decimal('kuantitas', 8, 2);
             $table->decimal('harga_satuan', 12, 2);
             $table->decimal('subtotal', 12, 2);
             $table->text('catatan')->nullable();

@@ -11,7 +11,7 @@ public function up(): void
         Schema::create('parfum', function (Blueprint $table) {
             $table->id();
             $table->string('nama', 100);
-            $table->string('karakter_aroma', 150)->nullable(); // e.g. "Floral Lembut & Tahan Lama"
+            $table->string('karakter_aroma', 150)->nullable();
             $table->text('deskripsi')->nullable();
             $table->boolean('aktif')->default(true);
             $table->timestamps();

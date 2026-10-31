@@ -1,4 +1,4 @@
-@extends('layouts.public')
+@extends('layouts.publik')
 
 @section('title', 'Katalog Layanan & Tarif Resmi - Katara Laundry Dinoyo Malang')
 @section('meta_description', 'Daftar harga resmi Katara Laundry Dinoyo Malang. Cuci kiloan reguler, kilat 24 jam, express 6 jam, cuci satuan bedcover, jas, sepatu sneakers. Higienis 1 mesin 1 pelanggan.')
@@ -95,7 +95,7 @@
             ];
         @endphp
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 items-stretch">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4 items-stretch !mt-4 sm:!mt-5">
             @foreach($services as $idx => $svc)
                 @php
                     $isPopular = ($svc->id == 2 || $loop->iteration == 2);
@@ -131,7 +131,7 @@
                         </div>
                     </div>
 
-<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3.5 sm:space-y-4">
                         <div class="space-y-2">
                             <h3 class="font-extrabold text-slate-900 text-base group-hover:text-sky-600 transition-colors">
                                 {{ $svc->name }}
@@ -148,10 +148,10 @@
                             </span>
                         </div>
 
-                        <div class="pt-1">
+                        <div class="pt-1 flex items-center justify-center">
                             <a href="{{ route('public.kalkulator') }}?service={{ $svc->id }}" 
-                               class="w-full py-2.5 min-h-[44px] rounded-xl bg-slate-50 hover:bg-sky-50 text-slate-700 hover:text-sky-700 border border-slate-200 font-bold text-xs transition-colors flex items-center justify-center gap-1.5 shadow-2xs">
-                                <i class="fa-solid fa-calculator text-[11px] text-sky-600"></i>
+                               class="inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-xl bg-sky-600 hover:bg-sky-500 text-white shadow-xs font-bold text-xs leading-none transition-colors">
+                                <i class="fa-solid fa-calculator text-[11px] text-white"></i>
                                 <span>Hitung Estimasi Biaya</span>
                             </a>
                         </div>
@@ -160,32 +160,78 @@
             @endforeach
         </div>
 
-<div class="rounded-2xl overflow-hidden border border-slate-200/80 bg-white p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center shadow-sm">
-            <div class="lg:col-span-5 rounded-xl overflow-hidden border border-slate-200 shadow-xs">
+<div class="rounded-2xl overflow-hidden border border-slate-200/80 bg-white p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center shadow-sm !mt-5 sm:!mt-6 lg:!mt-8">
+            <div class="lg:col-span-5 relative rounded-xl overflow-hidden border border-slate-200 shadow-xs group">
                 <img src="{{ asset('images/laundry-special-care.jpg') }}" 
-                     alt="Spesialis Perawatan Bedcover & Sepatu Katara Laundry" 
-                     class="w-full aspect-[4/3] object-cover">
+                     alt="Spesialis Perawatan Bedcover &amp; Sepatu Katara Laundry" 
+                     class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent pointer-events-none"></div>
+                <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[11px] font-medium bg-slate-900/80 backdrop-blur-xs px-3 py-1.5 rounded-lg border border-white/20">
+                    <span class="flex items-center gap-1.5">
+                        <i class="fa-solid fa-hand-sparkles text-sky-300"></i>
+                        <span>Hand-Wash &amp; Drum Kapasitas Besar</span>
+                    </span>
+                    <span class="text-emerald-300 font-bold">100% Aman</span>
+                </div>
             </div>
             <div class="lg:col-span-7 space-y-4">
-                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-bold uppercase tracking-wider border border-sky-200">
-                    <i class="fa-solid fa-sparkles text-sky-500"></i>
-                    <span>Layanan Spesialis</span>
-                </span>
-                <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900">
-                    Spesialis Cuci Bedcover Jumbo, Jas Formal & Sepatu Sneakers
-                </h3>
-                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                    Bedcover tebal dicuci tanpa membuat dakron menggumpal dan dikeringkan tuntas dengan gas dryer kapasitas besar. Sepatu sneakers dan jas formal diproses secara manual dengan sabun khusus serat agar bentuk dan warnanya tetap terjaga sempurna.
-                </p>
-                <div class="flex flex-wrap gap-2 pt-1 text-xs">
-                    <span class="px-3.5 py-2 rounded-xl bg-slate-50 text-slate-700 font-semibold border border-slate-200 flex items-center gap-1.5">
-                        <i class="fa-solid fa-check text-emerald-600"></i> Bedcover King Rp 25.000
-                    </span>
-                    <span class="px-3.5 py-2 rounded-xl bg-slate-50 text-slate-700 font-semibold border border-slate-200 flex items-center gap-1.5">
-                        <i class="fa-solid fa-check text-emerald-600"></i> Sepatu Sneakers Rp 25.000
-                    </span>
-                    <span class="px-3.5 py-2 rounded-xl bg-slate-50 text-slate-700 font-semibold border border-slate-200 flex items-center gap-1.5">
-                        <i class="fa-solid fa-check text-emerald-600"></i> Jas Formal Stel Rp 30.000
+                <div class="space-y-1.5">
+                    <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
+                        Spesialis Cuci Bedcover Jumbo, Jas Formal &amp; Sepatu Sneakers
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                        Penanganan terstandarisasi untuk material bernilai tinggi. Dikerjakan manual dengan deterjen enzim lembut dan pengeringan terukur agar serat kain serta bentuk aslinya tetap terjaga sempurna.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1">
+                    <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/90 hover:border-sky-300 hover:bg-sky-50/50 transition-all space-y-1">
+                        <div class="flex items-center justify-between">
+                            <div class="w-7 h-7 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-bed"></i>
+                            </div>
+                            <span class="text-[10px] font-bold text-slate-500">3 Hari</span>
+                        </div>
+                        <div class="font-extrabold text-slate-900 text-xs">Bedcover King</div>
+                        <div class="text-[11px] text-slate-500">Anti-dakron gumpal</div>
+                        <div class="text-xs font-black text-sky-700 pt-0.5">Rp 25.000</div>
+                    </div>
+
+                    <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/90 hover:border-sky-300 hover:bg-sky-50/50 transition-all space-y-1">
+                        <div class="flex items-center justify-between">
+                            <div class="w-7 h-7 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-shoe-prints"></i>
+                            </div>
+                            <span class="text-[10px] font-bold text-slate-500">2–3 Hari</span>
+                        </div>
+                        <div class="font-extrabold text-slate-900 text-xs">Sepatu Sneakers</div>
+                        <div class="text-[11px] text-slate-500">Deep-clean manual</div>
+                        <div class="text-xs font-black text-sky-700 pt-0.5">Rp 25.000</div>
+                    </div>
+
+                    <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/90 hover:border-sky-300 hover:bg-sky-50/50 transition-all space-y-1">
+                        <div class="flex items-center justify-between">
+                            <div class="w-7 h-7 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <span class="text-[10px] font-bold text-slate-500">2 Hari</span>
+                        </div>
+                        <div class="font-extrabold text-slate-900 text-xs">Jas Formal Stel</div>
+                        <div class="text-[11px] text-slate-500">Uap murni anti-kilap</div>
+                        <div class="text-xs font-black text-sky-700 pt-0.5">Rp 30.000</div>
+                    </div>
+                </div>
+
+                <div class="pt-1 flex flex-wrap items-center gap-3">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Katara%20Laundry%20Dinoyo,%20saya%20ingin%20tanya%20layanan%20cuci%20khusus%20(Bedcover/Sepatu/Jas)" 
+                       target="_blank" 
+                       class="inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs leading-none shadow-sm shadow-emerald-600/20 transition-all border border-emerald-500/40 active:scale-[0.99]">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Konsultasi Cuci Khusus</span>
+                    </a>
+                    <span class="text-[11px] text-slate-500 flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-check text-emerald-600 text-xs"></i>
+                        <span>Garansi cuci ulang jika noda belum tuntas</span>
                     </span>
                 </div>
             </div>

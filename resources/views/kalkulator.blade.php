@@ -1,4 +1,4 @@
-@extends('layouts.public')
+@extends('layouts.publik')
 
 @section('title', 'Kalkulator Estimasi Biaya & Waktu Laundry - Katara Laundry Dinoyo')
 @section('meta_description', 'Hitung estimasi biaya cucian kiloan dan satuan secara online dan instan di Katara Laundry Dinoyo Malang. Pilih parfum gratis dan dapatkan rincian biaya transparan.')

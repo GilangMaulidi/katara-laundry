@@ -1,4 +1,4 @@
-@extends('layouts.public')
+@extends('layouts.publik')
 
 @section('title', 'Galeri Gerai Dinoyo & Fasilitas Produksi - Katara Laundry Malang')
 @section('meta_description', 'Dokumentasi foto fasilitas gerai Katara Laundry Dinoyo Malang: deretan mesin cuci komersial, rak 45 slot, setrika uap boiler, dan hasil pengerjaan rapi.')

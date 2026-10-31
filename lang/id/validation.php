@@ -1,18 +1,6 @@
 <?php
 
 return [
-
-    /*
-    |--------------------------------------------------------------------------
-    | Baris Bahasa Validasi
-    |--------------------------------------------------------------------------
-    |
-    | Baris bahasa berikut berisi pesan kesalahan default yang digunakan oleh
-    | kelas validator. Beberapa aturan ini memiliki beberapa versi seperti
-    | aturan ukuran. Jangan ragu untuk mengubah setiap pesan di sini.
-    |
-    */
-
     'accepted' => ':attribute harus diterima.',
     'accepted_if' => ':attribute harus diterima jika :other adalah :value.',
     'active_url' => ':attribute bukan URL yang valid.',
@@ -160,17 +148,6 @@ return [
     'url' => ':attribute harus berupa URL yang valid.',
     'ulid' => ':attribute harus berupa ULID yang valid.',
     'uuid' => ':attribute harus berupa UUID yang valid.',
-
-    /*
-    |--------------------------------------------------------------------------
-    | Atribut Validasi Kustom
-    |--------------------------------------------------------------------------
-    |
-    | Baris bahasa berikut digunakan untuk menukar placeholder atribut kami
-    | dengan sesuatu yang lebih ramah pembaca seperti "Alamat Email" daripada
-    | "email". Ini membantu membuat pesan kita lebih ekspresif.
-    |
-    */
 
     'attributes' => [
         'name' => 'nama lengkap',
