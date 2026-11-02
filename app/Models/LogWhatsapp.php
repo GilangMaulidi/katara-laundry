@@ -140,4 +140,3 @@ class LogWhatsapp extends Model
         $this->attributes['payload_respons'] = $value;
     }
 }
-

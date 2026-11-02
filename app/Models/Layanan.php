@@ -131,4 +131,3 @@ class Layanan extends Model
         $this->attributes['aktif'] = (bool) $value;
     }
 }
-

@@ -92,4 +92,3 @@ class PelangganController extends Controller
         return back()->with('success', 'Data pelanggan berhasil dihapus.');
     }
 }
-

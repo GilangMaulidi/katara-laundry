@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-public function up(): void
+    public function up(): void
     {
         Schema::create('cache', function (Blueprint $table) {
             $table->string('key')->primary();
@@ -21,7 +21,7 @@ public function up(): void
         });
     }
 
-public function down(): void
+    public function down(): void
     {
         Schema::dropIfExists('cache');
         Schema::dropIfExists('cache_locks');

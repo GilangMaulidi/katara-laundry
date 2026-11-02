@@ -2,9 +2,9 @@
 
 return [
 
-'default' => env('FILESYSTEM_DISK', 'local'),
+    'default' => env('FILESYSTEM_DISK', 'local'),
 
-'disks' => [
+    'disks' => [
 
         'local' => [
             'driver' => 'local',
@@ -38,7 +38,7 @@ return [
 
     ],
 
-'links' => [
+    'links' => [
         public_path('storage') => storage_path('app/public'),
     ],
 

@@ -237,7 +237,7 @@
 
 </div>
 
-<div id="customer-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 hidden">
+<div id="customer-modal" class="fixed inset-0 z-50 bg-slate-900/50 flex items-center justify-center p-4 hidden">
     <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200 animate-in fade-in zoom-in duration-200">
         <div class="flex items-center justify-between pb-3 border-b border-slate-100">
             <h3 class="font-bold text-base text-slate-900 flex items-center gap-2">

@@ -100,4 +100,3 @@ class AutentikasiController extends Controller
         return redirect()->route('login')->with('info', 'Anda telah berhasil keluar dari sistem.');
     }
 }
-

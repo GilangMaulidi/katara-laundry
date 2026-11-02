@@ -5,9 +5,9 @@ use Pdo\Mysql;
 
 return [
 
-'default' => env('DB_CONNECTION', 'sqlite'),
+    'default' => env('DB_CONNECTION', 'sqlite'),
 
-'connections' => [
+    'connections' => [
 
         'sqlite' => [
             'driver' => 'sqlite',
@@ -91,12 +91,12 @@ return [
 
     ],
 
-'migrations' => [
+    'migrations' => [
         'table' => 'migrations',
         'update_date_on_publish' => true,
     ],
 
-'redis' => [
+    'redis' => [
 
         'client' => env('REDIS_CLIENT', 'phpredis'),
 

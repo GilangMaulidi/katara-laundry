@@ -126,4 +126,3 @@ class LayananController extends Controller
         return back()->with('success', 'Varian aroma parfum baru berhasil ditambahkan.');
     }
 }
-

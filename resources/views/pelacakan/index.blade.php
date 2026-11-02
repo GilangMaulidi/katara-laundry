@@ -1,10 +1,10 @@
 @extends('layouts.publik')
 
 @section('title', 'Katara Laundry Dinoyo Malang - Bersih, Higienis & Lacak Real-Time')
-@section('meta_description', 'Layanan laundry kiloan & satuan modern di Dinoyo Malang. SOP 1 mesin 1 pelanggan tanpa campur, gas dryer 100% kering anti-apek, setrika uap boiler, 5 pilihan aroma parfum, dan pelacakan status nota mandiri.')
+@section('meta_description', 'Layanan laundry kiloan & satuan modern di Dinoyo Malang. SOP 1 mesin 1 pelanggan tanpa campur, gas dryer 100% kering anti-apek, setrika uap boiler, pilihan aroma parfum premium, dan pelacakan status nota mandiri.')
 
 @section('content')
-<div class="space-y-14 sm:space-y-20 lg:space-y-24 pb-16 sm:pb-24">
+<div class="space-y-10 sm:space-y-14 lg:space-y-16 pb-12 sm:pb-16">
 
     
     
@@ -40,7 +40,7 @@
                             <i class="fa-brands fa-whatsapp text-sm shrink-0 leading-none"></i>
                             <span class="leading-none">Pesan via WhatsApp</span>
                         </a>
-                        <a href="#layanan" class="inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs leading-none transition-all shadow-xs border border-slate-700 active:scale-[0.99]">
+                        <a href="{{ route('public.layanan') }}" class="inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs leading-none transition-all shadow-xs border border-slate-700 active:scale-[0.99]">
                             <i class="fa-solid fa-list-ul text-sky-400 text-xs shrink-0 leading-none"></i>
                             <span class="leading-none">Lihat Katalog &amp; Tarif</span>
                         </a>
@@ -49,18 +49,18 @@
                     
                     <div class="space-y-2 pt-1">
                         <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-slate-500 font-medium">
-                            <a href="#pilar-anti-bau-apek" class="flex items-center gap-1.5 hover:text-emerald-700 transition-colors"><i class="fa-solid fa-circle-check text-emerald-500 text-xs"></i> Anti Bau Apek</a>
-                            <a href="#pilar-timbangan-digital" class="flex items-center gap-1.5 hover:text-sky-700 transition-colors"><i class="fa-solid fa-circle-check text-sky-500 text-xs"></i> Timbangan Digital Transparan</a>
-                            <a href="#pilar-notifikasi-wa" class="flex items-center gap-1.5 hover:text-amber-700 transition-colors"><i class="fa-solid fa-circle-check text-amber-500 text-xs"></i> Notifikasi WhatsApp Otomatis</a>
-                            <a href="#pilar-garansi-cuci" class="flex items-center gap-1.5 hover:text-emerald-700 transition-colors"><i class="fa-solid fa-circle-check text-emerald-500 text-xs"></i> Garansi Cuci Bersih</a>
-                            <a href="#pilar-express-6-jam" class="flex items-center gap-1.5 hover:text-sky-700 transition-colors"><i class="fa-solid fa-circle-check text-sky-500 text-xs"></i> Express 6 Jam</a>
-                            <a href="#pilar-1-mesin" class="flex items-center gap-1.5 hover:text-indigo-700 transition-colors"><i class="fa-solid fa-circle-check text-indigo-500 text-xs"></i> 1 Mesin 1 Pelanggan</a>
-                            <a href="#pilar-antar-jemput" class="flex items-center gap-1.5 hover:text-emerald-700 transition-colors"><i class="fa-solid fa-circle-check text-emerald-500 text-xs"></i> Gratis Antar-Jemput</a>
+                            <a href="{{ route('public.parfum') }}" class="flex items-center gap-1.5 hover:text-emerald-700 transition-colors"><i class="fa-solid fa-circle-check text-emerald-500 text-xs"></i> Anti Bau Apek</a>
+                            <a href="{{ route('public.kalkulator') }}" class="flex items-center gap-1.5 hover:text-sky-700 transition-colors"><i class="fa-solid fa-circle-check text-sky-500 text-xs"></i> Timbangan Digital Transparan</a>
+                            <a href="{{ route('public.lacak') }}" class="flex items-center gap-1.5 hover:text-amber-700 transition-colors"><i class="fa-solid fa-circle-check text-amber-500 text-xs"></i> Notifikasi WhatsApp Otomatis</a>
+                            <a href="{{ route('public.faq') }}" class="flex items-center gap-1.5 hover:text-emerald-700 transition-colors"><i class="fa-solid fa-circle-check text-emerald-500 text-xs"></i> Garansi Cuci Bersih</a>
+                            <a href="{{ route('public.layanan') }}" class="flex items-center gap-1.5 hover:text-sky-700 transition-colors"><i class="fa-solid fa-circle-check text-sky-500 text-xs"></i> Express 6 Jam</a>
+                            <a href="{{ route('public.keunggulan') }}" class="flex items-center gap-1.5 hover:text-indigo-700 transition-colors"><i class="fa-solid fa-circle-check text-indigo-500 text-xs"></i> 1 Mesin 1 Pelanggan</a>
+                            <a href="{{ route('public.lokasi') }}" class="flex items-center gap-1.5 hover:text-emerald-700 transition-colors"><i class="fa-solid fa-circle-check text-emerald-500 text-xs"></i> Gratis Antar-Jemput</a>
                         </div>
                         <div>
-                            <a href="#keunggulan" class="inline-flex items-center gap-1 text-[11px] font-bold text-sky-600 hover:text-sky-700 hover:underline transition-colors">
+                            <a href="{{ route('public.keunggulan') }}" class="inline-flex items-center gap-1 text-[11px] font-bold text-sky-600 hover:text-sky-700 hover:underline transition-colors">
                                 <span>Lihat penjelasan lengkap 7 jaminan mutu &amp; keunggulan di atas</span>
-                                <i class="fa-solid fa-arrow-down text-[10px]"></i>
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
                             </a>
                         </div>
                     </div>
@@ -96,7 +96,7 @@
                                         Jl. MT. Haryono, Lowokwaru Malang
                                     </p>
                                 </div>
-                                <a href="https://maps.google.com/?q=Dinoyo+Lowokwaru+Malang" target="_blank" class="inline-flex items-center justify-center gap-1.5 px-3 h-8.5 rounded-xl bg-sky-50 hover:bg-sky-100 text-sky-700 text-xs font-bold border border-sky-200/80 shrink-0 transition-colors shadow-2xs active:scale-[0.99]" title="Buka Petunjuk Arah Google Maps">
+                                <a href="https://maps.google.com/?q=Dinoyo+Lowokwaru+Malang" target="_blank" class="inline-flex items-center justify-center gap-1.5 px-3 h-9 rounded-xl bg-sky-50 hover:bg-sky-100 text-sky-700 text-xs font-bold border border-sky-200/80 shrink-0 transition-colors shadow-2xs active:scale-[0.99]" title="Buka Petunjuk Arah Google Maps">
                                     <i class="fa-solid fa-diamond-turn-right text-sky-600 text-[11px]"></i>
                                     <span>Rute Maps</span>
                                 </a>
@@ -335,7 +335,7 @@
                             <span class="font-bold flex items-center gap-1.5 drop-shadow-sm">
                                 <i class="fa-solid fa-gears text-sky-400"></i> Mesin Cuci Front Loading Komersial
                             </span>
-                            <span class="text-[10px] text-emerald-300 font-bold bg-emerald-950/80 backdrop-blur-md px-2.5 py-1 rounded-full border border-emerald-500/40 shadow-xs">
+                            <span class="text-[10px] text-emerald-300 font-bold bg-emerald-950/90 px-2.5 py-1 rounded-full border border-emerald-500/40 shadow-xs">
                                 1 Nota = 1 Drum Mesin
                             </span>
                         </div>
@@ -565,8 +565,8 @@
     
     <section id="layanan" class="site-container space-y-12 sm:space-y-16 lg:space-y-20 scroll-mt-28">
             
-            <div class="text-center max-w-2xl mx-auto space-y-2.5 reveal-up">
-                <h2 class="heading-section font-extrabold text-slate-900 tracking-tight">
+            <div class="text-center max-w-3xl mx-auto space-y-2.5 reveal-up">
+                <h2 class="heading-section font-extrabold text-slate-900 tracking-tight md:whitespace-nowrap">
                     Katalog Layanan &amp; Tarif Resmi Katara
                 </h2>
                 <p class="body-lead text-slate-600">
@@ -620,7 +620,7 @@
                                  alt="{{ $svc->name }}" 
                                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
                             
-                            <div class="absolute top-3 left-3 px-2.5 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-white/95 backdrop-blur-xs text-sky-800 border border-slate-200 shadow-xs">
+                            <div class="absolute top-3 left-3 px-2.5 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-white/95 text-sky-800 border border-slate-200 shadow-xs">
                                 {{ $svc->category }}
                             </div>
 
@@ -630,7 +630,7 @@
                                 </div>
                             @endif
 
-                            <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white bg-slate-900/80 backdrop-blur-xs px-3 py-1.5 rounded-lg border border-white/20">
+                            <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white bg-slate-900/90 px-3 py-1.5 rounded-lg border border-white/20">
                                 <span class="flex items-center gap-1.5 text-[11px] font-medium text-slate-100">
                                     <i class="fa-regular fa-clock text-sky-300"></i>
                                     <span>{{ $svc->duration_hours }} Jam</span>
@@ -679,7 +679,7 @@
                          alt="Spesialis Perawatan Bedcover &amp; Sepatu Katara Laundry" 
                          class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent pointer-events-none"></div>
-                    <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[11px] font-medium bg-slate-900/80 backdrop-blur-xs px-3 py-1.5 rounded-lg border border-white/20">
+                    <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[11px] font-medium bg-slate-900/90 px-3 py-1.5 rounded-lg border border-white/20">
                         <span class="flex items-center gap-1.5">
                             <i class="fa-solid fa-hand-sparkles text-sky-300"></i>
                             <span>Hand-Wash &amp; Drum Kapasitas Besar</span>
@@ -689,7 +689,7 @@
                 </div>
                 <div class="lg:col-span-7 space-y-4">
                     <div class="space-y-1.5">
-                        <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
+                        <h3 class="heading-section font-extrabold text-slate-900 tracking-tight">
                             Spesialis Cuci Bedcover Jumbo, Jas Formal &amp; Sepatu Sneakers
                         </h3>
                         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
@@ -756,13 +756,8 @@
         <div class="bg-white rounded-3xl border border-slate-200 shadow-xl p-6 sm:p-9">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
                 
-                
                 <div class="lg:col-span-7 space-y-5 reveal-left">
                     <div class="space-y-1.5">
-                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 text-amber-700 text-xs font-bold uppercase tracking-wider border border-amber-200">
-                            <i class="fa-solid fa-calculator text-amber-500"></i>
-                            <span>Simulator Biaya Online</span>
-                        </span>
                         <h2 class="heading-section font-extrabold text-slate-900 tracking-tight">
                             Simulasi Perhitungan Cucian Anda
                         </h2>
@@ -773,29 +768,98 @@
 
                     <div class="space-y-4 pt-1">
                         
-                        
                         <div class="space-y-1.5">
                             <label for="calcService" class="text-xs font-bold text-slate-700 flex items-center gap-2">
                                 <span class="w-5 h-5 rounded-full bg-sky-600 text-white text-[10px] font-bold flex items-center justify-center">1</span>
                                 <span>Pilih Layanan</span>
                             </label>
-                            <select id="calcService" onchange="recalculateEstimate()" class="w-full px-4 py-3 min-h-[46px] rounded-xl bg-slate-50 text-slate-900 border border-slate-300 text-xs sm:text-sm font-semibold focus:outline-none focus:bg-white focus:border-sky-500 focus:ring-4 focus:ring-sky-500/15 transition-all">
-                                @foreach($services as $svc)
-                                    <option value="{{ $svc->id }}" 
-                                            data-name="{{ $svc->name }}"
-                                            data-price="{{ $svc->price }}" 
-                                            data-duration="{{ $svc->duration_hours }}" 
-                                            data-hours="{{ $svc->duration_hours }}" 
-                                            data-unit="{{ $svc->unit }}" 
-                                            data-min="{{ $svc->min_order }}"
-                                            {{ $loop->iteration == 2 ? 'selected' : '' }}>
-                                        {{ $svc->name }} &bull; Rp {{ number_format($svc->price, 0, ',', '.') }}/{{ $svc->unit }} ({{ $svc->duration_hours }} Jam)
-                                    </option>
-                                @endforeach
-                            </select>
+                            <div class="relative" id="customServiceDropdown">
+                                <select id="calcService" onchange="onServiceChange()" class="sr-only">
+                                    <optgroup label="🧺 Paket Cuci Kiloan">
+                                        @foreach($services->where('unit', 'kg') as $svc)
+                                            <option value="{{ $svc->id }}" 
+                                                    data-name="{{ $svc->name }}"
+                                                    data-price="{{ $svc->price }}" 
+                                                    data-duration="{{ $svc->duration_hours }}" 
+                                                    data-hours="{{ $svc->duration_hours }}" 
+                                                    data-unit="{{ $svc->unit }}" 
+                                                    data-min="{{ $svc->min_order }}"
+                                                    {{ $svc->id == 2 ? 'selected' : '' }}>
+                                                {{ $svc->name }} &bull; Rp {{ number_format($svc->price, 0, ',', '.') }}/{{ $svc->unit }} ({{ $svc->duration_hours }} Jam)
+                                            </option>
+                                        @endforeach
+                                    </optgroup>
+                                    <optgroup label="✨ Paket Satuan &amp; Spesialis">
+                                        @foreach($services->where('unit', '!=', 'kg') as $svc)
+                                            <option value="{{ $svc->id }}" 
+                                                    data-name="{{ $svc->name }}"
+                                                    data-price="{{ $svc->price }}" 
+                                                    data-duration="{{ $svc->duration_hours }}" 
+                                                    data-hours="{{ $svc->duration_hours }}" 
+                                                    data-unit="{{ $svc->unit }}" 
+                                                    data-min="{{ $svc->min_order }}">
+                                                {{ $svc->name }} &bull; Rp {{ number_format($svc->price, 0, ',', '.') }}/{{ $svc->unit }} ({{ $svc->duration_hours }} Jam)
+                                            </option>
+                                        @endforeach
+                                    </optgroup>
+                                </select>
+
+                                <button type="button" 
+                                        id="customServiceBtn" 
+                                        onclick="toggleServiceDropdown()" 
+                                        class="w-full h-9 pl-3 pr-8 rounded-xl bg-slate-50 hover:bg-white text-slate-900 border border-slate-300 text-xs font-semibold flex items-center justify-between transition-all leading-none focus:outline-none focus:ring-2 focus:ring-sky-500/20 text-left">
+                                    <span id="customServiceLabel" class="truncate">Cuci Kering Setrika Express &bull; Rp 15.000/kg (6 Jam)</span>
+                                </button>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-slate-500">
+                                    <i class="fa-solid fa-chevron-down text-[10px] leading-none transition-transform duration-200" id="customServiceChevron"></i>
+                                </div>
+
+                                <div id="customServiceMenu" class="hidden absolute top-full left-0 right-0 mt-1.5 z-50 bg-white rounded-2xl border border-slate-200 shadow-2xl p-2 max-h-72 overflow-y-auto space-y-2">
+                                    
+                                    <div class="space-y-1">
+                                        <div class="bg-sky-600 text-white font-bold text-xs px-3 py-1.5 rounded-lg flex items-center gap-1.5 shadow-2xs">
+                                            <span class="text-xs">🧺</span>
+                                            <span>Paket Cuci Kiloan</span>
+                                        </div>
+                                        <div class="space-y-0.5 pt-0.5">
+                                            @foreach($services->where('unit', 'kg') as $svc)
+                                                <div class="custom-service-option px-3 py-2 rounded-xl text-xs font-medium cursor-pointer transition-colors flex items-center justify-between {{ $svc->id == 2 ? 'bg-sky-50 text-sky-800 font-bold' : 'text-slate-800 hover:bg-slate-50' }}"
+                                                     data-id="{{ $svc->id }}"
+                                                     onclick="selectCustomService('{{ $svc->id }}')">
+                                                    <div class="truncate pr-2">
+                                                        <span>{{ $svc->name }}</span>
+                                                        <span class="text-slate-500 font-normal">&bull; {{ $svc->duration_hours }} Jam</span>
+                                                    </div>
+                                                    <span class="font-bold text-sky-700 whitespace-nowrap">Rp {{ number_format($svc->price, 0, ',', '.') }}/{{ $svc->unit }}</span>
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                    </div>
+
+                                    <div class="space-y-1 pt-1 border-t border-slate-100">
+                                        <div class="bg-sky-600 text-white font-bold text-xs px-3 py-1.5 rounded-lg flex items-center gap-1.5 shadow-2xs">
+                                            <span class="text-xs">✨</span>
+                                            <span>Paket Satuan &amp; Spesialis</span>
+                                        </div>
+                                        <div class="space-y-0.5 pt-0.5">
+                                            @foreach($services->where('unit', '!=', 'kg') as $svc)
+                                                <div class="custom-service-option px-3 py-2 rounded-xl text-xs font-medium cursor-pointer transition-colors flex items-center justify-between text-slate-800 hover:bg-slate-50"
+                                                     data-id="{{ $svc->id }}"
+                                                     onclick="selectCustomService('{{ $svc->id }}')">
+                                                    <div class="truncate pr-2">
+                                                        <span>{{ $svc->name }}</span>
+                                                        <span class="text-slate-500 font-normal">&bull; {{ $svc->duration_hours }} Jam</span>
+                                                    </div>
+                                                    <span class="font-bold text-sky-700 whitespace-nowrap">Rp {{ number_format($svc->price, 0, ',', '.') }}/{{ $svc->unit }}</span>
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
 
-                        
                         <div class="space-y-2.5 bg-slate-50 p-4 sm:p-5 rounded-2xl border border-slate-200">
                             <div class="flex items-center justify-between">
                                 <label for="calcWeight" class="text-xs font-bold text-slate-700 flex items-center gap-2">
@@ -809,35 +873,70 @@
                             
                             <input type="range" id="calcWeight" min="1" max="25" step="0.5" value="3.0" oninput="recalculateEstimate()" class="w-full h-2.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-sky-600 border border-slate-300">
                             
-                            
                             <div class="flex flex-wrap items-center gap-2 pt-1 text-xs">
                                 <span class="text-[10px] font-semibold text-slate-500">Preset Cepat:</span>
-                                <button type="button" onclick="setCalcSlider(1)" class="px-2.5 py-1 rounded-lg bg-white hover:bg-sky-50 text-slate-700 hover:text-sky-700 border border-slate-200 text-[11px] font-bold shadow-xs">1 kg (~4 kemeja)</button>
-                                <button type="button" onclick="setCalcSlider(3)" class="px-2.5 py-1 rounded-lg bg-white hover:bg-sky-50 text-slate-700 hover:text-sky-700 border border-slate-200 text-[11px] font-bold shadow-xs">3 kg (Standar)</button>
-                                <button type="button" onclick="setCalcSlider(5)" class="px-2.5 py-1 rounded-lg bg-white hover:bg-sky-50 text-slate-700 hover:text-sky-700 border border-slate-200 text-[11px] font-bold shadow-xs">5 kg (1 Keranjang)</button>
-                                <button type="button" onclick="setCalcSlider(10)" class="px-2.5 py-1 rounded-lg bg-white hover:bg-sky-50 text-slate-700 hover:text-sky-700 border border-slate-200 text-[11px] font-bold shadow-xs">10 kg (Borongan)</button>
+                                <div id="calcPresetsContainer" class="flex flex-wrap items-center gap-1.5">
+                                    <button type="button" data-val="1" onclick="setCalcSlider(1)" class="calc-preset-btn px-2.5 py-1 rounded-lg bg-white text-slate-700 border border-slate-200 text-[11px] font-bold shadow-xs transition-all">1 kg (~4 kemeja)</button>
+                                    <button type="button" data-val="3" onclick="setCalcSlider(3)" class="calc-preset-btn px-2.5 py-1 rounded-lg bg-sky-600 text-white border border-sky-600 text-[11px] font-bold shadow-xs transition-all">3 kg (Standar)</button>
+                                    <button type="button" data-val="5" onclick="setCalcSlider(5)" class="calc-preset-btn px-2.5 py-1 rounded-lg bg-white text-slate-700 border border-slate-200 text-[11px] font-bold shadow-xs transition-all">5 kg (1 Keranjang)</button>
+                                    <button type="button" data-val="10" onclick="setCalcSlider(10)" class="calc-preset-btn px-2.5 py-1 rounded-lg bg-white text-slate-700 border border-slate-200 text-[11px] font-bold shadow-xs transition-all">10 kg (Borongan)</button>
+                                </div>
                             </div>
                         </div>
 
-                        
                         <div class="space-y-1.5">
-                            <label for="calcPerfume" class="text-xs font-bold text-slate-700 flex items-center gap-2">
+                            <label for="customPerfumeBtn" class="text-xs font-bold text-slate-700 flex items-center gap-2">
                                 <span class="w-5 h-5 rounded-full bg-sky-600 text-white text-[10px] font-bold flex items-center justify-center">3</span>
                                 <span>Pilihan Parfum Gratis</span>
                             </label>
-                            <select id="calcPerfume" onchange="recalculateEstimate()" class="w-full px-4 py-3 min-h-[46px] rounded-xl bg-slate-50 text-slate-900 border border-slate-300 text-xs sm:text-sm font-semibold focus:outline-none focus:bg-white focus:border-sky-500 focus:ring-4 focus:ring-sky-500/15 transition-all">
-                                @foreach($perfumes as $pf)
-                                    <option value="{{ $pf->name }}">
-                                        {{ $pf->name }} &bull; {{ $pf->aroma_character }}
-                                    </option>
-                                @endforeach
-                            </select>
+                            <div class="relative" id="customPerfumeDropdown">
+                                <select id="calcPerfume" onchange="recalculateEstimate()" class="sr-only">
+                                    @foreach($perfumes as $pf)
+                                        <option value="{{ $pf->name }}" {{ $loop->first ? 'selected' : '' }}>
+                                            {{ $pf->name }} &bull; {{ $pf->aroma_character }}
+                                        </option>
+                                    @endforeach
+                                </select>
+
+                                <button type="button" 
+                                        id="customPerfumeBtn" 
+                                        onclick="togglePerfumeDropdown()" 
+                                        class="w-full h-9 pl-3 pr-8 rounded-xl bg-slate-50 hover:bg-white text-slate-900 border border-slate-300 text-xs font-semibold flex items-center justify-between transition-all leading-none focus:outline-none focus:ring-2 focus:ring-sky-500/20 text-left">
+                                    <span id="customPerfumeLabel" class="truncate">{{ $perfumes->first()->name ?? 'Sakura Blossom' }} &bull; {{ $perfumes->first()->aroma_character ?? 'Floral Lembut &amp; Feminin' }}</span>
+                                </button>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-slate-500">
+                                    <i class="fa-solid fa-chevron-down text-[10px] leading-none transition-transform duration-200" id="customPerfumeChevron"></i>
+                                </div>
+
+                                <div id="customPerfumeMenu" class="hidden absolute top-full left-0 right-0 mt-1.5 z-50 bg-white rounded-2xl border border-slate-200 shadow-2xl p-2 max-h-72 overflow-y-auto space-y-2">
+                                    <div class="space-y-1">
+                                        <div class="bg-sky-600 text-white font-bold text-xs px-3 py-1.5 rounded-lg flex items-center gap-1.5 shadow-2xs">
+                                            <span class="text-xs">🌸</span>
+                                            <span>Pilihan Parfum Gratis</span>
+                                        </div>
+                                        <div class="space-y-0.5 pt-0.5">
+                                            @foreach($perfumes as $pf)
+                                                <div class="custom-perfume-option px-3 py-2 rounded-xl text-xs font-medium cursor-pointer transition-colors flex items-center justify-between {{ $loop->first ? 'bg-sky-50 text-sky-800 font-bold' : 'text-slate-800 hover:bg-slate-50' }}"
+                                                     data-name="{{ $pf->name }}"
+                                                     onclick="selectCustomPerfume('{{ $pf->name }}')">
+                                                    <div class="truncate pr-2">
+                                                        <span>{{ $pf->name }}</span>
+                                                        <span class="text-slate-500 font-normal">&bull; {{ $pf->aroma_character }}</span>
+                                                    </div>
+                                                    <span class="px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-bold whitespace-nowrap">
+                                                        Gratis
+                                                    </span>
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
                 </div>
 
-                
                 <div class="lg:col-span-5 reveal-right">
                     <div class="bg-slate-900 rounded-3xl p-6 sm:p-7 text-white shadow-xl space-y-5 border border-slate-800">
                         
@@ -849,39 +948,42 @@
                             <span class="px-2.5 py-1 rounded-md bg-slate-800 text-sky-300 border border-slate-700 text-[10px] font-bold">1 Mesin 1 Nota</span>
                         </div>
 
-                        <div class="space-y-3 text-xs">
+                        <div class="space-y-2 text-xs">
                             <div class="flex justify-between text-slate-300">
                                 <span>Perhitungan Tarif:</span>
-                                <span class="font-semibold text-white" id="calcPriceDetails">3.0 kg x Rp 7.000</span>
+                                <span class="font-semibold text-white" id="calcPriceDetails">3.0 kg x Rp 10.000</span>
                             </div>
                             <div class="flex justify-between text-slate-300">
                                 <span>Estimasi Pengerjaan:</span>
-                                <span class="font-semibold text-white" id="calcDurationText">24 Jam (Kilat)</span>
+                                <span class="font-semibold text-white" id="calcDurationText">24 Jam (Layanan Kilat)</span>
                             </div>
                             <div class="flex justify-between text-slate-300">
                                 <span>Parfum Pilihan:</span>
-                                <span class="font-semibold text-sky-300" id="calcPerfumeText">Sakura Blossom</span>
+                                <span class="font-semibold text-sky-300 flex items-center gap-1.5">
+                                    <span id="calcPerfumeText">Sakura Blossom</span>
+                                    <span class="text-[9px] font-bold uppercase tracking-wider bg-sky-950 text-sky-300 border border-sky-700/60 px-1.5 py-0.5 rounded">Gratis</span>
+                                </span>
                             </div>
-                            <div class="flex justify-between text-slate-300 pt-2 border-t border-slate-800">
+                            <div class="flex justify-between text-slate-300 pt-2 border-t border-dashed border-slate-800">
                                 <span>Perkiraan Selesai:</span>
                                 <span class="font-bold text-emerald-400" id="calcReadyTime">Besok, ~ 14.00 WIB</span>
                             </div>
                         </div>
 
-                        
                         <div class="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-1 text-center">
                             <span class="text-[11px] uppercase font-bold text-slate-400 block tracking-wider">Total Biaya Estimasi</span>
                             <div class="text-3xl sm:text-4xl font-black text-white" id="calcTotalPrice">
-                                Rp 21.000
+                                Rp 30.000
                             </div>
                             <span class="text-[10px] text-slate-400 block pt-1" id="calcMinHint">Ditimbang riil saat cucian tiba di gerai</span>
                         </div>
 
-                        
-                        <a href="#" id="calcWaBtn" target="_blank" class="w-full h-12 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 transition-all interactive-btn">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Pesan via WhatsApp Sekarang</span>
-                        </a>
+                        <div class="pt-1 flex items-center justify-center">
+                            <a href="#" id="calcWaBtn" target="_blank" class="inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs leading-none shadow-sm shadow-emerald-600/20 transition-all border border-emerald-500/40 active:scale-[0.99] interactive-btn">
+                                <i class="fa-brands fa-whatsapp text-sm"></i>
+                                <span>Pesan via WhatsApp Sekarang</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -892,28 +994,39 @@
     
     <section id="parfum" class="site-container scroll-mt-28 space-y-12 sm:space-y-16 lg:space-y-20">
         
-        <div class="text-center max-w-2xl mx-auto space-y-2.5 reveal-up">
-            <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-bold uppercase tracking-wider border border-sky-200">
-                <i class="fa-solid fa-spray-can-sparkles text-sky-500"></i>
-                <span>Katara Fragrance Bar</span>
-            </span>
-            <h2 class="heading-section font-extrabold text-slate-900 tracking-tight">
-                5 Pilihan Aroma Parfum Pakaian
+        <div class="text-center max-w-3xl mx-auto space-y-2 reveal-up">
+            <h2 class="heading-section font-extrabold text-slate-900 tracking-tight md:whitespace-nowrap">
+                Pilihan Aroma Parfum Pakaian
             </h2>
-            <p class="body-lead text-slate-600">
+            <p class="body-lead text-slate-600 font-normal text-xs sm:text-sm">
                 Formula wangi grade premium tahan hingga 14 hari di serat pakaian tanpa meninggalkan noda minyak pada kain.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch !mt-4 sm:!mt-5">
             
-            <div class="lg:col-span-5 rounded-3xl overflow-hidden shadow-xl border border-slate-200 bg-white reveal-left">
-                <img src="{{ asset('images/laundry-fragrance.jpg') }}" 
-                     alt="Koleksi Aroma Parfum Katara Laundry" 
-                     class="w-full aspect-[4/3] sm:aspect-[16/10] lg:h-[440px] object-cover object-center">
-                <div class="p-4 bg-slate-900 text-white text-xs">
-                    <span class="font-bold text-sm block">100% Bebas Alkohol Keras</span>
-                    <span class="text-slate-400 text-[11px] block">Aman untuk kulit sensitif dan pakaian anak-anak</span>
+            <div class="lg:col-span-5 rounded-2xl overflow-hidden shadow-sm hover:shadow-md border border-slate-200 bg-white reveal-left flex flex-col justify-between h-full transition-all">
+                <div class="relative w-full flex-1 min-h-[260px] sm:min-h-[300px] overflow-hidden bg-slate-100 group">
+                    <img src="{{ asset('images/laundry-fragrance.jpg') }}" 
+                         alt="Koleksi Aroma Parfum Katara Laundry" 
+                         class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent"></div>
+                    <div class="absolute top-3.5 left-3.5">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 text-white text-xs font-bold border border-white/20 shadow-xs">
+                            <i class="fa-solid fa-spray-can-sparkles text-sky-400"></i>
+                            <span>Katara Fragrance Bar</span>
+                        </span>
+                    </div>
+                    <div class="absolute bottom-3.5 left-4 right-4 text-white">
+                        <span class="text-xs font-bold text-sky-300 drop-shadow-sm flex items-center gap-1.5">
+                            <i class="fa-solid fa-droplet text-xs"></i>
+                            <span>Koleksi Aroma Parfum Katara Laundry</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="p-4 sm:p-5 bg-slate-900 text-white space-y-1 text-xs shrink-0 border-t border-slate-800">
+                    <span class="font-extrabold text-sm sm:text-base text-white block">100% Bebas Alkohol Keras</span>
+                    <span class="text-slate-400 text-xs block leading-relaxed">Aman untuk kulit sensitif dan pakaian anak-anak</span>
                 </div>
             </div>
 
@@ -931,35 +1044,89 @@
 
                 @foreach($perfumes as $idx => $pf)
                     @php
-                        $notes = $perfumeNotes[$pf->id] ?? ['top' => 'Fresh Essence', 'base' => 'Soft Cotton', 'tag' => 'Pilihan Utama', 'accent' => 'border-sky-200 bg-sky-50/50 text-sky-700'];
+                        $notes = $perfumeNotes[$pf->id] ?? ['top' => 'Fresh Essence, Floral Breeze', 'base' => 'Clean Cotton, Soft Musk', 'tag' => $pf->karakter_aroma ?? 'Aroma Premium', 'accent' => 'border-sky-200 bg-sky-50/50 text-sky-700'];
+                        $isLastOdd = $loop->last && $loop->count % 2 !== 0;
                     @endphp
-                    <div class="perfume-card-item interactive-card bg-white rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-400 cursor-pointer space-y-3 flex flex-col justify-between" 
-                         onclick="selectPerfumeCard('{{ $pf->name }}', this)">
-                        
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between">
-                                <span class="px-2.5 py-0.5 rounded-full border text-[10px] font-bold {{ $notes['accent'] }}">
-                                    {{ $notes['tag'] }}
-                                </span>
-                                <i class="fa-solid fa-spray-can text-sky-500 text-xs"></i>
-                            </div>
-                            <h3 class="font-bold text-slate-900 text-sm">
-                                {{ $pf->name }}
-                            </h3>
-                            <p class="text-xs text-slate-600 leading-relaxed font-normal">
-                                {{ $pf->description }}
-                            </p>
-                        </div>
 
-                        <div class="space-y-1.5 pt-3 border-t border-slate-100 text-[11px] text-slate-500">
-                            <div><strong class="text-slate-700 font-semibold">Top:</strong> {{ $notes['top'] }}</div>
-                            <div><strong class="text-slate-700 font-semibold">Base:</strong> {{ $notes['base'] }}</div>
-                            <div class="flex items-center justify-between text-[11px] pt-1 text-sky-600 font-bold">
-                                <span>Pilih di Kalkulator</span>
-                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    @if($isLastOdd)
+                        <div class="perfume-card-item interactive-card bg-white rounded-2xl p-4 sm:p-4.5 border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-400 cursor-pointer sm:col-span-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4" 
+                             onclick="selectPerfumeCard('{{ $pf->name }}', this)">
+                            
+                            <div class="space-y-1.5 flex-1 min-w-0 pr-0 sm:pr-3">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-1.5 flex-wrap">
+                                        <span class="px-2.5 py-0.5 rounded-full border text-[10px] font-bold {{ $notes['accent'] }}">
+                                            {{ $notes['tag'] }}
+                                        </span>
+                                        <span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-bold">
+                                            Gratis
+                                        </span>
+                                    </div>
+                                    <i class="fa-solid fa-spray-can text-sky-500 text-xs sm:hidden"></i>
+                                </div>
+                                <h3 class="font-bold text-slate-900 text-sm">
+                                    {{ $pf->name }}
+                                </h3>
+                                <p class="text-xs text-slate-600 leading-relaxed font-normal">
+                                    {{ $pf->description }}
+                                </p>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3.5 pt-2.5 sm:pt-0 border-t sm:border-t-0 sm:border-l border-slate-100 sm:pl-3.5 text-[11px] text-slate-500 shrink-0">
+                                <div class="space-y-0.5 whitespace-nowrap">
+                                    <div><strong class="text-slate-700 font-semibold">Top:</strong> {{ $notes['top'] }}</div>
+                                    <div><strong class="text-slate-700 font-semibold">Base:</strong> {{ $notes['base'] }}</div>
+                                </div>
+                                <div class="pt-0.5 sm:pt-0">
+                                    <button type="button" 
+                                            onclick="event.stopPropagation(); selectPerfumeCard('{{ $pf->name }}', this.closest('.perfume-card-item'))"
+                                            class="inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-xs leading-none transition-colors shadow-xs interactive-btn w-full sm:w-auto whitespace-nowrap">
+                                        <span>Pilih di Kalkulator</span>
+                                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    @else
+                        <div class="perfume-card-item interactive-card bg-white rounded-2xl p-4 sm:p-4.5 border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-400 cursor-pointer flex flex-col justify-between space-y-2.5" 
+                             onclick="selectPerfumeCard('{{ $pf->name }}', this)">
+                            
+                            <div class="space-y-1.5">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-1.5 flex-wrap">
+                                        <span class="px-2.5 py-0.5 rounded-full border text-[10px] font-bold {{ $notes['accent'] }}">
+                                            {{ $notes['tag'] }}
+                                        </span>
+                                        <span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-bold">
+                                            Gratis
+                                        </span>
+                                    </div>
+                                    <i class="fa-solid fa-spray-can text-sky-500 text-xs"></i>
+                                </div>
+                                <h3 class="font-bold text-slate-900 text-sm">
+                                    {{ $pf->name }}
+                                </h3>
+                                <p class="text-xs text-slate-600 leading-relaxed font-normal">
+                                    {{ $pf->description }}
+                                </p>
+                            </div>
+
+                            <div class="pt-2.5 border-t border-slate-100 text-[11px] text-slate-500 space-y-2">
+                                <div class="space-y-0.5">
+                                    <div><strong class="text-slate-700 font-semibold">Top:</strong> {{ $notes['top'] }}</div>
+                                    <div><strong class="text-slate-700 font-semibold">Base:</strong> {{ $notes['base'] }}</div>
+                                </div>
+                                <div class="pt-1 flex items-center justify-center">
+                                    <button type="button" 
+                                            onclick="event.stopPropagation(); selectPerfumeCard('{{ $pf->name }}', this.closest('.perfume-card-item'))"
+                                            class="inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-xs leading-none transition-colors shadow-xs interactive-btn w-full sm:w-auto">
+                                        <span>Pilih di Kalkulator</span>
+                                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    @endif
                 @endforeach
             </div>
 
@@ -969,28 +1136,26 @@
     
     <section id="cara-pesan" class="site-container space-y-12 sm:space-y-16 lg:space-y-20 scroll-mt-28">
             
-            <div class="text-center max-w-2xl mx-auto space-y-2.5 reveal-up">
-                <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-bold uppercase tracking-wider border border-sky-200">
-                    <i class="fa-solid fa-list-check text-sky-500"></i>
-                    <span>Standar Pengerjaan Katara Laundry</span>
-                </span>
-                <h2 class="heading-section font-extrabold text-slate-900 tracking-tight">
+            <div class="text-center max-w-3xl mx-auto space-y-2 reveal-up">
+                <h2 class="heading-section font-extrabold text-slate-900 tracking-tight md:whitespace-nowrap">
                     5 Langkah Mudah Mencuci di Katara
                 </h2>
-                <p class="body-lead text-slate-600">
+                <p class="body-lead text-slate-600 font-normal text-xs sm:text-sm">
                     Setiap tahapan tercatat otomatis di sistem hingga pakaian rapi tersimpan di slot rak.
                 </p>
             </div>
 
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-5">
-                
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-5 !mt-4 sm:!mt-5">
                 
                 <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-300 flex flex-col justify-between reveal-up interactive-card group">
                     <div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
                         <img src="{{ asset('images/laundry-delivery.jpg') }}" alt="Drop atau Penjemputan Cucian" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute top-2.5 left-2.5 w-7 h-7 rounded-lg bg-slate-900 text-white font-black text-xs flex items-center justify-center border border-white">
                             01
+                        </div>
+                        <div class="hidden lg:flex absolute top-2.5 right-2.5 w-6 h-6 rounded-full bg-slate-900/90 text-slate-300 items-center justify-center text-[10px] border border-white/20">
+                            <i class="fa-solid fa-arrow-right"></i>
                         </div>
                         <span class="absolute bottom-2 left-2.5 text-[10px] font-bold text-emerald-300 bg-slate-900/80 px-2 py-0.5 rounded">Drop / Pickup</span>
                     </div>
@@ -1004,12 +1169,14 @@
                     </div>
                 </div>
 
-                
                 <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-300 flex flex-col justify-between reveal-up interactive-card group">
                     <div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
                         <img src="{{ asset('images/service-express.jpg') }}" alt="Timbang dan Tagging Cucian" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute top-2.5 left-2.5 w-7 h-7 rounded-lg bg-slate-900 text-white font-black text-xs flex items-center justify-center border border-white">
                             02
+                        </div>
+                        <div class="hidden lg:flex absolute top-2.5 right-2.5 w-6 h-6 rounded-full bg-slate-900/90 text-slate-300 items-center justify-center text-[10px] border border-white/20">
+                            <i class="fa-solid fa-arrow-right"></i>
                         </div>
                         <span class="absolute bottom-2 left-2.5 text-[10px] font-bold text-sky-300 bg-slate-900/80 px-2 py-0.5 rounded">Timbang Digital</span>
                     </div>
@@ -1023,12 +1190,14 @@
                     </div>
                 </div>
 
-                
                 <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-300 flex flex-col justify-between reveal-up interactive-card group">
                     <div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
                         <img src="{{ asset('images/laundry-washers.jpg') }}" alt="Cuci 1 Mesin Sendiri" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute top-2.5 left-2.5 w-7 h-7 rounded-lg bg-slate-900 text-white font-black text-xs flex items-center justify-center border border-white">
                             03
+                        </div>
+                        <div class="hidden lg:flex absolute top-2.5 right-2.5 w-6 h-6 rounded-full bg-slate-900/90 text-slate-300 items-center justify-center text-[10px] border border-white/20">
+                            <i class="fa-solid fa-arrow-right"></i>
                         </div>
                         <span class="absolute bottom-2 left-2.5 text-[10px] font-bold text-cyan-300 bg-slate-900/80 px-2 py-0.5 rounded">1 Mesin Sendiri</span>
                     </div>
@@ -1042,12 +1211,14 @@
                     </div>
                 </div>
 
-                
                 <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-300 flex flex-col justify-between reveal-up interactive-card group">
                     <div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
                         <img src="{{ asset('images/laundry-folded.jpg') }}" alt="Kering Gas Dryer Bebas Apek" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute top-2.5 left-2.5 w-7 h-7 rounded-lg bg-slate-900 text-white font-black text-xs flex items-center justify-center border border-white">
                             04
+                        </div>
+                        <div class="hidden lg:flex absolute top-2.5 right-2.5 w-6 h-6 rounded-full bg-slate-900/90 text-slate-300 items-center justify-center text-[10px] border border-white/20">
+                            <i class="fa-solid fa-arrow-right"></i>
                         </div>
                         <span class="absolute bottom-2 left-2.5 text-[10px] font-bold text-amber-300 bg-slate-900/80 px-2 py-0.5 rounded">Gas Dryer 100%</span>
                     </div>
@@ -1061,12 +1232,14 @@
                     </div>
                 </div>
 
-                
-                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-300 flex flex-col justify-between reveal-up interactive-card group">
-                    <div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-300 flex flex-col sm:flex-row lg:flex-col justify-between reveal-up interactive-card group sm:col-span-2 lg:col-span-1">
+                    <div class="relative aspect-[16/10] sm:w-2/5 lg:w-full overflow-hidden bg-slate-100 shrink-0">
                         <img src="{{ asset('images/laundry-ironing.jpg') }}" alt="Setrika Uap & Masuk Rak" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute top-2.5 left-2.5 w-7 h-7 rounded-lg bg-sky-600 text-white font-black text-xs flex items-center justify-center border border-white">
                             05
+                        </div>
+                        <div class="hidden lg:flex absolute top-2.5 right-2.5 w-6 h-6 rounded-full bg-emerald-500 text-white items-center justify-center text-[10px] border border-white/20 shadow-2xs">
+                            <i class="fa-solid fa-check"></i>
                         </div>
                         <span class="absolute bottom-2 left-2.5 text-[10px] font-bold text-sky-200 bg-slate-900/80 px-2 py-0.5 rounded">Setrika &amp; Rak</span>
                     </div>
@@ -1081,82 +1254,112 @@
                 </div>
 
             </div>
+
+            <div class="!mt-4 sm:!mt-5 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs">
+                <a href="{{ route('public.lacak') }}" class="inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-xs leading-none transition-all shadow-xs interactive-btn">
+                    <i class="fa-solid fa-magnifying-glass text-[11px]"></i>
+                    <span>Cek Status Cucian Anda</span>
+                </a>
+                <a href="https://wa.me/6281234567890?text=Halo%20Katara%20Laundry%20Dinoyo,%20saya%20ingin%20pesan%20laundry%20antar-jemput" target="_blank" class="inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs leading-none shadow-sm shadow-emerald-600/20 transition-all border border-emerald-500/40 active:scale-[0.99] interactive-btn">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                    <span>Pesan Antar-Jemput via WhatsApp</span>
+                </a>
+            </div>
     </section>
 
     
-    <section class="site-container space-y-12 sm:space-y-16 lg:space-y-20">
-        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-9">
+    <section class="site-container">
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-7">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 
                 <div class="lg:col-span-5 space-y-4 reveal-left">
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-bold uppercase tracking-wider border border-sky-200">
-                        <i class="fa-solid fa-shield-halved text-sky-500"></i>
-                        <span>Komitmen Bersih</span>
-                    </span>
                     <h2 class="heading-section font-extrabold text-slate-900 tracking-tight">
                         Standar Higienis &amp; Jaminan Bebas Khawatir
                     </h2>
                     <p class="body-lead text-slate-600 leading-relaxed font-normal">
-                        Pakaian Anda diperlakukan secara higienis sejak pertama kali diterima. Jika hasil cucian dirasa kurang bersih atau kurang wangi, kami siap mencuci ulang tanpa biaya tambahan.
+                        Pakaian Anda diperlakukan secara higienis sejak pertama kali diterima. Jika hasil cucian dirasa kurang bersih atau kurang wangi, kami siap mencuci dan menyetrika ulang 100% tanpa biaya tambahan.
                     </p>
 
-                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-center gap-3.5">
-                        <div class="w-10 h-10 rounded-xl bg-sky-600 text-white flex items-center justify-center text-lg shrink-0">
-                            <i class="fa-solid fa-certificate"></i>
+                    <div class="p-3 sm:p-3.5 rounded-xl bg-gradient-to-br from-emerald-50/80 via-white to-sky-50/80 border border-emerald-200/90 shadow-2xs space-y-2.5">
+                        <div class="flex items-center gap-3">
+                            <div class="shrink-0 w-7 flex items-center justify-center text-emerald-600 text-xl">
+                                <i class="fa-solid fa-certificate"></i>
+                            </div>
+                            <div class="space-y-0.5 flex-1 min-w-0">
+                                <span class="font-extrabold text-slate-900 text-xs sm:text-sm block">Garansi 100% Cuci &amp; Setrika Ulang</span>
+                                <span class="text-[11px] text-slate-600 block leading-relaxed font-normal">Klaim mudah dalam 24 jam setelah pengambilan cucian jika noda belum tuntas atau aroma kurang semerbak.</span>
+                            </div>
                         </div>
-                        <div>
-                            <span class="font-bold text-slate-900 text-xs sm:text-sm block">Garansi 100% Cuci Ulang Gratis</span>
-                            <span class="text-[11px] text-slate-500 block">Klaim mudah dalam 24 jam setelah pengambilan cucian</span>
+                        <div class="pt-2.5 border-t border-emerald-100/90 flex flex-wrap items-center justify-between gap-2 text-[11px]">
+                            <span class="text-emerald-800 font-bold flex items-center gap-1.5">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-xs"></i> <span>Tanpa Biaya Tambahan</span>
+                            </span>
+                            <a href="{{ route('public.faq') }}" class="font-bold text-sky-700 hover:text-sky-800 hover:underline flex items-center gap-1 transition-colors">
+                                <span>Pelajari SOP Garansi</span>
+                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-xs reveal-right">
-                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3">
-                        <i class="fa-solid fa-check text-emerald-600 text-sm mt-0.5 shrink-0"></i>
-                        <div>
-                            <strong class="text-slate-900 font-bold block">Mesin Disanitasi Berkala</strong>
-                            <p class="text-slate-600 mt-0.5 font-normal">Drum mesin cuci dibersihkan dengan desinfektan antibakteri secara rutin.</p>
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-2.5 auto-rows-fr text-xs reveal-right">
+                    <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50/70 border border-slate-200/90 hover:bg-white hover:border-sky-300 hover:shadow-xs transition-all flex items-center gap-2.5 sm:gap-3 group h-full">
+                        <div class="shrink-0 w-6 flex items-center justify-center text-sky-500 text-base group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-spray-can-sparkles"></i>
+                        </div>
+                        <div class="space-y-0.5 flex-1 min-w-0">
+                            <strong class="text-slate-900 font-bold block text-xs group-hover:text-sky-900 transition-colors leading-snug">Mesin Disanitasi Berkala</strong>
+                            <p class="text-slate-600 font-normal leading-normal text-[11px]">Drum mesin cuci dibersihkan dengan desinfektan antibakteri &amp; filter serat dikuras rutin.</p>
                         </div>
                     </div>
 
-                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3">
-                        <i class="fa-solid fa-check text-emerald-600 text-sm mt-0.5 shrink-0"></i>
-                        <div>
-                            <strong class="text-slate-900 font-bold block">100% Tidak Pernah Dicampur</strong>
-                            <p class="text-slate-600 mt-0.5 font-normal">SOP tegas 1 mesin 1 nota tanpa toleransi kompromi.</p>
+                    <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50/70 border border-slate-200/90 hover:bg-white hover:border-emerald-300 hover:shadow-xs transition-all flex items-center gap-2.5 sm:gap-3 group h-full">
+                        <div class="shrink-0 w-6 flex items-center justify-center text-emerald-500 text-base group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="space-y-0.5 flex-1 min-w-0">
+                            <strong class="text-slate-900 font-bold block text-xs group-hover:text-emerald-900 transition-colors leading-snug">100% Tidak Pernah Dicampur</strong>
+                            <p class="text-slate-600 font-normal leading-normal text-[11px]">SOP tegas 1 mesin 1 nota tanpa kompromi demi menjaga privasi dan mencegah luntur.</p>
                         </div>
                     </div>
 
-                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3">
-                        <i class="fa-solid fa-check text-emerald-600 text-sm mt-0.5 shrink-0"></i>
-                        <div>
-                            <strong class="text-slate-900 font-bold block">Area Kerja Bersih &amp; Teratur</strong>
-                            <p class="text-slate-600 mt-0.5 font-normal">Pakaian ditaruh di keranjang bersih dan bebas dari paparan debu jalan.</p>
+                    <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50/70 border border-slate-200/90 hover:bg-white hover:border-amber-300 hover:shadow-xs transition-all flex items-center gap-2.5 sm:gap-3 group h-full">
+                        <div class="shrink-0 w-6 flex items-center justify-center text-amber-500 text-base group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <div class="space-y-0.5 flex-1 min-w-0">
+                            <strong class="text-slate-900 font-bold block text-xs group-hover:text-amber-900 transition-colors leading-snug">Area Kerja Bersih &amp; Teratur</strong>
+                            <p class="text-slate-600 font-normal leading-normal text-[11px]">Pakaian ditaruh di keranjang steril bersirkulasi baik, bebas kontak dengan lantai kotor.</p>
                         </div>
                     </div>
 
-                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3">
-                        <i class="fa-solid fa-check text-emerald-600 text-sm mt-0.5 shrink-0"></i>
-                        <div>
-                            <strong class="text-slate-900 font-bold block">Kemasan Plastik Tebal</strong>
-                            <p class="text-slate-600 mt-0.5 font-normal">Melindungi pakaian dari cipratan air hujan dan debu saat dibawa pulang.</p>
+                    <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50/70 border border-slate-200/90 hover:bg-white hover:border-indigo-300 hover:shadow-xs transition-all flex items-center gap-2.5 sm:gap-3 group h-full">
+                        <div class="shrink-0 w-6 flex items-center justify-center text-indigo-500 text-base group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-box-open"></i>
+                        </div>
+                        <div class="space-y-0.5 flex-1 min-w-0">
+                            <strong class="text-slate-900 font-bold block text-xs group-hover:text-indigo-900 transition-colors leading-snug">Kemasan Plastik Tebal</strong>
+                            <p class="text-slate-600 font-normal leading-normal text-[11px]">Packing tersegel rapat melindungi pakaian dari cipratan air hujan &amp; debu knalpot motor.</p>
                         </div>
                     </div>
 
-                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3">
-                        <i class="fa-solid fa-check text-emerald-600 text-sm mt-0.5 shrink-0"></i>
-                        <div>
-                            <strong class="text-slate-900 font-bold block">Pemeriksaan Saku Teliti</strong>
-                            <p class="text-slate-600 mt-0.5 font-normal">Pengecekan teliti agar koin, kartu, atau barang berharga tidak tertinggal.</p>
+                    <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50/70 border border-slate-200/90 hover:bg-white hover:border-rose-300 hover:shadow-xs transition-all flex items-center gap-2.5 sm:gap-3 group h-full">
+                        <div class="shrink-0 w-6 flex items-center justify-center text-rose-500 text-base group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <div class="space-y-0.5 flex-1 min-w-0">
+                            <strong class="text-slate-900 font-bold block text-xs group-hover:text-rose-900 transition-colors leading-snug">Pemeriksaan Saku Teliti</strong>
+                            <p class="text-slate-600 font-normal leading-normal text-[11px]">Pengecekan teliti agar uang, koin, kartu, atau barang berharga diamankan sebelum dicuci.</p>
                         </div>
                     </div>
 
-                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3">
-                        <i class="fa-solid fa-check text-emerald-600 text-sm mt-0.5 shrink-0"></i>
-                        <div>
-                            <strong class="text-slate-900 font-bold block">Timbangan Digital Tera Resmi</strong>
-                            <p class="text-slate-600 mt-0.5 font-normal">Berat cucian ditimbang terbuka dan akurat di hadapan Anda.</p>
+                    <div class="p-2.5 sm:p-3 rounded-xl bg-slate-50/70 border border-slate-200/90 hover:bg-white hover:border-cyan-300 hover:shadow-xs transition-all flex items-center gap-2.5 sm:gap-3 group h-full">
+                        <div class="shrink-0 w-6 flex items-center justify-center text-cyan-500 text-base group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+                        <div class="space-y-0.5 flex-1 min-w-0">
+                            <strong class="text-slate-900 font-bold block text-xs group-hover:text-cyan-900 transition-colors leading-snug">Timbangan Digital Tera Resmi</strong>
+                            <p class="text-slate-600 font-normal leading-normal text-[11px]">Akurasi hingga 0,01 kg ditimbang terbuka di hadapan Anda tanpa pembulatan sepihak.</p>
                         </div>
                     </div>
                 </div>
@@ -1166,286 +1369,483 @@
     </section>
 
     
-    <section id="testimoni" class="site-container scroll-mt-28 space-y-12 sm:space-y-16 lg:space-y-20">
+    <section id="testimoni" class="site-container space-y-12 sm:space-y-16 lg:space-y-20 scroll-mt-28">
         
-        <div class="text-center max-w-2xl mx-auto space-y-2.5 reveal-up">
-            <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-bold uppercase tracking-wider border border-sky-200">
-                <i class="fa-solid fa-comment-dots text-sky-500"></i>
-                <span>Ulasan Pelanggan</span>
-            </span>
-            <h2 class="heading-section font-extrabold text-slate-900 tracking-tight">
-                Dipercaya Mahasiswa & Warga Dinoyo
+        <div class="text-center max-w-3xl mx-auto space-y-2 reveal-up">
+            <h2 class="heading-section font-extrabold text-slate-900 tracking-tight md:whitespace-nowrap">
+                Dipercaya Mahasiswa &amp; Warga Dinoyo
             </h2>
-            <p class="body-lead text-slate-600">
-                Pengalaman nyata dari ribuan pelanggan di kawasan kampus Lowokwaru Kota Malang.
+            <div class="flex items-center justify-center gap-2 text-xs text-slate-600 font-medium">
+                <div class="flex text-amber-400 text-xs gap-0.5">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="font-bold text-slate-900">4.9 / 5.0</span>
+                <span class="text-slate-300">&bull;</span>
+                <span>1.200+ Ulasan Pelanggan di Dinoyo Malang</span>
+            </div>
+            <p class="body-lead text-slate-600 font-normal text-xs sm:text-sm">
+                Pengalaman nyata dari pelanggan di kawasan kampus UB, UIN, UM, Polinema &amp; perumahan Lowokwaru.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 sm:gap-4 items-stretch !mt-4 sm:!mt-5">
             
-            
-            <div class="reveal-up interactive-card bg-white rounded-3xl p-6 sm:p-7 border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-300 space-y-4 flex flex-col justify-between">
-                <div class="space-y-3">
-                    <div class="flex text-amber-400 text-xs gap-1">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <div class="reveal-up interactive-card bg-white rounded-2xl p-4.5 sm:p-5 border border-slate-200/90 shadow-sm hover:shadow-md hover:border-sky-300 space-y-3.5 flex flex-col justify-between relative group">
+                <i class="fa-solid fa-quote-right text-slate-100 text-2xl absolute top-4 right-4 group-hover:text-sky-100 transition-colors pointer-events-none"></i>
+                <div class="space-y-2.5 relative z-10">
+                    <div class="flex items-center justify-between">
+                        <span class="px-2.5 py-0.5 rounded-full bg-sky-50 text-sky-700 border border-sky-200 text-[10px] font-bold">
+                            Cuci Kiloan Gas Dryer
+                        </span>
+                        <div class="flex items-center gap-1">
+                            <div class="flex text-amber-400 text-xs gap-0.5">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[11px] font-bold text-slate-700">5.0</span>
+                        </div>
                     </div>
-                    <p class="text-xs sm:text-sm text-slate-700 italic leading-relaxed">
-                        "Sebagai anak kos UB yang mager jemur baju pas musim hujan di Malang, Katara penyelamat banget! Gas dryernya beneran kering total tanpa bau apek. Wangi Sakura Blossom-nya tahan berhari-hari!"
+                    <p class="text-xs text-slate-700 leading-relaxed font-normal">
+                        &ldquo;Sebagai anak kos UB yang mager jemur baju pas musim hujan di Malang, Katara penyelamat banget! Gas dryernya beneran kering total tanpa bau apek. Wangi Sakura Blossom-nya tahan berhari-hari!&rdquo;
                     </p>
                 </div>
-                <div class="flex items-center gap-3 pt-4 border-t border-slate-100 mt-auto">
+                <div class="flex items-center gap-3 pt-3 border-t border-slate-100 mt-auto relative z-10">
                     <img src="{{ asset('images/avatar-dimas.jpg') }}" 
                          alt="Foto Dimas Nugroho Mahasiswa UB" 
-                         class="w-12 h-12 rounded-full object-cover shrink-0 border border-slate-200">
-                    <div>
-                        <h4 class="font-bold text-xs sm:text-sm text-slate-900">Dimas Nugroho</h4>
-                        <p class="text-[10px] sm:text-xs text-slate-500">Mahasiswa Universitas Brawijaya (UB)</p>
+                         class="w-10 h-10 rounded-full object-cover shrink-0 border border-slate-200">
+                    <div class="min-w-0">
+                        <h4 class="font-bold text-xs sm:text-sm text-slate-900 flex items-center gap-1.5 truncate">
+                            <span>Dimas Nugroho</span>
+                            <i class="fa-solid fa-circle-check text-sky-500 text-[11px]" title="Pelanggan Terverifikasi"></i>
+                        </h4>
+                        <p class="text-[10px] sm:text-[11px] text-slate-500 truncate">Mahasiswa Universitas Brawijaya (UB)</p>
                     </div>
                 </div>
             </div>
 
-            
-            <div class="reveal-up interactive-card bg-white rounded-3xl p-6 sm:p-7 border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-300 space-y-4 flex flex-col justify-between">
-                <div class="space-y-3">
-                    <div class="flex text-amber-400 text-xs gap-1">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <div class="reveal-up interactive-card bg-white rounded-2xl p-4.5 sm:p-5 border border-slate-200/90 shadow-sm hover:shadow-md hover:border-sky-300 space-y-3.5 flex flex-col justify-between relative group">
+                <i class="fa-solid fa-quote-right text-slate-100 text-2xl absolute top-4 right-4 group-hover:text-sky-100 transition-colors pointer-events-none"></i>
+                <div class="space-y-2.5 relative z-10">
+                    <div class="flex items-center justify-between">
+                        <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-bold">
+                            Pelacakan Nota Web
+                        </span>
+                        <div class="flex items-center gap-1">
+                            <div class="flex text-amber-400 text-xs gap-0.5">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[11px] font-bold text-slate-700">5.0</span>
+                        </div>
                     </div>
-                    <p class="text-xs sm:text-sm text-slate-700 italic leading-relaxed">
-                        "Suka banget sama fitur lacak status cucian lewat website ini! Gak perlu bolak-balik chat kasir nanya 'baju saya sudah jadi belum'. Pas statusnya sudah di rak, langsung cus ke gerai."
+                    <p class="text-xs text-slate-700 leading-relaxed font-normal">
+                        &ldquo;Suka banget sama fitur lacak status cucian lewat website ini! Gak perlu bolak-balik chat kasir nanya 'baju saya sudah jadi belum'. Pas statusnya sudah di rak, langsung cus ke gerai.&rdquo;
                     </p>
                 </div>
-                <div class="flex items-center gap-3 pt-4 border-t border-slate-100 mt-auto">
+                <div class="flex items-center gap-3 pt-3 border-t border-slate-100 mt-auto relative z-10">
                     <img src="{{ asset('images/avatar-siti.jpg') }}" 
                          alt="Foto Siti Anggraini Mahasiswi Polinema" 
-                         class="w-12 h-12 rounded-full object-cover shrink-0 border border-slate-200">
-                    <div>
-                        <h4 class="font-bold text-xs sm:text-sm text-slate-900">Siti Anggraini</h4>
-                        <p class="text-[10px] sm:text-xs text-slate-500">Mahasiswi Polinema Jurusan Akuntansi</p>
+                         class="w-10 h-10 rounded-full object-cover shrink-0 border border-slate-200">
+                    <div class="min-w-0">
+                        <h4 class="font-bold text-xs sm:text-sm text-slate-900 flex items-center gap-1.5 truncate">
+                            <span>Siti Anggraini</span>
+                            <i class="fa-solid fa-circle-check text-sky-500 text-[11px]" title="Pelanggan Terverifikasi"></i>
+                        </h4>
+                        <p class="text-[10px] sm:text-[11px] text-slate-500 truncate">Mahasiswi Polinema Jurusan Akuntansi</p>
                     </div>
                 </div>
             </div>
 
-            
-            <div class="reveal-up interactive-card bg-white rounded-3xl p-6 sm:p-7 border border-slate-200 shadow-sm hover:shadow-md hover:border-sky-300 space-y-4 flex flex-col justify-between">
-                <div class="space-y-3">
-                    <div class="flex text-amber-400 text-xs gap-1">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <div class="reveal-up interactive-card bg-white rounded-2xl p-4.5 sm:p-5 border border-slate-200/90 shadow-sm hover:shadow-md hover:border-sky-300 space-y-3.5 flex flex-col justify-between relative group">
+                <i class="fa-solid fa-quote-right text-slate-100 text-2xl absolute top-4 right-4 group-hover:text-sky-100 transition-colors pointer-events-none"></i>
+                <div class="space-y-2.5 relative z-10">
+                    <div class="flex items-center justify-between">
+                        <span class="px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200 text-[10px] font-bold">
+                            Cuci Satuan Bedcover
+                        </span>
+                        <div class="flex items-center gap-1">
+                            <div class="flex text-amber-400 text-xs gap-0.5">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-[11px] font-bold text-slate-700">5.0</span>
+                        </div>
                     </div>
-                    <p class="text-xs sm:text-sm text-slate-700 italic leading-relaxed">
-                        "Bedcover king size saya dicuci bersih tanpa gumpalan, wangi Snappy Luxury elegan seperti hotel bintang lima. Sistem rak fisiknya rapi banget, pakaian keluarga gak pernah tertukar."
+                    <p class="text-xs text-slate-700 leading-relaxed font-normal">
+                        &ldquo;Bedcover king size saya dicuci bersih tanpa gumpalan, wangi Snappy Luxury elegan seperti hotel bintang lima. Sistem rak fisiknya rapi banget, pakaian keluarga gak pernah tertukar.&rdquo;
                     </p>
                 </div>
-                <div class="flex items-center gap-3 pt-4 border-t border-slate-100 mt-auto">
+                <div class="flex items-center gap-3 pt-3 border-t border-slate-100 mt-auto relative z-10">
                     <img src="{{ asset('images/avatar-rina.jpg') }}" 
                          alt="Foto Rina Puspitasari Warga Dinoyo" 
-                         class="w-12 h-12 rounded-full object-cover shrink-0 border border-slate-200">
-                    <div>
-                        <h4 class="font-bold text-xs sm:text-sm text-slate-900">Rina Puspitasari</h4>
-                        <p class="text-[10px] sm:text-xs text-slate-500">Warga Perumahan Dinoyo Malang</p>
+                         class="w-10 h-10 rounded-full object-cover shrink-0 border border-slate-200">
+                    <div class="min-w-0">
+                        <h4 class="font-bold text-xs sm:text-sm text-slate-900 flex items-center gap-1.5 truncate">
+                            <span>Rina Puspitasari</span>
+                            <i class="fa-solid fa-circle-check text-sky-500 text-[11px]" title="Pelanggan Terverifikasi"></i>
+                        </h4>
+                        <p class="text-[10px] sm:text-[11px] text-slate-500 truncate">Warga Perumahan Dinoyo Malang</p>
                     </div>
                 </div>
             </div>
 
         </div>
     </section>
-
-    
-    <section id="galeri" class="site-container scroll-mt-28 space-y-12 sm:space-y-16 lg:space-y-20">
+    <section id="galeri" class="site-container space-y-12 sm:space-y-16 lg:space-y-20 scroll-mt-28">
         
-        <div class="text-center max-w-2xl mx-auto space-y-2.5 reveal-up">
-            <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-bold uppercase tracking-wider border border-sky-200">
-                <i class="fa-solid fa-camera-retro text-sky-500"></i>
-                <span>Dokumentasi &amp; Fasilitas</span>
-            </span>
-            <h2 class="heading-section font-extrabold text-slate-900 tracking-tight">
-                Galeri Gerai & Operasional Katara Dinoyo
+        <div class="text-center max-w-3xl mx-auto space-y-2 reveal-up">
+            <h2 class="heading-section font-extrabold text-slate-900 tracking-tight md:whitespace-nowrap">
+                Galeri Gerai &amp; Operasional Katara Dinoyo
             </h2>
-            <p class="body-lead text-slate-600">
+            <p class="body-lead text-slate-600 font-normal text-xs sm:text-sm">
                 Lihat langsung standar kebersihan mesin, stasiun setrika uap, dan fasilitas pelayanan kami di Jl. MT. Haryono Dinoyo Malang.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4 items-stretch !mt-4 sm:!mt-5">
             
-            <div class="group rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md reveal-up interactive-card flex flex-col justify-between">
-                <div class="relative aspect-[16/11] overflow-hidden bg-slate-100">
-                    <img src="{{ asset('images/laundry-hero.jpg') }}" alt="Tampak Depan Gerai Katara Laundry Dinoyo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                    <span class="absolute top-3 left-3 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-slate-900/90 text-white border border-white/20 shadow-xs">
+            <div class="group rounded-2xl overflow-hidden border border-slate-200/90 bg-white shadow-2xs hover:shadow-md hover:border-sky-300 transition-all reveal-up interactive-card flex flex-col justify-between">
+                <div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                    <img src="{{ asset('images/laundry-hero.jpg') }}" alt="Tampak Depan Gerai Katara Laundry Dinoyo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-900/90 text-white border border-white/20 shadow-2xs">
                         Front Desk Gerai
                     </span>
                 </div>
-                <div class="p-5 bg-white border-t border-slate-100 space-y-1">
-                    <h4 class="font-bold text-slate-900 text-sm group-hover:text-sky-600 transition-colors">Gerai Utama Dinoyo</h4>
-                    <p class="text-xs text-slate-600 leading-relaxed font-normal">Area penerimaan, timbangan digital terbuka, dan customer lounge.</p>
+                <div class="p-4 sm:p-4.5 bg-white border-t border-slate-100 space-y-2.5 flex-1 flex flex-col justify-between">
+                    <div class="space-y-1">
+                        <h4 class="font-extrabold text-slate-900 text-sm sm:text-base group-hover:text-sky-600 transition-colors leading-snug">Gerai Utama Dinoyo</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed font-normal">Area drop-off &amp; penerimaan nyaman ber-AC dengan timbangan digital tera terbuka di depan pelanggan.</p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 flex flex-wrap items-center gap-1.5 text-[10px] font-semibold text-slate-600">
+                        <span class="px-2 py-0.5 rounded-md bg-slate-50 border border-slate-200 text-slate-700 flex items-center gap-1">
+                            <i class="fa-solid fa-check text-sky-500 text-[9px]"></i> Timbangan Digital Tera
+                        </span>
+                        <span class="px-2 py-0.5 rounded-md bg-slate-50 border border-slate-200 text-slate-700 flex items-center gap-1">
+                            <i class="fa-solid fa-check text-sky-500 text-[9px]"></i> Kasir Terdata Nota
+                        </span>
+                    </div>
                 </div>
             </div>
 
-            <div class="group rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md reveal-up interactive-card flex flex-col justify-between">
-                <div class="relative aspect-[16/11] overflow-hidden bg-slate-100">
-                    <img src="{{ asset('images/laundry-washers.jpg') }}" alt="Deretan Drum Mesin Cuci Komersial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                    <span class="absolute top-3 left-3 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-slate-900/90 text-white border border-white/20 shadow-xs">
+            <div class="group rounded-2xl overflow-hidden border border-slate-200/90 bg-white shadow-2xs hover:shadow-md hover:border-sky-300 transition-all reveal-up interactive-card flex flex-col justify-between">
+                <div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                    <img src="{{ asset('images/laundry-washers.jpg') }}" alt="Deretan Drum Mesin Cuci Komersial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-900/90 text-white border border-white/20 shadow-2xs">
                         Mesin Komersial
                     </span>
                 </div>
-                <div class="p-5 bg-white border-t border-slate-100 space-y-1">
-                    <h4 class="font-bold text-slate-900 text-sm group-hover:text-sky-600 transition-colors">Drum Cuci Front Load Stainless</h4>
-                    <p class="text-xs text-slate-600 leading-relaxed font-normal">1 mesin khusus 1 nota pelanggan, higienis disanitasi berkala.</p>
+                <div class="p-4 sm:p-4.5 bg-white border-t border-slate-100 space-y-2.5 flex-1 flex flex-col justify-between">
+                    <div class="space-y-1">
+                        <h4 class="font-extrabold text-slate-900 text-sm sm:text-base group-hover:text-sky-600 transition-colors leading-snug">Drum Cuci Front Load Stainless</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed font-normal">SOP tegas 1 drum khusus 1 nota pelanggan tanpa pernah dicampur, selalu disanitasi berkala.</p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 flex flex-wrap items-center gap-1.5 text-[10px] font-semibold text-slate-600">
+                        <span class="px-2 py-0.5 rounded-md bg-slate-50 border border-slate-200 text-slate-700 flex items-center gap-1">
+                            <i class="fa-solid fa-check text-emerald-500 text-[9px]"></i> 1 Mesin 1 Pelanggan
+                        </span>
+                        <span class="px-2 py-0.5 rounded-md bg-slate-50 border border-slate-200 text-slate-700 flex items-center gap-1">
+                            <i class="fa-solid fa-check text-emerald-500 text-[9px]"></i> Drum Sanitasi Rutin
+                        </span>
+                    </div>
                 </div>
             </div>
 
-            <div class="group rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md reveal-up interactive-card flex flex-col justify-between">
-                <div class="relative aspect-[16/11] overflow-hidden bg-slate-100">
-                    <img src="{{ asset('images/laundry-ironing.jpg') }}" alt="Stasiun Setrika Uap Boiler" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                    <span class="absolute top-3 left-3 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-slate-900/90 text-white border border-white/20 shadow-xs">
+            <div class="group rounded-2xl overflow-hidden border border-slate-200/90 bg-white shadow-2xs hover:shadow-md hover:border-sky-300 transition-all reveal-up interactive-card flex flex-col justify-between">
+                <div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                    <img src="{{ asset('images/laundry-ironing.jpg') }}" alt="Stasiun Setrika Uap Boiler" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-900/90 text-white border border-white/20 shadow-2xs">
                         Finishing Presisi
                     </span>
                 </div>
-                <div class="p-5 bg-white border-t border-slate-100 space-y-1">
-                    <h4 class="font-bold text-slate-900 text-sm group-hover:text-sky-600 transition-colors">Setrika Uap Boiler Industri</h4>
-                    <p class="text-xs text-slate-600 leading-relaxed font-normal">Uap panas merata melicinkan serat kain tanpa risiko mengkilap.</p>
+                <div class="p-4 sm:p-4.5 bg-white border-t border-slate-100 space-y-2.5 flex-1 flex flex-col justify-between">
+                    <div class="space-y-1">
+                        <h4 class="font-extrabold text-slate-900 text-sm sm:text-base group-hover:text-sky-600 transition-colors leading-snug">Setrika Uap Boiler Industri</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed font-normal">Uap bertekanan tinggi melicinkan serat pakaian secara halus tanpa risiko pakaian gosong atau mengkilap.</p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 flex flex-wrap items-center gap-1.5 text-[10px] font-semibold text-slate-600">
+                        <span class="px-2 py-0.5 rounded-md bg-slate-50 border border-slate-200 text-slate-700 flex items-center gap-1">
+                            <i class="fa-solid fa-check text-sky-500 text-[9px]"></i> Uap Panas Murni
+                        </span>
+                        <span class="px-2 py-0.5 rounded-md bg-slate-50 border border-slate-200 text-slate-700 flex items-center gap-1">
+                            <i class="fa-solid fa-check text-sky-500 text-[9px]"></i> Anti-Gosong &amp; Anti-Kilap
+                        </span>
+                    </div>
                 </div>
             </div>
 
-            <div class="group rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md reveal-up interactive-card flex flex-col justify-between">
-                <div class="relative aspect-[16/11] overflow-hidden bg-slate-100">
-                    <img src="{{ asset('images/service-express.jpg') }}" alt="Area Penyerahan & Tagging Cucian" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                    <span class="absolute top-3 left-3 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-slate-900/90 text-white border border-white/20 shadow-xs">
+            <div class="group rounded-2xl overflow-hidden border border-slate-200/90 bg-white shadow-2xs hover:shadow-md hover:border-sky-300 transition-all reveal-up interactive-card flex flex-col justify-between">
+                <div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                    <img src="{{ asset('images/service-express.jpg') }}" alt="Area Penyerahan & Tagging Cucian" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-900/90 text-white border border-white/20 shadow-2xs">
                         Express &amp; Tagging
                     </span>
                 </div>
-                <div class="p-5 bg-white border-t border-slate-100 space-y-1">
-                    <h4 class="font-bold text-slate-900 text-sm group-hover:text-sky-600 transition-colors">Pengemasan &amp; Siap Ambil</h4>
-                    <p class="text-xs text-slate-600 leading-relaxed font-normal">Plastik proteksi ganda dengan barcode label nota terdata rapi.</p>
+                <div class="p-4 sm:p-4.5 bg-white border-t border-slate-100 space-y-2.5 flex-1 flex flex-col justify-between">
+                    <div class="space-y-1">
+                        <h4 class="font-extrabold text-slate-900 text-sm sm:text-base group-hover:text-sky-600 transition-colors leading-snug">Pengemasan &amp; Siap Ambil</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed font-normal">Pakaian dipacking plastik tebal bersegel rapat dengan barcode label nota dan tersimpan di rak bernomor.</p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 flex flex-wrap items-center gap-1.5 text-[10px] font-semibold text-slate-600">
+                        <span class="px-2 py-0.5 rounded-md bg-slate-50 border border-slate-200 text-slate-700 flex items-center gap-1">
+                            <i class="fa-solid fa-check text-sky-500 text-[9px]"></i> Plastik Segel Tebal
+                        </span>
+                        <span class="px-2 py-0.5 rounded-md bg-slate-50 border border-slate-200 text-slate-700 flex items-center gap-1">
+                            <i class="fa-solid fa-check text-sky-500 text-[9px]"></i> Rak Fisik Terdata
+                        </span>
+                    </div>
                 </div>
             </div>
 
-            <div class="group rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md reveal-up interactive-card flex flex-col justify-between">
-                <div class="relative aspect-[16/11] overflow-hidden bg-slate-100">
-                    <img src="{{ asset('images/service-shoes.jpg') }}" alt="Workshop Cuci Sepatu Sneakers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                    <span class="absolute top-3 left-3 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-slate-900/90 text-white border border-white/20 shadow-xs">
+            <div class="group rounded-2xl overflow-hidden border border-slate-200/90 bg-white shadow-2xs hover:shadow-md hover:border-sky-300 transition-all reveal-up interactive-card flex flex-col justify-between">
+                <div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                    <img src="{{ asset('images/service-shoes.jpg') }}" alt="Workshop Cuci Sepatu Sneakers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-900/90 text-white border border-white/20 shadow-2xs">
                         Workshop Sepatu
                     </span>
                 </div>
-                <div class="p-5 bg-white border-t border-slate-100 space-y-1">
-                    <h4 class="font-bold text-slate-900 text-sm group-hover:text-sky-600 transition-colors">Spesialis Sneakers &amp; Canvas</h4>
-                    <p class="text-xs text-slate-600 leading-relaxed font-normal">Pencucian manual dengan pembersih khusus busa dan sikat halus.</p>
+                <div class="p-4 sm:p-4.5 bg-white border-t border-slate-100 space-y-2.5 flex-1 flex flex-col justify-between">
+                    <div class="space-y-1">
+                        <h4 class="font-extrabold text-slate-900 text-sm sm:text-base group-hover:text-sky-600 transition-colors leading-snug">Spesialis Sneakers &amp; Canvas</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed font-normal">Pencucian manual bertahap menggunakan foam pembersih khusus dan sikat halus demi menjaga material sepatu.</p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 flex flex-wrap items-center gap-1.5 text-[10px] font-semibold text-slate-600">
+                        <span class="px-2 py-0.5 rounded-md bg-slate-50 border border-slate-200 text-slate-700 flex items-center gap-1">
+                            <i class="fa-solid fa-check text-amber-500 text-[9px]"></i> Deep Clean Manual
+                        </span>
+                        <span class="px-2 py-0.5 rounded-md bg-slate-50 border border-slate-200 text-slate-700 flex items-center gap-1">
+                            <i class="fa-solid fa-check text-amber-500 text-[9px]"></i> Sabun pH Netral
+                        </span>
+                    </div>
                 </div>
             </div>
 
-            <div class="group rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md reveal-up interactive-card flex flex-col justify-between">
-                <div class="relative aspect-[16/11] overflow-hidden bg-slate-100">
-                    <img src="{{ asset('images/laundry-delivery.jpg') }}" alt="Armada Kurir Antar Jemput Dinoyo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                    <span class="absolute top-3 left-3 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-slate-900/90 text-white border border-white/20 shadow-xs">
+            <div class="group rounded-2xl overflow-hidden border border-slate-200/90 bg-white shadow-2xs hover:shadow-md hover:border-sky-300 transition-all reveal-up interactive-card flex flex-col justify-between">
+                <div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                    <img src="{{ asset('images/laundry-delivery.jpg') }}" alt="Armada Kurir Antar Jemput Dinoyo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-900/90 text-white border border-white/20 shadow-2xs">
                         Armada Kurir
                     </span>
                 </div>
-                <div class="p-5 bg-white border-t border-slate-100 space-y-1">
-                    <h4 class="font-bold text-slate-900 text-sm group-hover:text-sky-600 transition-colors">Layanan Antar-Jemput Cepat</h4>
-                    <p class="text-xs text-slate-600 leading-relaxed font-normal">Siap meluncur ke kos dan perumahan di sekitar kampus Dinoyo.</p>
+                <div class="p-4 sm:p-4.5 bg-white border-t border-slate-100 space-y-2.5 flex-1 flex flex-col justify-between">
+                    <div class="space-y-1">
+                        <h4 class="font-extrabold text-slate-900 text-sm sm:text-base group-hover:text-sky-600 transition-colors leading-snug">Layanan Antar-Jemput Cepat</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed font-normal">Armada kurir dengan box tertutup anti-hujan siap meluncur ke kos dan perumahan di kawasan Dinoyo.</p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 flex flex-wrap items-center gap-1.5 text-[10px] font-semibold text-slate-600">
+                        <span class="px-2 py-0.5 rounded-md bg-slate-50 border border-slate-200 text-slate-700 flex items-center gap-1">
+                            <i class="fa-solid fa-check text-emerald-500 text-[9px]"></i> Box Rapat Anti-Hujan
+                        </span>
+                        <span class="px-2 py-0.5 rounded-md bg-slate-50 border border-slate-200 text-slate-700 flex items-center gap-1">
+                            <i class="fa-solid fa-check text-emerald-500 text-[9px]"></i> Radius Kampus Dinoyo
+                        </span>
+                    </div>
                 </div>
             </div>
 
         </div>
     </section>
-
-    
-    <section id="faq" class="site-container-narrow scroll-mt-28 space-y-12 sm:space-y-16 lg:space-y-20">
-        
-        <div class="text-center space-y-2.5 reveal-up">
-            <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-bold uppercase tracking-wider border border-sky-200">
-                <i class="fa-solid fa-circle-question text-sky-500"></i>
-                <span>Tanya Jawab</span>
-            </span>
-            <h2 class="heading-section font-extrabold text-slate-900 tracking-tight">
+    <section id="faq" class="site-container space-y-12 sm:space-y-16 lg:space-y-20 scroll-mt-28">
+        <div class="text-center max-w-3xl mx-auto space-y-2 reveal-up">
+            <h2 class="heading-section font-extrabold text-slate-900 tracking-tight md:whitespace-nowrap">
                 Pertanyaan yang Sering Diajukan
             </h2>
-            <p class="body-lead text-slate-600">
-                Punya pertanyaan sebelum mencuci? Berikut jawaban ringkas untuk kenyamanan Anda.
+            <p class="body-lead text-slate-600 font-normal text-xs sm:text-sm">
+                Punya pertanyaan sebelum mencuci? Berikut informasi lengkap dan transparan seputar layanan Katara Laundry Dinoyo.
             </p>
         </div>
 
-        <div class="space-y-3.5">
+        <div class="space-y-1.5 sm:space-y-2 !mt-3 sm:!mt-4">
             
-            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs hover:border-sky-300 reveal-up interactive-card">
-                <button type="button" onclick="toggleFaq(1)" class="w-full p-5 min-h-[50px] text-left font-bold text-xs sm:text-sm text-slate-900 flex items-center justify-between gap-3 hover:bg-slate-50 transition-colors" aria-expanded="false" id="faq-btn-1">
-                    <span>Apakah pakaian saya dicampur dengan pakaian pelanggan lain?</span>
-                    <i class="fa-solid fa-chevron-down text-sky-600 text-xs transition-transform duration-200" id="faq-icon-1"></i>
+            <div id="faq-card-1" class="bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden reveal-up interactive-card transition-all">
+                <button type="button" onclick="toggleFaq(1)" class="w-full px-3 py-1.5 sm:px-3.5 sm:py-2 text-left flex items-center justify-between gap-2 hover:bg-slate-50/80 transition-colors group" aria-expanded="false" id="faq-btn-1">
+                    <div class="flex items-center gap-2 min-w-0 flex-1">
+                        <span id="faq-num-1" class="w-6 h-6 rounded-lg bg-slate-100 text-slate-700 text-[11px] sm:text-xs font-bold flex items-center justify-center shrink-0 transition-colors">
+                            01
+                        </span>
+                        <span class="text-slate-800 font-bold text-xs leading-snug group-hover:text-sky-700 transition-colors">
+                            Apakah pakaian saya dicampur dengan pakaian pelanggan lain?
+                        </span>
+                    </div>
+                    <div class="w-6 h-6 rounded-lg bg-slate-100/80 flex items-center justify-center text-slate-500 shrink-0 text-[10px] sm:text-xs transition-colors group-hover:bg-sky-50 group-hover:text-sky-600">
+                        <i class="fa-solid fa-chevron-down text-sky-600 transition-transform duration-300 leading-none" id="faq-icon-1"></i>
+                    </div>
                 </button>
-                <div id="faq-content-1" class="hidden px-5 pb-5 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-                    <strong class="text-slate-900">Sama sekali tidak!</strong> Katara Laundry menerapkan SOP tegas <em>1 Mesin 1 Pelanggan</em>. Pakaian Anda diproses dalam drum terpisah sejak tahap pencucian, pengeringan, hingga setrika uap demi higienitas maksimal.
+                <div id="faq-content-1" class="hidden px-3.5 sm:px-4 pb-3.5 sm:pb-4 text-xs sm:text-[13px] text-slate-600 leading-relaxed border-t border-slate-100 pt-2.5 sm:pt-3 space-y-2">
+                    <p>
+                        <strong class="text-slate-900 font-bold">Sama sekali tidak pernah dicampur!</strong> Katara Laundry menerapkan SOP ketat <span class="text-sky-700 font-bold">1 Mesin 1 Pelanggan</span> tanpa kompromi.
+                    </p>
+                    <p>
+                        Pakaian Anda dicuci mandiri dalam drum stainless sendiri dari awal proses cuci, pembilasan, pengeringan gas dryer, hingga setrika uap. Privasi Anda terlindungi penuh, higienis, serta bebas dari risiko tertular bakteri atau risiko pakaian tertukar dan luntur.
+                    </p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs hover:border-sky-300 reveal-up interactive-card">
-                <button type="button" onclick="toggleFaq(2)" class="w-full p-5 min-h-[50px] text-left font-bold text-xs sm:text-sm text-slate-900 flex items-center justify-between gap-3 hover:bg-slate-50 transition-colors" aria-expanded="false" id="faq-btn-2">
-                    <span>Berapa lama estimasi pakaian selesai dicuci?</span>
-                    <i class="fa-solid fa-chevron-down text-sky-600 text-xs transition-transform duration-200" id="faq-icon-2"></i>
+            <div id="faq-card-2" class="bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden reveal-up interactive-card transition-all">
+                <button type="button" onclick="toggleFaq(2)" class="w-full px-3 py-1.5 sm:px-3.5 sm:py-2 text-left flex items-center justify-between gap-2 hover:bg-slate-50/80 transition-colors group" aria-expanded="false" id="faq-btn-2">
+                    <div class="flex items-center gap-2 min-w-0 flex-1">
+                        <span id="faq-num-2" class="w-6 h-6 rounded-lg bg-slate-100 text-slate-700 text-[11px] sm:text-xs font-bold flex items-center justify-center shrink-0 transition-colors">
+                            02
+                        </span>
+                        <span class="text-slate-800 font-bold text-xs leading-snug group-hover:text-sky-700 transition-colors">
+                            Berapa lama estimasi pakaian selesai dicuci? Ada layanan cepat?
+                        </span>
+                    </div>
+                    <div class="w-6 h-6 rounded-lg bg-slate-100/80 flex items-center justify-center text-slate-500 shrink-0 text-[10px] sm:text-xs transition-colors group-hover:bg-sky-50 group-hover:text-sky-600">
+                        <i class="fa-solid fa-chevron-down text-sky-600 transition-transform duration-300 leading-none" id="faq-icon-2"></i>
+                    </div>
                 </button>
-                <div id="faq-content-2" class="hidden px-5 pb-5 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-                    Kami menyediakan 3 pilihan kecepatan: <strong class="text-slate-900">Reguler (48 Jam)</strong>, <strong class="text-slate-900">Kilat (24 Jam)</strong>, dan <strong class="text-slate-900">Express Prioritas (6 Jam)</strong>. Anda dapat memilih paket sesuai kebutuhan waktu Anda saat penimbangan.
+                <div id="faq-content-2" class="hidden px-3.5 sm:px-4 pb-3.5 sm:pb-4 text-xs sm:text-[13px] text-slate-600 leading-relaxed border-t border-slate-100 pt-2.5 sm:pt-3 space-y-2.5">
+                    <p>
+                        Kami menyediakan 3 pilihan durasi pengerjaan yang transparan sesuai kebutuhan waktu Anda:
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-0.5 pb-0.5">
+                        <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 text-center space-y-1">
+                            <span class="font-bold text-slate-900 text-xs sm:text-sm block">Reguler</span>
+                            <span class="text-xs text-slate-600 block">48 Jam Siap Ambil</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-sky-50 border border-sky-200 text-center space-y-1">
+                            <span class="font-bold text-sky-800 text-xs sm:text-sm block">Kilat</span>
+                            <span class="text-xs text-sky-700 block">24 Jam Siap Ambil</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 text-center space-y-1">
+                            <span class="font-bold text-amber-900 text-xs sm:text-sm block">Express Prioritas</span>
+                            <span class="text-xs text-amber-800 block">6 Jam Langsung Beres</span>
+                        </div>
+                    </div>
+                    <p>
+                        Seluruh cucian dikeringkan tuntas menggunakan mesin gas dryer komersial bersuhu terkontrol, sehingga bebas apek dan langsung siap pakai saat diambil.
+                    </p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs hover:border-sky-300 reveal-up interactive-card">
-                <button type="button" onclick="toggleFaq(3)" class="w-full p-5 min-h-[50px] text-left font-bold text-xs sm:text-sm text-slate-900 flex items-center justify-between gap-3 hover:bg-slate-50 transition-colors" aria-expanded="false" id="faq-btn-3">
-                    <span>Bagaimana cara melacak status pakaian saya secara mandiri?</span>
-                    <i class="fa-solid fa-chevron-down text-sky-600 text-xs transition-transform duration-200" id="faq-icon-3"></i>
+            <div id="faq-card-3" class="bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden reveal-up interactive-card transition-all">
+                <button type="button" onclick="toggleFaq(3)" class="w-full px-3 py-1.5 sm:px-3.5 sm:py-2 text-left flex items-center justify-between gap-2 hover:bg-slate-50/80 transition-colors group" aria-expanded="false" id="faq-btn-3">
+                    <div class="flex items-center gap-2 min-w-0 flex-1">
+                        <span id="faq-num-3" class="w-6 h-6 rounded-lg bg-slate-100 text-slate-700 text-[11px] sm:text-xs font-bold flex items-center justify-center shrink-0 transition-colors">
+                            03
+                        </span>
+                        <span class="text-slate-800 font-bold text-xs leading-snug group-hover:text-sky-700 transition-colors">
+                            Bagaimana cara melacak status cucian saya secara mandiri?
+                        </span>
+                    </div>
+                    <div class="w-6 h-6 rounded-lg bg-slate-100/80 flex items-center justify-center text-slate-500 shrink-0 text-[10px] sm:text-xs transition-colors group-hover:bg-sky-50 group-hover:text-sky-600">
+                        <i class="fa-solid fa-chevron-down text-sky-600 transition-transform duration-300 leading-none" id="faq-icon-3"></i>
+                    </div>
                 </button>
-                <div id="faq-content-3" class="hidden px-5 pb-5 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-                    Cukup masukkan nomor nota transaksi Anda (contoh: <code class="text-sky-700 bg-sky-50 px-2 py-0.5 rounded border border-sky-200">KTR-20260906-0001</code>) atau nomor WhatsApp yang terdaftar pada form pelacakan di beranda website ini. Anda akan melihat tahapan pengerjaan (cuci, kering, setrika, rak penyimpanan) secara real-time.
+                <div id="faq-content-3" class="hidden px-3.5 sm:px-4 pb-3.5 sm:pb-4 text-xs sm:text-[13px] text-slate-600 leading-relaxed border-t border-slate-100 pt-2.5 sm:pt-3 space-y-2">
+                    <p>
+                        Sangat mudah dan tanpa perlu bolak-balik chat kasir. Cukup masukkan <strong class="text-slate-900 font-bold">Nomor Nota</strong> Anda (contoh: <code class="text-sky-700 bg-sky-50 px-2.5 py-0.5 rounded-lg border border-sky-200 font-mono text-xs font-bold">KTR-20260906-0001</code>) atau nomor WhatsApp terdaftar pada kolom pelacakan di bagian atas website ini.
+                    </p>
+                    <p>
+                        Sistem menampilkan posisi riil tahapan pakaian: <em>Diterima &amp; Timbang &rarr; Cuci 1 Drum &rarr; Kering Gas Dryer &rarr; Setrika Uap Boiler &rarr; Masuk Rak Slot Bernomor</em>.
+                    </p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs hover:border-sky-300 reveal-up interactive-card">
-                <button type="button" onclick="toggleFaq(4)" class="w-full p-5 min-h-[50px] text-left font-bold text-xs sm:text-sm text-slate-900 flex items-center justify-between gap-3 hover:bg-slate-50 transition-colors" aria-expanded="false" id="faq-btn-4">
-                    <span>Apakah ada layanan antar-jemput cucian di kawasan Dinoyo?</span>
-                    <i class="fa-solid fa-chevron-down text-sky-600 text-xs transition-transform duration-200" id="faq-icon-4"></i>
+            <div id="faq-card-4" class="bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden reveal-up interactive-card transition-all">
+                <button type="button" onclick="toggleFaq(4)" class="w-full px-3 py-1.5 sm:px-3.5 sm:py-2 text-left flex items-center justify-between gap-2 hover:bg-slate-50/80 transition-colors group" aria-expanded="false" id="faq-btn-4">
+                    <div class="flex items-center gap-2 min-w-0 flex-1">
+                        <span id="faq-num-4" class="w-6 h-6 rounded-lg bg-slate-100 text-slate-700 text-[11px] sm:text-xs font-bold flex items-center justify-center shrink-0 transition-colors">
+                            04
+                        </span>
+                        <span class="text-slate-800 font-bold text-xs leading-snug group-hover:text-sky-700 transition-colors">
+                            Apakah ada layanan antar-jemput cucian ke kos atau perumahan?
+                        </span>
+                    </div>
+                    <div class="w-6 h-6 rounded-lg bg-slate-100/80 flex items-center justify-center text-slate-500 shrink-0 text-[10px] sm:text-xs transition-colors group-hover:bg-sky-50 group-hover:text-sky-600">
+                        <i class="fa-solid fa-chevron-down text-sky-600 transition-transform duration-300 leading-none" id="faq-icon-4"></i>
+                    </div>
                 </button>
-                <div id="faq-content-4" class="hidden px-5 pb-5 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-                    Ya, kami melayani antar-jemput pakaian di kawasan Dinoyo, Sigura-gura, Sumbersari, Soekarno-Hatta (Suhat), Tlogomas, dan sekitarnya. Hubungi hotline WhatsApp kami untuk penjadwalan kurir.
+                <div id="faq-content-4" class="hidden px-3.5 sm:px-4 pb-3.5 sm:pb-4 text-xs sm:text-[13px] text-slate-600 leading-relaxed border-t border-slate-100 pt-2.5 sm:pt-3 space-y-2">
+                    <p>
+                        <strong class="text-slate-900 font-bold">Ada!</strong> Kurir Katara Laundry melayani jemput dan antar pakaian langsung ke kos, asrama, apartemen, atau perumahan di kawasan Dinoyo, Sigura-gura, Sumbersari, Soekarno-Hatta (Suhat), Tlogomas, Tunggulwulung, hingga area kampus UB, UIN, UM, Polinema, dan Unisma.
+                    </p>
+                    <p>
+                        Armada kurir kami dilengkapi box tertutup kedap air sehingga pakaian tetap rapi dan terlindung dari debu knalpot jalanan serta percikan hujan. Hubungi WhatsApp kasir untuk mengatur jadwal penjemputan.
+                    </p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs hover:border-sky-300 reveal-up interactive-card">
-                <button type="button" onclick="toggleFaq(5)" class="w-full p-5 min-h-[50px] text-left font-bold text-xs sm:text-sm text-slate-900 flex items-center justify-between gap-3 hover:bg-slate-50 transition-colors" aria-expanded="false" id="faq-btn-5">
-                    <span>Apakah ada garansi jika hasil cucian kurang bersih?</span>
-                    <i class="fa-solid fa-chevron-down text-sky-600 text-xs transition-transform duration-200" id="faq-icon-5"></i>
+            <div id="faq-card-5" class="bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden reveal-up interactive-card transition-all">
+                <button type="button" onclick="toggleFaq(5)" class="w-full px-3 py-1.5 sm:px-3.5 sm:py-2 text-left flex items-center justify-between gap-2 hover:bg-slate-50/80 transition-colors group" aria-expanded="false" id="faq-btn-5">
+                    <div class="flex items-center gap-2 min-w-0 flex-1">
+                        <span id="faq-num-5" class="w-6 h-6 rounded-lg bg-slate-100 text-slate-700 text-[11px] sm:text-xs font-bold flex items-center justify-center shrink-0 transition-colors">
+                            05
+                        </span>
+                        <span class="text-slate-800 font-bold text-xs leading-snug group-hover:text-sky-700 transition-colors">
+                            Apakah menerima pembayaran non-tunai (QRIS &amp; Transfer Bank)?
+                        </span>
+                    </div>
+                    <div class="w-6 h-6 rounded-lg bg-slate-100/80 flex items-center justify-center text-slate-500 shrink-0 text-[10px] sm:text-xs transition-colors group-hover:bg-sky-50 group-hover:text-sky-600">
+                        <i class="fa-solid fa-chevron-down text-sky-600 transition-transform duration-300 leading-none" id="faq-icon-5"></i>
+                    </div>
                 </button>
-                <div id="faq-content-5" class="hidden px-5 pb-5 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-                    Tentu saja! Jika ada pakaian yang dirasa kurang rapi atau aroma parfum kurang semerbak, Anda berhak mengajukan <strong class="text-slate-900">garansi cuci ulang gratis 100%</strong> maksimal dalam waktu 24 jam setelah pakaian diambil.
+                <div id="faq-content-5" class="hidden px-3.5 sm:px-4 pb-3.5 sm:pb-4 text-xs sm:text-[13px] text-slate-600 leading-relaxed border-t border-slate-100 pt-2.5 sm:pt-3 space-y-2">
+                    <p>
+                        <strong class="text-slate-900 font-bold">Ya, 100% mendukung pembayaran non-tunai!</strong> Kami menyediakan scan <span class="font-semibold text-slate-800">QRIS</span> resmi yang dapat dibayar melalui m-banking (BCA, Mandiri, BRI, BNI) maupun e-wallet (GoPay, ShopeePay, OVO, Dana) tanpa biaya admin tambahan.
+                    </p>
+                    <p>
+                        Anda juga bisa membayar secara tunai langsung di kasir gerai maupun saat pakaian diantar oleh kurir ke tempat Anda.
+                    </p>
                 </div>
             </div>
 
+            <div id="faq-card-6" class="bg-white rounded-xl border border-slate-200/90 shadow-2xs overflow-hidden reveal-up interactive-card transition-all">
+                <button type="button" onclick="toggleFaq(6)" class="w-full px-3 py-1.5 sm:px-3.5 sm:py-2 text-left flex items-center justify-between gap-2 hover:bg-slate-50/80 transition-colors group" aria-expanded="false" id="faq-btn-6">
+                    <div class="flex items-center gap-2 min-w-0 flex-1">
+                        <span id="faq-num-6" class="w-6 h-6 rounded-lg bg-slate-100 text-slate-700 text-[11px] sm:text-xs font-bold flex items-center justify-center shrink-0 transition-colors">
+                            06
+                        </span>
+                        <span class="text-slate-800 font-bold text-xs leading-snug group-hover:text-sky-700 transition-colors">
+                            Bagaimana jika hasil cucian kurang bersih atau aromanya kurang wangi?
+                        </span>
+                    </div>
+                    <div class="w-6 h-6 rounded-lg bg-slate-100/80 flex items-center justify-center text-slate-500 shrink-0 text-[10px] sm:text-xs transition-colors group-hover:bg-sky-50 group-hover:text-sky-600">
+                        <i class="fa-solid fa-chevron-down text-sky-600 transition-transform duration-300 leading-none" id="faq-icon-6"></i>
+                    </div>
+                </button>
+                <div id="faq-content-6" class="hidden px-3.5 sm:px-4 pb-3.5 sm:pb-4 text-xs sm:text-[13px] text-slate-600 leading-relaxed border-t border-slate-100 pt-2.5 sm:pt-3 space-y-2">
+                    <p>
+                        Katara Laundry memberikan <strong class="text-emerald-700 font-bold">Garansi 100% Cuci &amp; Setrika Ulang Gratis</strong> tanpa biaya sepeser pun.
+                    </p>
+                    <p>
+                        Jika ada noda yang terlewat, lipatan kurang rapi, atau aroma parfum dirasa kurang harum, cukup konfirmasikan ke kasir atau hotline WhatsApp kami dalam 1x24 jam setelah cucian diambil dengan menunjukkan nota fisik/digital Anda. Kami siap mencuci ulang dengan senang hati.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="rounded-2xl bg-gradient-to-r from-sky-50 via-white to-sky-50 border border-sky-200/90 p-4.5 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4 reveal-up !mt-5 sm:!mt-6">
+            <div class="flex items-center gap-3.5 text-center sm:text-left">
+                <div class="w-11 h-11 rounded-xl bg-sky-600 text-white flex items-center justify-center text-xl shrink-0 shadow-xs">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="space-y-0.5">
+                    <h4 class="font-extrabold text-slate-900 text-sm sm:text-base">Punya pertanyaan lain seputar cucian Anda?</h4>
+                    <p class="text-xs sm:text-sm text-slate-600">Kasir dan tim kurir Katara Laundry siap membantu konsultasi cepat via WhatsApp.</p>
+                </div>
+            </div>
+            <a href="https://wa.me/6281234567890?text=Halo%20Katara%20Laundry%20Dinoyo,%20saya%20mau%20tanya%20seputar%20layanan%20laundry" target="_blank" class="inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs leading-none shadow-sm shadow-emerald-600/20 transition-all border border-emerald-500/40 interactive-btn shrink-0 whitespace-nowrap active:scale-[0.99]">
+                <i class="fa-brands fa-whatsapp text-sm"></i>
+                <span>Tanya Admin WhatsApp</span>
+            </a>
         </div>
     </section>
 
     
     <section id="lokasi" class="site-container scroll-mt-28">
-        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 sm:p-9">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-7">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6 items-center">
                 
-                <div class="space-y-4 reveal-left">
-                    <div class="flex items-center gap-2">
-                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-bold uppercase tracking-wider border border-sky-200">
-                            <i class="fa-solid fa-location-dot text-sky-500"></i>
-                            <span>Lokasi Strategis</span>
-                        </span>
-                        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[11px] font-bold border border-emerald-200">
-                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                            <span>Buka Setiap Hari</span>
-                        </span>
-                    </div>
-
-                    <h2 class="heading-section font-extrabold text-slate-900 tracking-tight">
+                <div class="space-y-3.5 reveal-left">
+                    <h2 class="heading-section font-extrabold text-slate-900 tracking-tight md:whitespace-nowrap">
                         Kunjungi Gerai Katara Dinoyo Malang
                     </h2>
                     <p class="body-lead text-slate-600 leading-relaxed font-normal">
                         Terletak strategis di kawasan Dinoyo Lowokwaru. Sangat mudah dijangkau dari gerbang UB Dinoyo, Kampus UM, Polinema, dan UIN Malang.
                     </p>
 
-                    <div class="space-y-3 text-xs">
-                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
-                            <div class="w-9 h-9 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center shrink-0 border border-rose-200 text-sm">
+                    <div class="space-y-2 text-xs">
+                        <div class="p-3 sm:p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-rose-50 text-rose-600 flex items-center justify-center shrink-0 border border-rose-200 text-xs">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div>
@@ -1456,8 +1856,8 @@
                             </div>
                         </div>
 
-                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
-                            <div class="w-9 h-9 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 border border-amber-200 text-sm">
+                        <div class="p-3 sm:p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 border border-amber-200 text-xs">
                                 <i class="fa-regular fa-clock"></i>
                             </div>
                             <div>
@@ -1470,16 +1870,20 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-wrap items-center gap-3 pt-2">
-                        <a href="https://maps.google.com/?q=Dinoyo+Lowokwaru+Malang" target="_blank" class="inline-flex items-center justify-center gap-2 h-11 px-5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition-all shadow-xs interactive-btn border border-slate-700">
+                    <div class="flex flex-wrap items-center gap-2 pt-1">
+                        <a href="https://maps.google.com/?q=Dinoyo+Lowokwaru+Malang" target="_blank" class="inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold leading-none transition-all shadow-xs interactive-btn border border-slate-700 active:scale-[0.99]">
                             <i class="fa-solid fa-diamond-turn-right text-sky-400"></i>
                             <span>Buka di Google Maps</span>
+                        </a>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Katara%20Laundry%20Dinoyo,%20saya%20ingin%20tanya%20rute%20lokasi%20gerai" target="_blank" class="inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold leading-none transition-all border border-emerald-200 active:scale-[0.99]">
+                            <i class="fa-brands fa-whatsapp text-emerald-600 text-sm"></i>
+                            <span>Tanya Rute Gerai via WA</span>
                         </a>
                     </div>
                 </div>
 
                 
-                <div class="bg-slate-50 rounded-3xl p-6 sm:p-7 text-slate-800 space-y-4 border border-slate-200 reveal-right">
+                <div class="bg-slate-50 rounded-2xl p-5 sm:p-6 text-slate-800 space-y-3 border border-slate-200 reveal-right">
                     <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm relative group">
                         <img src="{{ asset('images/laundry-delivery.jpg') }}" 
                              alt="Kurir Antar-Jemput Katara Laundry di Kawasan Dinoyo Malang" 
@@ -1489,7 +1893,7 @@
                                 <i class="fa-solid fa-motorcycle text-emerald-400"></i>
                                 <span>Kurir Antar-Jemput Dinoyo</span>
                             </span>
-                            <span class="text-[10px] text-slate-300 font-semibold bg-slate-800 px-2 py-0.5 rounded">Radius 3 - 5 KM</span>
+                            <span class="text-[10px] text-emerald-300 font-bold bg-slate-800 px-2.5 py-0.5 rounded border border-emerald-500/30">Gratis Radius 3 - 5 KM</span>
                         </div>
                     </div>
 
@@ -1497,39 +1901,39 @@
                         Kami melayani penjemputan &amp; pengantaran cucian untuk kos-kosan dan perumahan sekitar kampus:
                     </p>
 
-                    <div class="grid grid-cols-2 gap-2 text-xs">
-                        <div class="p-2.5 rounded-xl bg-white border border-slate-200 text-slate-700 flex items-center gap-2 font-medium">
+                    <div class="grid grid-cols-2 gap-1.5 text-xs">
+                        <div class="p-2 rounded-lg bg-white border border-slate-200 text-slate-700 flex items-center gap-2 font-medium">
                             <i class="fa-solid fa-check text-emerald-600 text-xs"></i>
                             <span>Dinoyo &amp; MT Haryono</span>
                         </div>
-                        <div class="p-2.5 rounded-xl bg-white border border-slate-200 text-slate-700 flex items-center gap-2 font-medium">
+                        <div class="p-2 rounded-lg bg-white border border-slate-200 text-slate-700 flex items-center gap-2 font-medium">
                             <i class="fa-solid fa-check text-emerald-600 text-xs"></i>
                             <span>Sigura-gura &amp; Bendungan</span>
                         </div>
-                        <div class="p-2.5 rounded-xl bg-white border border-slate-200 text-slate-700 flex items-center gap-2 font-medium">
+                        <div class="p-2 rounded-lg bg-white border border-slate-200 text-slate-700 flex items-center gap-2 font-medium">
                             <i class="fa-solid fa-check text-emerald-600 text-xs"></i>
                             <span>Sumbersari &amp; Gajayana</span>
                         </div>
-                        <div class="p-2.5 rounded-xl bg-white border border-slate-200 text-slate-700 flex items-center gap-2 font-medium">
+                        <div class="p-2 rounded-lg bg-white border border-slate-200 text-slate-700 flex items-center gap-2 font-medium">
                             <i class="fa-solid fa-check text-emerald-600 text-xs"></i>
                             <span>Soekarno-Hatta (Suhat)</span>
                         </div>
-                        <div class="p-2.5 rounded-xl bg-white border border-slate-200 text-slate-700 flex items-center gap-2 font-medium">
+                        <div class="p-2 rounded-lg bg-white border border-slate-200 text-slate-700 flex items-center gap-2 font-medium">
                             <i class="fa-solid fa-check text-emerald-600 text-xs"></i>
                             <span>Tlogomas &amp; Landungsari</span>
                         </div>
-                        <div class="p-2.5 rounded-xl bg-white border border-slate-200 text-slate-700 flex items-center gap-2 font-medium">
+                        <div class="p-2 rounded-lg bg-white border border-slate-200 text-slate-700 flex items-center gap-2 font-medium">
                             <i class="fa-solid fa-check text-emerald-600 text-xs"></i>
                             <span>Ketawanggede / UB</span>
                         </div>
                     </div>
 
-                    <div class="p-3.5 rounded-2xl bg-white border border-slate-200 flex items-center justify-between text-xs">
+                    <div class="p-2.5 rounded-xl bg-white border border-slate-200 flex items-center justify-between text-xs">
                         <div class="flex items-center gap-2 text-slate-600">
                             <i class="fa-solid fa-circle-info text-sky-500"></i>
-                            <span>Layanan jemput cucian berlaku setiap hari operasional.</span>
+                            <span>Layanan jemput pakaian berlaku setiap hari operasional.</span>
                         </div>
-                        <span class="text-[11px] font-bold text-emerald-600">Radius 3-5 KM</span>
+                        <span class="text-[11px] font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md shrink-0">Radius 3-5 KM</span>
                     </div>
                 </div>
 
@@ -1539,25 +1943,37 @@
 
     
     <section class="site-container">
-        <div class="bg-gradient-to-br from-slate-900 via-[#0a1e38] to-[#071325] rounded-3xl p-8 sm:p-12 text-white border border-sky-800/60 shadow-2xl reveal-up">
-            <div class="relative z-10 max-w-2xl mx-auto text-center space-y-5">
-                <span class="px-3.5 py-1.5 rounded-full bg-sky-900/80 text-sky-300 text-xs font-bold uppercase tracking-wider inline-block border border-sky-700/60">
-                    Layanan Laundry Dinoyo Malang
-                </span>
-                <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
-                    Pakaian Bersih, Rapi &amp; Harum Semerbak Tanpa Repot
+        <div class="bg-gradient-to-br from-slate-900 via-[#0a1e38] to-[#071325] rounded-3xl p-6 sm:p-9 text-white border border-sky-800/60 shadow-xl reveal-up">
+            <div class="relative z-10 max-w-2xl mx-auto text-center space-y-4">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white leading-tight">
+                    Pakaian Bersih, Rapi &amp; Harum Semerbak <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-teal-300 to-emerald-400">Tanpa Repot</span>
                 </h2>
                 <p class="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed font-normal">
                     Serahkan cucian Anda pada Katara Laundry Dinoyo. Cukup hubungi WhatsApp untuk jadwal kurir jemput atau drop-off langsung ke gerai kami.
                 </p>
 
-                <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
-                    <a href="https://wa.me/6281234567890?text=Halo%20Katara%20Laundry,%20saya%20mau%20order%20laundry%20sekarang" target="_blank" class="inline-flex items-center justify-center gap-2.5 h-12 px-6 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs sm:text-sm shadow-lg shadow-emerald-500/25 transition-all interactive-btn border border-emerald-400/50">
-                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                <div class="flex flex-wrap items-center justify-center gap-2 pt-0.5 text-[11px] font-semibold text-slate-300">
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-800/90 border border-slate-700/80">
+                        <i class="fa-solid fa-circle-check text-emerald-400 text-[10px]"></i>
+                        <span>1 Mesin 1 Nota</span>
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-800/90 border border-slate-700/80">
+                        <i class="fa-solid fa-fire-flame-curved text-amber-400 text-[10px]"></i>
+                        <span>Gas Dryer Kering 100%</span>
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-800/90 border border-slate-700/80">
+                        <i class="fa-solid fa-shield-halved text-sky-400 text-[10px]"></i>
+                        <span>Garansi Cuci Ulang</span>
+                    </span>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-center gap-2 pt-1">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Katara%20Laundry%20Dinoyo,%20saya%20ingin%20pesan%20layanan%20cuci%20pakaian" target="_blank" class="inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs leading-none shadow-sm shadow-emerald-600/20 transition-all interactive-btn border border-emerald-500/40 active:scale-[0.99]">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
                         <span>Pesan via WhatsApp</span>
                     </a>
-                    <a href="#lacak" class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-sky-950 hover:bg-sky-900 border border-sky-700/70 text-sky-200 font-bold text-xs sm:text-sm transition-all interactive-btn shadow-xs">
-                        <i class="fa-solid fa-magnifying-glass text-sky-400 text-xs sm:text-sm"></i>
+                    <a href="{{ route('public.lacak') }}" onclick="scrollToTracking(event)" class="inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-xl bg-sky-950 hover:bg-sky-900 border border-sky-700/70 text-sky-200 font-bold text-xs leading-none transition-all interactive-btn shadow-xs active:scale-[0.99]">
+                        <i class="fa-solid fa-magnifying-glass text-sky-400 text-xs"></i>
                         <span>Lacak Status Nota</span>
                     </a>
                 </div>
@@ -1568,7 +1984,7 @@
 </div>
 
 
-<div id="demoModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/80 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+<div id="demoModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/75" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="bg-gradient-to-br from-[#07152b] via-[#0a1e3a] to-[#08172c] rounded-2xl sm:rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto p-4 sm:p-5 space-y-3.5 shadow-2xl border border-sky-800/70 relative text-white">
         
         <button type="button" onclick="closeDemoModal()" class="absolute top-4 right-4 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#0b1d38] hover:bg-sky-900 text-slate-300 hover:text-white border border-sky-800/60 flex items-center justify-center text-xs transition-colors shadow-2xs" aria-label="Tutup Pratinjau Demo">
@@ -1686,7 +2102,7 @@
 </div>
 
 
-<div id="trackingResultModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto hidden" role="dialog" aria-modal="true" aria-labelledby="popInvoiceNumber">
+<div id="trackingResultModal" class="fixed inset-0 z-50 bg-slate-950/75 flex items-center justify-center p-3 sm:p-4 overflow-y-auto hidden" role="dialog" aria-modal="true" aria-labelledby="popInvoiceNumber">
     <div class="relative w-full max-w-xl bg-gradient-to-br from-[#07152b] via-[#0a1e3a] to-[#08172c] rounded-2xl sm:rounded-3xl shadow-2xl border border-sky-800/70 overflow-hidden my-auto animate-fade-in text-white">
         
         
@@ -1858,7 +2274,7 @@
 </div>
 
 
-<div id="trackingErrorModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto hidden" role="dialog" aria-modal="true">
+<div id="trackingErrorModal" class="fixed inset-0 z-50 bg-slate-950/75 flex items-center justify-center p-3 sm:p-4 overflow-y-auto hidden" role="dialog" aria-modal="true">
     <div class="relative w-full max-w-sm bg-gradient-to-br from-[#07152b] via-[#0a1e3a] to-[#08172c] rounded-2xl sm:rounded-3xl shadow-2xl border border-sky-800/70 p-5 text-center space-y-3.5 my-auto animate-fade-in text-white">
         <div class="w-12 h-12 mx-auto rounded-xl bg-rose-950/70 text-rose-400 flex items-center justify-center text-xl border border-rose-800/60 shadow-inner">
             <i class="fa-solid fa-triangle-exclamation"></i>
@@ -1883,7 +2299,7 @@
 
 
 <div id="toastNotification" class="fixed top-6 sm:top-8 left-1/2 -translate-x-1/2 z-50 pointer-events-none transition-all duration-300 transform -translate-y-12 opacity-0 w-[90%] max-w-sm flex justify-center" role="alert" aria-live="polite">
-    <div class="px-5 py-3 rounded-full bg-slate-900/95 backdrop-blur-md text-white border border-slate-700 shadow-2xl text-xs font-semibold flex items-center gap-2.5 text-center">
+    <div class="px-5 py-3 rounded-full bg-slate-900 text-white border border-slate-700 shadow-2xl text-xs font-semibold flex items-center gap-2.5 text-center">
         <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0 animate-pulse"></span>
         <span id="toastMessage">Aroma terpilih pada simulasi kalkulator!</span>
     </div>
@@ -1920,12 +2336,109 @@
         const select = document.getElementById('calcService');
         if (select) {
             select.value = serviceId;
-            recalculateEstimate();
+            onServiceChange();
         }
+        syncCustomServiceDropdown();
         const calcSection = document.getElementById('kalkulator');
         if (calcSection) {
             calcSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+    }
+
+    function closeServiceDropdown() {
+        const menu = document.getElementById('customServiceMenu');
+        const chevron = document.getElementById('customServiceChevron');
+        if (menu) menu.classList.add('hidden');
+        if (chevron) chevron.classList.remove('rotate-180');
+    }
+
+    function toggleServiceDropdown() {
+        closePerfumeDropdown();
+        const menu = document.getElementById('customServiceMenu');
+        const chevron = document.getElementById('customServiceChevron');
+        if (!menu) return;
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+            if (chevron) chevron.classList.add('rotate-180');
+        } else {
+            menu.classList.add('hidden');
+            if (chevron) chevron.classList.remove('rotate-180');
+        }
+    }
+
+    function closePerfumeDropdown() {
+        const menu = document.getElementById('customPerfumeMenu');
+        const chevron = document.getElementById('customPerfumeChevron');
+        if (menu) menu.classList.add('hidden');
+        if (chevron) chevron.classList.remove('rotate-180');
+    }
+
+    function togglePerfumeDropdown() {
+        closeServiceDropdown();
+        const menu = document.getElementById('customPerfumeMenu');
+        const chevron = document.getElementById('customPerfumeChevron');
+        if (!menu) return;
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+            if (chevron) chevron.classList.add('rotate-180');
+        } else {
+            menu.classList.add('hidden');
+            if (chevron) chevron.classList.remove('rotate-180');
+        }
+    }
+
+    function selectCustomPerfume(perfumeName) {
+        const select = document.getElementById('calcPerfume');
+        if (select) {
+            select.value = perfumeName;
+            recalculateEstimate();
+        }
+        syncCustomPerfumeDropdown();
+        closePerfumeDropdown();
+    }
+
+    function syncCustomPerfumeDropdown() {
+        const select = document.getElementById('calcPerfume');
+        const label = document.getElementById('customPerfumeLabel');
+        if (!select || !label) return;
+        const opt = select.options[select.selectedIndex];
+        if (opt) {
+            label.innerHTML = opt.text;
+        }
+        document.querySelectorAll('.custom-perfume-option').forEach(el => {
+            if (el.getAttribute('data-name') === select.value) {
+                el.className = 'custom-perfume-option px-3 py-2 rounded-xl text-xs font-bold cursor-pointer transition-colors flex items-center justify-between bg-sky-50 text-sky-800';
+            } else {
+                el.className = 'custom-perfume-option px-3 py-2 rounded-xl text-xs font-medium cursor-pointer transition-colors flex items-center justify-between text-slate-800 hover:bg-slate-50';
+            }
+        });
+    }
+
+    function selectCustomService(serviceId) {
+        const select = document.getElementById('calcService');
+        if (select) {
+            select.value = serviceId;
+            onServiceChange();
+        }
+        syncCustomServiceDropdown();
+        closeServiceDropdown();
+    }
+
+    function syncCustomServiceDropdown() {
+        const select = document.getElementById('calcService');
+        const label = document.getElementById('customServiceLabel');
+        if (!select || !label) return;
+        const opt = select.options[select.selectedIndex];
+        if (opt) {
+            label.innerHTML = opt.text;
+        }
+        document.querySelectorAll('.custom-service-option').forEach(el => {
+            if (el.getAttribute('data-id') === select.value) {
+                el.className = 'custom-service-option px-3 py-2 rounded-xl text-xs font-bold cursor-pointer transition-colors flex items-center justify-between bg-sky-50 text-sky-800';
+            } else {
+                el.className = 'custom-service-option px-3 py-2 rounded-xl text-xs font-medium cursor-pointer transition-colors flex items-center justify-between text-slate-800 hover:bg-slate-50';
+            }
+        });
     }
 
     function fillInvoiceInput(val) {
@@ -1937,6 +2450,54 @@
             setTimeout(() => input.classList.remove('ring-4', 'ring-sky-400/40', 'border-sky-500'), 1500);
         }
         executeTracking(val);
+    }
+
+        function onServiceChange() {
+        const select = document.getElementById('calcService');
+        const slider = document.getElementById('calcWeight');
+        if (!select || !slider) return;
+
+        const selectedOption = select.options[select.selectedIndex];
+        const unit = selectedOption.getAttribute('data-unit') || 'kg';
+        const minOrder = parseFloat(selectedOption.getAttribute('data-min')) || 1;
+
+        if (unit === 'kg') {
+            slider.min = '1';
+            slider.max = '25';
+            slider.step = '0.5';
+            if (slider.value > 25) slider.value = '25';
+            if (slider.value < 1) slider.value = '1';
+        } else {
+            slider.min = '1';
+            slider.max = '10';
+            slider.step = '1';
+            slider.value = Math.max(1, Math.min(10, Math.round(slider.value)));
+        }
+
+        renderPresets(unit);
+        recalculateEstimate();
+    }
+
+    function renderPresets(unit) {
+        const container = document.getElementById('calcPresetsContainer');
+        if (!container) return;
+
+        if (unit === 'kg') {
+            container.innerHTML = `
+                <button type="button" data-val="1" onclick="setCalcSlider(1)" class="calc-preset-btn px-2.5 py-1 rounded-lg bg-white text-slate-700 border border-slate-200 text-[11px] font-bold shadow-xs transition-all">1 kg (~4 kemeja)</button>
+                <button type="button" data-val="3" onclick="setCalcSlider(3)" class="calc-preset-btn px-2.5 py-1 rounded-lg bg-white text-slate-700 border border-slate-200 text-[11px] font-bold shadow-xs transition-all">3 kg (Standar)</button>
+                <button type="button" data-val="5" onclick="setCalcSlider(5)" class="calc-preset-btn px-2.5 py-1 rounded-lg bg-white text-slate-700 border border-slate-200 text-[11px] font-bold shadow-xs transition-all">5 kg (1 Keranjang)</button>
+                <button type="button" data-val="10" onclick="setCalcSlider(10)" class="calc-preset-btn px-2.5 py-1 rounded-lg bg-white text-slate-700 border border-slate-200 text-[11px] font-bold shadow-xs transition-all">10 kg (Borongan)</button>
+            `;
+        } else {
+            const u = unit.toLowerCase();
+            container.innerHTML = `
+                <button type="button" data-val="1" onclick="setCalcSlider(1)" class="calc-preset-btn px-2.5 py-1 rounded-lg bg-white text-slate-700 border border-slate-200 text-[11px] font-bold shadow-xs transition-all">1 ${u}</button>
+                <button type="button" data-val="2" onclick="setCalcSlider(2)" class="calc-preset-btn px-2.5 py-1 rounded-lg bg-white text-slate-700 border border-slate-200 text-[11px] font-bold shadow-xs transition-all">2 ${u}</button>
+                <button type="button" data-val="3" onclick="setCalcSlider(3)" class="calc-preset-btn px-2.5 py-1 rounded-lg bg-white text-slate-700 border border-slate-200 text-[11px] font-bold shadow-xs transition-all">3 ${u}</button>
+                <button type="button" data-val="5" onclick="setCalcSlider(5)" class="calc-preset-btn px-2.5 py-1 rounded-lg bg-white text-slate-700 border border-slate-200 text-[11px] font-bold shadow-xs transition-all">5 ${u}</button>
+            `;
+        }
     }
 
     function recalculateEstimate() {
@@ -1952,20 +2513,38 @@
         const serviceName = selectedOption.getAttribute('data-name') || selectedOption.text.split('•')[0].trim();
 
         let qty = parseFloat(slider.value) || 1;
+        if (unit !== 'kg') {
+            qty = Math.round(qty);
+            slider.value = qty;
+        }
 
         const qtyLabel = document.getElementById('calcQtyLabel');
         const minHint = document.getElementById('calcMinHint');
         const sliderDisplay = document.getElementById('calcWeightLabel');
 
         if (qtyLabel) {
-            qtyLabel.textContent = unit === 'kg' ? 'Estimasi Berat Cucian' : 'Jumlah Barang (' + unit.toUpperCase() + ')';
+            qtyLabel.textContent = unit === 'kg' ? 'Estimasi Berat Cucian' : 'Jumlah Cucian (' + unit.toUpperCase() + ')';
         }
         if (minHint) {
-            minHint.textContent = 'Min. order ' + minOrder + ' ' + unit + ' • Ditimbang riil saat cucian tiba di gerai';
+            if (qty < minOrder) {
+                minHint.textContent = 'Ketentuan min. order ' + minOrder + ' ' + unit + ' • Tetap diproses higienis 1 drum sendiri';
+            } else {
+                minHint.textContent = 'Ditimbang riil saat cucian tiba di gerai • Akurasi timbangan 0,01 kg';
+            }
         }
         if (sliderDisplay) {
-            sliderDisplay.textContent = qty.toFixed(1) + ' ' + unit;
+            sliderDisplay.textContent = unit === 'kg' ? qty.toFixed(1) + ' kg' : qty + ' ' + unit;
         }
+
+        const presetBtns = document.querySelectorAll('.calc-preset-btn');
+        presetBtns.forEach(btn => {
+            const val = parseFloat(btn.getAttribute('data-val'));
+            if (val === qty) {
+                btn.className = 'calc-preset-btn px-2.5 py-1 rounded-lg bg-sky-600 text-white border border-sky-600 text-[11px] font-bold shadow-xs transition-all';
+            } else {
+                btn.className = 'calc-preset-btn px-2.5 py-1 rounded-lg bg-white text-slate-700 border border-slate-200 hover:bg-sky-50 hover:text-sky-700 text-[11px] font-bold shadow-xs transition-all';
+            }
+        });
 
         const billableQty = Math.max(qty, minOrder);
         const total = billableQty * price;
@@ -1977,11 +2556,8 @@
 
         const detailsDisplay = document.getElementById('calcPriceDetails');
         if (detailsDisplay) {
-            if (qty < minOrder) {
-                detailsDisplay.textContent = billableQty.toFixed(1) + ' ' + unit + ' (Ketentuan Min) x Rp ' + price.toLocaleString('id-ID');
-            } else {
-                detailsDisplay.textContent = qty.toFixed(1) + ' ' + unit + ' x Rp ' + price.toLocaleString('id-ID');
-            }
+            const displayQtyStr = unit === 'kg' ? (qty < minOrder ? billableQty.toFixed(1) + ' kg (Min ' + minOrder + ' kg)' : qty.toFixed(1) + ' kg') : (qty < minOrder ? billableQty + ' ' + unit + ' (Min ' + minOrder + ')' : qty + ' ' + unit);
+            detailsDisplay.textContent = displayQtyStr + ' x Rp ' + price.toLocaleString('id-ID');
         }
 
         const durationDisplay = document.getElementById('calcDurationText');
@@ -2008,9 +2584,10 @@
 
         const waBtn = document.getElementById('calcWaBtn');
         if (waBtn) {
+            const qtyFormatted = unit === 'kg' ? qty.toFixed(1) + ' kg' : qty + ' ' + unit;
             const message = `Halo Katara Laundry Dinoyo, saya ingin memesan laundry:
 - Layanan: ${serviceName}
-- Estimasi: ${qty.toFixed(1)} ${unit}
+- Estimasi: ${qtyFormatted}
 - Pilihan Parfum: ${perfumeName}
 - Estimasi Biaya: Rp ${total.toLocaleString('id-ID')}
 Mohon informasi jadwal penerimaan / kurir penjemputan. Terima kasih!`;
@@ -2029,6 +2606,8 @@ Mohon informasi jadwal penerimaan / kurir penjemputan. Terima kasih!`;
         const content = document.getElementById('faq-content-' + id);
         const icon = document.getElementById('faq-icon-' + id);
         const btn = document.getElementById('faq-btn-' + id);
+        const card = document.getElementById('faq-card-' + id);
+        const num = document.getElementById('faq-num-' + id);
         if (!content) return;
 
         const isHidden = content.classList.contains('hidden');
@@ -2036,10 +2615,26 @@ Mohon informasi jadwal penerimaan / kurir penjemputan. Terima kasih!`;
             content.classList.remove('hidden');
             if (icon) icon.classList.add('rotate-180');
             if (btn) btn.setAttribute('aria-expanded', 'true');
+            if (card) {
+                card.classList.add('border-sky-300', 'shadow-xs');
+                card.classList.remove('border-slate-200/90', 'shadow-2xs');
+            }
+            if (num) {
+                num.classList.add('bg-sky-600', 'text-white');
+                num.classList.remove('bg-slate-100', 'text-slate-700');
+            }
         } else {
             content.classList.add('hidden');
             if (icon) icon.classList.remove('rotate-180');
             if (btn) btn.setAttribute('aria-expanded', 'false');
+            if (card) {
+                card.classList.remove('border-sky-300', 'shadow-xs');
+                card.classList.add('border-slate-200/90', 'shadow-2xs');
+            }
+            if (num) {
+                num.classList.remove('bg-sky-600', 'text-white');
+                num.classList.add('bg-slate-100', 'text-slate-700');
+            }
         }
     }
 
@@ -2066,8 +2661,28 @@ Mohon informasi jadwal penerimaan / kurir penjemputan. Terima kasih!`;
             select.value = name;
             recalculateEstimate();
         }
+        if (typeof syncCustomPerfumeDropdown === 'function') {
+            syncCustomPerfumeDropdown();
+        }
+
+        const calcSection = document.getElementById('kalkulator');
+        if (calcSection) {
+            calcSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
 
         showToast(`Aroma "${name}" terpilih pada simulasi kalkulator!`);
+    }
+
+    function scrollToTracking(e) {
+        if (e) e.preventDefault();
+        const lacakEl = document.getElementById('lacak');
+        if (lacakEl) {
+            lacakEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            setTimeout(() => {
+                const input = document.getElementById('invoiceInput');
+                if (input) input.focus();
+            }, 450);
+        }
     }
 
     function showToast(message) {
@@ -2279,8 +2894,21 @@ Mohon informasi jadwal penerimaan / kurir penjemputan. Terima kasih!`;
     }
 
     document.addEventListener('DOMContentLoaded', function() {
-        recalculateEstimate();
+        onServiceChange();
+        syncCustomServiceDropdown();
+        syncCustomPerfumeDropdown();
         animateCounters();
+
+        document.addEventListener('click', function(e) {
+            const sDropdown = document.getElementById('customServiceDropdown');
+            if (sDropdown && !sDropdown.contains(e.target)) {
+                closeServiceDropdown();
+            }
+            const pDropdown = document.getElementById('customPerfumeDropdown');
+            if (pDropdown && !pDropdown.contains(e.target)) {
+                closePerfumeDropdown();
+            }
+        });
 
         const form = document.getElementById('trackingForm');
         if (form) {
@@ -2298,6 +2926,8 @@ Mohon informasi jadwal penerimaan / kurir penjemputan. Terima kasih!`;
                 closeTrackingModal();
                 closeTrackingErrorModal();
                 closeDemoModal();
+                closeServiceDropdown();
+                closePerfumeDropdown();
             }
         });
 
@@ -2316,3 +2946,4 @@ Mohon informasi jadwal penerimaan / kurir penjemputan. Terima kasih!`;
     });
 </script>
 @endpush
+

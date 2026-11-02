@@ -180,4 +180,3 @@ class PelacakanController extends Controller
         return view('lacak', compact('services', 'perfumes'));
     }
 }
-

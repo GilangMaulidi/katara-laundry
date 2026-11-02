@@ -21,10 +21,10 @@ class HalamanPublikTest extends TestCase
         $response->assertSee('KATARA LAUNDRY');
         $response->assertSee('Lacak Status Pakaian Anda');
         $response->assertSee('Mengapa Katara Laundry Menjadi Pilihan Terpercaya?');
-        $response->assertSee('Standar Pengerjaan Katara Laundry');
-        $response->assertSee('5 Pilihan Aroma Parfum Pakaian');
-        $response->assertSee('Dipercaya Mahasiswa & Warga Dinoyo', false);
-        $response->assertSee('Galeri Gerai & Operasional Katara Dinoyo', false);
+        $response->assertSee('Standar Higienis');
+        $response->assertSee('Pilihan Aroma Parfum Pakaian');
+        $response->assertSee('Dipercaya Mahasiswa & Warga Dinoyo');
+        $response->assertSee('Galeri Gerai & Operasional Katara Dinoyo');
         $response->assertSee('Pertanyaan yang Sering Diajukan');
         $response->assertSee('Aksi Cepat Mobile');
     }
@@ -259,7 +259,7 @@ class HalamanPublikTest extends TestCase
     {
         $response = $this->get('/parfum');
         $response->assertStatus(200);
-        $response->assertSee('5 Pilihan Aroma Parfum Premium');
+        $response->assertSee('Pilihan Aroma Parfum Premium');
 
         $aliasResponse = $this->get('/aroma-parfum');
         $aliasResponse->assertStatus(200);
@@ -286,4 +286,3 @@ class HalamanPublikTest extends TestCase
         $aliasResponse->assertStatus(200);
     }
 }
-

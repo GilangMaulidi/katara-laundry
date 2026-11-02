@@ -4,9 +4,9 @@ use Illuminate\Support\Str;
 
 return [
 
-'default' => env('CACHE_STORE', 'database'),
+    'default' => env('CACHE_STORE', 'database'),
 
-'stores' => [
+    'stores' => [
 
         'array' => [
             'driver' => 'array',
@@ -80,8 +80,8 @@ return [
 
     ],
 
-'prefix' => env('CACHE_PREFIX', Str::slug((string) env('APP_NAME', 'laravel')).'-cache-'),
+    'prefix' => env('CACHE_PREFIX', Str::slug((string) env('APP_NAME', 'laravel')).'-cache-'),
 
-'serializable_classes' => false,
+    'serializable_classes' => false,
 
 ];

@@ -260,4 +260,3 @@ class UjiSistemMenyeluruhTest extends TestCase
         $response->assertSee('Total Omset Bersih');
     }
 }
-

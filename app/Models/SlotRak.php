@@ -79,4 +79,3 @@ class SlotRak extends Model
         $this->attributes['catatan'] = $value;
     }
 }
-

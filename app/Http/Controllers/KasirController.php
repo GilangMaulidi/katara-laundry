@@ -253,4 +253,3 @@ class KasirController extends Controller
         ]);
     }
 }
-

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="@yield('meta_description', 'Katara Laundry Dinoyo Malang - Layanan laundry kiloan & satuan modern, higienis 1 mesin 1 pelanggan, gas dryer 100% tuntas bebas apek, setrika uap boiler, 5 pilihan aroma parfum, dan pelacakan status cucian real-time.')">
+    <meta name="description" content="@yield('meta_description', 'Katara Laundry Dinoyo Malang - Layanan laundry kiloan & satuan modern, higienis 1 mesin 1 pelanggan, gas dryer 100% tuntas bebas apek, setrika uap boiler, pilihan aroma parfum premium, dan pelacakan status cucian real-time.')">
 
     <title>@yield('title', 'Katara Laundry Dinoyo Malang - Bersih, Higienis & Lacak Real-Time')</title>
     <link rel="icon" type="image/jpeg" href="{{ asset('images/logo.katara.jpg') }}">
@@ -98,8 +98,8 @@
         }
 
         .heading-section {
-            font-size: clamp(1.65rem, 2.8vw + 0.25rem, 2.5rem);
-            line-height: 1.2;
+            font-size: clamp(1.45rem, 2vw + 0.35rem, 2.25rem);
+            line-height: 1.25;
             letter-spacing: -0.025em;
         }
 
@@ -125,15 +125,15 @@
 
         .glass-dark {
             background: rgba(9, 30, 58, 0.94);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
+
+
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .glass-card {
             background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
+
+
             border: 1px solid rgba(226, 232, 240, 0.9);
         }
 
@@ -183,6 +183,20 @@
                 transform: none !important;
             }
         }
+        optgroup {
+            background-color: #0284c7 !important;
+            color: #ffffff !important;
+            font-weight: 700 !important;
+            font-style: normal !important;
+            padding: 4px 8px;
+        }
+
+        optgroup option {
+            background-color: #ffffff !important;
+            color: #0f172a !important;
+            font-weight: 400 !important;
+            padding: 4px 8px;
+        }
     </style>
 
     @stack('styles')
@@ -231,8 +245,8 @@
         </div>
     </div>
 
-    <header class="bg-[#091e3a]/95 backdrop-blur-md border-b border-sky-950/80 sticky top-0 z-40 transition-all shadow-lg shadow-black/15">
-        <div class="site-container h-18 sm:h-20 flex items-center justify-between gap-2 lg:gap-4 xl:gap-6 flex-nowrap">
+    <header class="bg-[#091e3a] border-b border-sky-950/80 sticky top-0 z-40 transition-all shadow-md">
+        <div class="site-container h-16 flex items-center justify-between gap-2 lg:gap-4 xl:gap-6 flex-nowrap">
             
             <a href="{{ route('home') }}" class="flex items-center group shrink-0" aria-label="Beranda Katara Laundry">
                 <div class="leading-tight">
@@ -249,52 +263,52 @@
             </a>
 
             <nav id="desktopNav" class="hidden lg:flex items-center justify-center gap-0.5 xl:gap-1 text-xs xl:text-sm font-semibold text-slate-300 shrink-0">
-                <a href="{{ route('home') }}" class="nav-link h-8 inline-flex items-center justify-center px-2.5 xl:px-3 rounded-lg hover:text-white hover:bg-sky-900/60 transition-all whitespace-nowrap leading-none {{ request()->routeIs('home') ? 'text-white bg-sky-900/80 font-bold ring-1 ring-sky-700/60' : '' }}" data-section="hero">
+                <a href="{{ route('home') }}" class="nav-link h-9 inline-flex items-center justify-center px-2.5 xl:px-3 rounded-lg hover:text-white hover:bg-sky-900/60 transition-all whitespace-nowrap leading-none {{ request()->routeIs('home') ? 'text-white bg-sky-900/80 font-bold ring-1 ring-sky-700/60' : '' }}" data-section="hero">
                     <span class="leading-none">Beranda</span>
                 </a>
-                <a href="{{ route('public.layanan') }}" class="nav-link h-8 inline-flex items-center justify-center px-2.5 xl:px-3 rounded-lg hover:text-white hover:bg-sky-900/60 transition-all whitespace-nowrap leading-none {{ request()->routeIs('public.layanan') ? 'text-white bg-sky-900/80 font-bold ring-1 ring-sky-700/60' : '' }}" data-section="layanan">
+                <a href="{{ route('public.layanan') }}" class="nav-link h-9 inline-flex items-center justify-center px-2.5 xl:px-3 rounded-lg hover:text-white hover:bg-sky-900/60 transition-all whitespace-nowrap leading-none {{ request()->routeIs('public.layanan') ? 'text-white bg-sky-900/80 font-bold ring-1 ring-sky-700/60' : '' }}" data-section="layanan">
                     <span class="leading-none">Layanan &amp; Tarif</span>
                 </a>
-                <a href="{{ route('public.kalkulator') }}" class="nav-link h-8 inline-flex items-center justify-center px-2.5 xl:px-3 rounded-lg hover:text-white hover:bg-sky-900/60 transition-all whitespace-nowrap leading-none {{ request()->routeIs('public.kalkulator') ? 'text-white bg-sky-900/80 font-bold ring-1 ring-sky-700/60' : '' }}" data-section="kalkulator">
+                <a href="{{ route('public.kalkulator') }}" class="nav-link h-9 inline-flex items-center justify-center px-2.5 xl:px-3 rounded-lg hover:text-white hover:bg-sky-900/60 transition-all whitespace-nowrap leading-none {{ request()->routeIs('public.kalkulator') ? 'text-white bg-sky-900/80 font-bold ring-1 ring-sky-700/60' : '' }}" data-section="kalkulator">
                     <span class="leading-none">Estimasi Biaya</span>
                 </a>
-                <a href="{{ route('public.keunggulan') }}" class="nav-link h-8 inline-flex items-center justify-center px-2.5 xl:px-3 rounded-lg hover:text-white hover:bg-sky-900/60 transition-all whitespace-nowrap leading-none {{ request()->routeIs('public.keunggulan') ? 'text-white bg-sky-900/80 font-bold ring-1 ring-sky-700/60' : '' }}" data-section="keunggulan">
+                <a href="{{ route('public.keunggulan') }}" class="nav-link h-9 inline-flex items-center justify-center px-2.5 xl:px-3 rounded-lg hover:text-white hover:bg-sky-900/60 transition-all whitespace-nowrap leading-none {{ request()->routeIs('public.keunggulan') ? 'text-white bg-sky-900/80 font-bold ring-1 ring-sky-700/60' : '' }}" data-section="keunggulan">
                     <span class="leading-none">Keunggulan</span>
                 </a>
-                <a href="{{ route('public.galeri') }}" class="nav-link h-8 inline-flex items-center justify-center px-2.5 xl:px-3 rounded-lg hover:text-white hover:bg-sky-900/60 transition-all whitespace-nowrap leading-none {{ request()->routeIs('public.galeri') ? 'text-white bg-sky-900/80 font-bold ring-1 ring-sky-700/60' : '' }}" data-section="galeri">
+                <a href="{{ route('public.galeri') }}" class="nav-link h-9 inline-flex items-center justify-center px-2.5 xl:px-3 rounded-lg hover:text-white hover:bg-sky-900/60 transition-all whitespace-nowrap leading-none {{ request()->routeIs('public.galeri') ? 'text-white bg-sky-900/80 font-bold ring-1 ring-sky-700/60' : '' }}" data-section="galeri">
                     <span class="leading-none">Galeri Gerai</span>
                 </a>
 
                 <div class="relative" id="moreDropdownContainer">
-                    <button type="button" id="moreDropdownBtn" class="nav-link h-8 inline-flex items-center justify-center gap-1.5 px-2.5 xl:px-3 rounded-lg hover:text-white hover:bg-sky-900/60 transition-all font-semibold text-slate-300 whitespace-nowrap leading-none {{ request()->routeIs(['public.cara_pesan', 'public.parfum', 'public.faq', 'public.lokasi']) ? 'text-white bg-sky-900/80 font-bold ring-1 ring-sky-700/60' : '' }}" aria-expanded="false" aria-haspopup="true">
+                    <button type="button" id="moreDropdownBtn" class="nav-link h-9 inline-flex items-center justify-center gap-1.5 px-2.5 xl:px-3 rounded-lg hover:text-white hover:bg-sky-900/60 transition-all font-semibold text-slate-300 whitespace-nowrap leading-none {{ request()->routeIs(['public.cara_pesan', 'public.parfum', 'public.faq', 'public.lokasi']) ? 'text-white bg-sky-900/80 font-bold ring-1 ring-sky-700/60' : '' }}" aria-expanded="false" aria-haspopup="true">
                         <span class="leading-none">Lainnya</span>
                         <i class="fa-solid fa-chevron-down text-[10px] text-sky-400 transition-transform duration-200 shrink-0 leading-none" id="moreDropdownIcon"></i>
                     </button>
-                    <div id="moreDropdownMenu" class="hidden absolute top-full right-0 pt-2 w-60 z-50">
-                        <div class="bg-[#08172c] rounded-2xl shadow-2xl border border-sky-800/80 py-2 divide-y divide-sky-950/60 overflow-hidden">
+                    <div id="moreDropdownMenu" class="hidden absolute top-full right-0 pt-1.5 w-60 z-50">
+                        <div class="bg-[#08172c] rounded-xl shadow-2xl border border-sky-800/80 py-1.5 divide-y divide-sky-950/60 overflow-hidden">
                             <div class="py-1">
-                                <a href="{{ route('public.cara_pesan') }}" class="flex items-center gap-3 px-4 py-2.5 text-xs font-semibold text-slate-300 hover:bg-sky-900/70 hover:text-white transition-colors {{ request()->routeIs('public.cara_pesan') ? 'bg-sky-900/60 text-white font-bold' : '' }}">
+                                <a href="{{ route('public.cara_pesan') }}" class="flex items-center gap-3 px-3.5 py-2 text-xs font-semibold text-slate-300 hover:bg-sky-900/70 hover:text-white transition-colors {{ request()->routeIs('public.cara_pesan') ? 'bg-sky-900/60 text-white font-bold' : '' }}">
                                     <i class="fa-solid fa-list-check text-sky-400 w-4 text-center"></i>
                                     <div>
                                         <span class="block">Cara Pesan</span>
                                         <span class="text-[10px] text-slate-400 font-normal">5 alur pencucian di gerai</span>
                                     </div>
                                 </a>
-                                <a href="{{ route('public.parfum') }}" class="flex items-center gap-3 px-4 py-2.5 text-xs font-semibold text-slate-300 hover:bg-sky-900/70 hover:text-white transition-colors {{ request()->routeIs('public.parfum') ? 'bg-sky-900/60 text-white font-bold' : '' }}">
+                                <a href="{{ route('public.parfum') }}" class="flex items-center gap-3 px-3.5 py-2 text-xs font-semibold text-slate-300 hover:bg-sky-900/70 hover:text-white transition-colors {{ request()->routeIs('public.parfum') ? 'bg-sky-900/60 text-white font-bold' : '' }}">
                                     <i class="fa-solid fa-spray-can text-purple-400 w-4 text-center"></i>
                                     <div>
                                         <span class="block">Varian Parfum</span>
-                                        <span class="text-[10px] text-slate-400 font-normal">5 aroma tahan 14 hari</span>
+                                        <span class="text-[10px] text-slate-400 font-normal">Aroma tahan 14 hari</span>
                                     </div>
                                 </a>
-                                <a href="{{ route('public.faq') }}" class="flex items-center gap-3 px-4 py-2.5 text-xs font-semibold text-slate-300 hover:bg-sky-900/70 hover:text-white transition-colors {{ request()->routeIs(['public.faq']) ? 'bg-sky-900/60 text-white font-bold' : '' }}">
+                                <a href="{{ route('public.faq') }}" class="flex items-center gap-3 px-3.5 py-2 text-xs font-semibold text-slate-300 hover:bg-sky-900/70 hover:text-white transition-colors {{ request()->routeIs(['public.faq']) ? 'bg-sky-900/60 text-white font-bold' : '' }}">
                                     <i class="fa-solid fa-circle-question text-amber-400 w-4 text-center"></i>
                                     <div>
                                         <span class="block">Tanya Jawab (FAQ)</span>
                                         <span class="text-[10px] text-slate-400 font-normal">Pertanyaan umum seputar laundry</span>
                                     </div>
                                 </a>
-                                <a href="{{ route('public.lokasi') }}" class="flex items-center gap-3 px-4 py-2.5 text-xs font-semibold text-slate-300 hover:bg-sky-900/70 hover:text-white transition-colors {{ request()->routeIs('public.lokasi') ? 'bg-sky-900/60 text-white font-bold' : '' }}">
+                                <a href="{{ route('public.lokasi') }}" class="flex items-center gap-3 px-3.5 py-2 text-xs font-semibold text-slate-300 hover:bg-sky-900/70 hover:text-white transition-colors {{ request()->routeIs('public.lokasi') ? 'bg-sky-900/60 text-white font-bold' : '' }}">
                                     <i class="fa-solid fa-map-location-dot text-rose-400 w-4 text-center"></i>
                                     <div>
                                         <span class="block">Lokasi &amp; Jam Buka</span>
@@ -307,27 +321,27 @@
                 </div>
             </nav>
 
-            <div class="hidden sm:flex items-center gap-1.5 xl:gap-2 shrink-0">
-                <a href="{{ request()->routeIs('home') ? '#lacak' : route('public.lacak') }}" id="headerLacakBtn" class="nav-lacak-link inline-flex items-center justify-center gap-1.5 h-8 px-3.5 rounded-lg text-xs font-bold leading-none transition-all shrink-0 whitespace-nowrap shadow-xs active:scale-[0.99] {{ request()->routeIs(['public.lacak', 'tracking.index']) ? 'bg-sky-600 hover:bg-sky-500 text-white shadow-xs border border-sky-400/50' : 'bg-sky-950 text-sky-200 border border-sky-700/70 hover:bg-sky-900 hover:text-white' }}">
+            <div class="hidden sm:flex items-center gap-2 shrink-0">
+                <a href="{{ route('public.lacak') }}" id="headerLacakBtn" class="nav-lacak-link inline-flex items-center justify-center gap-1.5 h-9 w-28 rounded-xl text-xs font-bold leading-none transition-all shrink-0 whitespace-nowrap shadow-xs active:scale-[0.99] {{ request()->routeIs(['public.lacak', 'tracking.index']) ? 'bg-sky-600 hover:bg-sky-500 text-white shadow-xs border border-sky-400/50' : 'bg-sky-950 text-sky-200 border border-sky-700/70 hover:bg-sky-900 hover:text-white' }}">
                     <i class="fa-solid fa-magnifying-glass text-sky-400 text-[11px] shrink-0 leading-none"></i>
                     <span class="leading-none">Lacak Nota</span>
                 </a>
 
                 @auth
-                    <a href="{{ route('dashboard') }}" class="inline-flex items-center justify-center gap-1.5 h-8 px-3 rounded-lg bg-sky-600 hover:bg-sky-500 text-white text-xs font-bold leading-none transition-all shadow-xs border border-sky-500 active:scale-[0.99] shrink-0 whitespace-nowrap" title="Buka Dasbor Staf">
+                    <a href="{{ route('dashboard') }}" class="inline-flex items-center justify-center gap-1.5 h-9 w-28 rounded-xl bg-sky-600 hover:bg-sky-500 text-white text-xs font-bold leading-none transition-all shadow-xs border border-sky-500 active:scale-[0.99] shrink-0 whitespace-nowrap" title="Buka Dasbor Staf">
                         <i class="fa-solid fa-gauge-high text-[11px] shrink-0 leading-none"></i>
                         <span class="leading-none">Dasbor</span>
                     </a>
                 @else
-                    <a href="{{ route('login') }}" class="inline-flex items-center justify-center gap-1.5 h-8 px-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-white border border-slate-700 text-xs font-bold leading-none transition-all shadow-xs active:scale-[0.99] shrink-0 whitespace-nowrap" title="Masuk Akun Staf Gerai">
+                    <a href="{{ route('login') }}" class="inline-flex items-center justify-center gap-1.5 h-9 w-28 rounded-xl bg-slate-900 hover:bg-slate-800 text-white border border-slate-700/80 text-xs font-bold leading-none transition-all shadow-xs active:scale-[0.99] shrink-0 whitespace-nowrap" title="Masuk Akun Staf Gerai">
                         <i class="fa-solid fa-lock text-slate-300 text-[10px] shrink-0 leading-none"></i>
-                        <span class="leading-none">Staf</span>
+                        <span class="leading-none">Masuk Staf</span>
                     </a>
                 @endauth
             </div>
 
             <div class="flex items-center lg:hidden shrink-0">
-                <button type="button" id="mobileMenuBtn" class="w-8.5 h-8.5 min-w-[34px] min-h-[34px] rounded-lg bg-[#08172c] text-slate-200 border border-sky-800 hover:bg-sky-900 hover:text-white focus:outline-none flex items-center justify-center interactive-btn shrink-0" aria-label="Buka Menu Navigasi" aria-expanded="false">
+                <button type="button" id="mobileMenuBtn" class="w-9 h-9 min-w-[36px] min-h-[36px] rounded-xl bg-[#08172c] text-slate-200 border border-sky-800 hover:bg-sky-900 hover:text-white focus:outline-none flex items-center justify-center interactive-btn shrink-0" aria-label="Buka Menu Navigasi" aria-expanded="false">
                     <i class="fa-solid fa-bars text-sm text-slate-200" id="mobileMenuIcon"></i>
                 </button>
             </div>
@@ -347,7 +361,7 @@
                 <a href="{{ route('public.kalkulator') }}" class="p-3 rounded-xl bg-[#0b1d38] hover:bg-sky-900 hover:text-sky-300 transition-colors flex items-center gap-2.5 border border-sky-900/60 {{ request()->routeIs('public.kalkulator') ? 'border-sky-400 text-white font-bold bg-sky-950' : '' }}">
                     <i class="fa-solid fa-calculator text-amber-400 text-sm"></i> Estimasi Biaya
                 </a>
-                <a href="{{ request()->routeIs('home') ? '#lacak' : route('public.lacak') }}" class="nav-lacak-link p-3 rounded-xl bg-[#0b1d38] hover:bg-sky-900 hover:text-sky-300 transition-colors flex items-center gap-2.5 border border-sky-900/60 {{ request()->routeIs(['public.lacak', 'tracking.index']) ? 'border-sky-400 text-white font-bold bg-sky-950' : '' }}">
+                <a href="{{ route('public.lacak') }}" class="nav-lacak-link p-3 rounded-xl bg-[#0b1d38] hover:bg-sky-900 hover:text-sky-300 transition-colors flex items-center gap-2.5 border border-sky-900/60 {{ request()->routeIs(['public.lacak', 'tracking.index']) ? 'border-sky-400 text-white font-bold bg-sky-950' : '' }}">
                     <i class="fa-solid fa-magnifying-glass text-sky-400 text-sm"></i> Lacak Nota
                 </a>
                 <a href="{{ route('public.keunggulan') }}" class="p-3 rounded-xl bg-[#0b1d38] hover:bg-sky-900 hover:text-sky-300 transition-colors flex items-center gap-2.5 border border-sky-900/60 {{ request()->routeIs('public.keunggulan') ? 'border-sky-400 text-white font-bold bg-sky-950' : '' }}">
@@ -400,35 +414,35 @@
         </button>
     </div>
 
-    <footer class="bg-white text-slate-600 pt-12 sm:pt-16 lg:pt-20 pb-14 border-t border-slate-200 text-sm mt-12 sm:mt-16 lg:mt-20">
-        <div class="site-container space-y-12">
+    <footer class="bg-white text-slate-600 pt-8 sm:pt-10 pb-8 border-t border-slate-200 text-sm mt-8 sm:mt-10">
+        <div class="site-container space-y-6 sm:space-y-7">
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
                 
-                <div class="space-y-4">
-                    <div class="flex items-center gap-2.5 text-slate-900 font-extrabold text-lg">
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2 text-slate-900 font-extrabold text-base sm:text-lg">
                         <img src="{{ asset('images/logo.katara.jpg') }}" alt="Katara Laundry Logo" class="w-9 h-9 rounded-none object-cover border border-slate-200 shadow-xs">
                         <span class="tracking-tight font-black">KATARA LAUNDRY</span>
                     </div>
                     <p class="text-xs text-slate-500 leading-relaxed font-normal">
                         Layanan laundry kiloan & satuan modern di Dinoyo, Lowokwaru, Malang. Menerapkan SOP ketat 1 mesin 1 pelanggan, pengering gas dryer anti-apek, setrika uap presisi, serta rak fisik 45 slot terintegrasi pelacakan nota online.
                     </p>
-                    <div class="flex items-center gap-2.5 text-slate-500 text-sm pt-1">
-                        <a href="https://instagram.com" target="_blank" class="w-9 h-9 rounded-xl bg-white border border-slate-200 hover:bg-sky-600 hover:text-white hover:border-sky-600 flex items-center justify-center transition-all shadow-xs" title="Instagram Katara Laundry">
+                    <div class="flex items-center gap-2 text-slate-500 text-xs pt-0.5">
+                        <a href="https://instagram.com" target="_blank" class="w-8 h-8 rounded-lg bg-white border border-slate-200 hover:bg-sky-600 hover:text-white hover:border-sky-600 flex items-center justify-center transition-all shadow-xs" title="Instagram Katara Laundry">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
-                        <a href="https://tiktok.com" target="_blank" class="w-9 h-9 rounded-xl bg-white border border-slate-200 hover:bg-sky-600 hover:text-white hover:border-sky-600 flex items-center justify-center transition-all shadow-xs" title="TikTok Katara Laundry">
+                        <a href="https://tiktok.com" target="_blank" class="w-8 h-8 rounded-lg bg-white border border-slate-200 hover:bg-sky-600 hover:text-white hover:border-sky-600 flex items-center justify-center transition-all shadow-xs" title="TikTok Katara Laundry">
                             <i class="fa-brands fa-tiktok"></i>
                         </a>
-                        <a href="https://wa.me/6281234567890" target="_blank" class="w-9 h-9 rounded-xl bg-white border border-slate-200 hover:bg-emerald-600 hover:text-white hover:border-emerald-600 flex items-center justify-center transition-all shadow-xs" title="WhatsApp Customer Service">
+                        <a href="https://wa.me/6281234567890" target="_blank" class="w-8 h-8 rounded-lg bg-white border border-slate-200 hover:bg-emerald-600 hover:text-white hover:border-emerald-600 flex items-center justify-center transition-all shadow-xs" title="WhatsApp Customer Service">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
                     </div>
                 </div>
 
-                <div class="space-y-3">
+                <div class="space-y-2.5">
                     <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider">Layanan & Fasilitas</h4>
-                    <ul class="text-xs space-y-2.5 text-slate-500 font-medium">
+                    <ul class="text-xs space-y-1.5 text-slate-500 font-medium">
                         <li>
                             <a href="{{ route('public.layanan') }}" class="hover:text-sky-600 transition-colors flex items-center gap-2">
                                 <i class="fa-solid fa-angle-right text-[10px] text-sky-500"></i>
@@ -454,7 +468,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ request()->routeIs('home') ? '#lacak' : route('public.lacak') }}" class="nav-lacak-link hover:text-sky-600 transition-colors flex items-center gap-2">
+                            <a href="{{ route('public.lacak') }}" class="nav-lacak-link hover:text-sky-600 transition-colors flex items-center gap-2">
                                 <i class="fa-solid fa-angle-right text-[10px] text-emerald-500"></i>
                                 <span>Cek Status Nota Real-Time</span>
                             </a>
@@ -468,9 +482,9 @@
                     </ul>
                 </div>
 
-                <div class="space-y-3">
+                <div class="space-y-2.5">
                     <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider">Jam Buka Gerai</h4>
-                    <div class="p-4 rounded-2xl bg-white border border-slate-200 text-xs space-y-2.5 shadow-xs">
+                    <div class="p-3 sm:p-3.5 rounded-xl bg-white border border-slate-200 text-xs space-y-1.5 shadow-xs">
                         <div class="flex justify-between items-center text-slate-600">
                             <span>Senin &ndash; Sabtu:</span>
                             <strong class="text-slate-900 font-mono">07.00 - 21.00 WIB</strong>
@@ -490,56 +504,58 @@
                     </div>
                 </div>
 
-                <div class="space-y-3">
+                <div class="space-y-2.5">
                     <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider">Lokasi Dinoyo Malang</h4>
                     <p class="text-xs text-slate-500 leading-relaxed font-normal">
                         <i class="fa-solid fa-location-dot text-rose-500 mr-1.5"></i>
                         Jl. MT. Haryono / Dinoyo, Kec. Lowokwaru, Kota Malang (Sangat dekat gerbang UB, UM, Polinema & UIN).
                     </p>
-                    <div class="text-xs space-y-1.5 text-slate-500">
-                        <p><i class="fa-brands fa-whatsapp text-emerald-500 mr-1.5"></i> WhatsApp: <strong class="text-slate-800 font-semibold">0812-3456-7890</strong></p>
-                        <p><i class="fa-regular fa-envelope text-sky-500 mr-1.5"></i> Email: info@kataralaundry.com</p>
+                    <div class="text-xs space-y-1 text-slate-500">
+                        <p><i class="fa-brands fa-whatsapp text-emerald-500 mr-1.5"></i> WhatsApp: <a href="https://wa.me/6281234567890?text=Halo%20Katara%20Laundry%20Dinoyo,%20saya%20ingin%20tanya%20layanan" target="_blank" class="text-slate-800 font-semibold hover:text-emerald-600 transition-colors">0812-3456-7890</a></p>
+                        <p><i class="fa-regular fa-envelope text-sky-500 mr-1.5"></i> Email: <a href="mailto:info@kataralaundry.com" class="hover:text-sky-600 transition-colors">info@kataralaundry.com</a></p>
                     </div>
-                    <a href="https://maps.google.com/?q=Dinoyo+Malang" target="_blank" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-sky-50 hover:bg-sky-100 text-sky-700 text-xs font-bold transition-colors border border-sky-200 shadow-xs">
-                        <i class="fa-solid fa-diamond-turn-right text-sky-600"></i>
-                        <span>Buka Rute Google Maps</span>
-                    </a>
+                    <div class="pt-0.5">
+                        <a href="https://maps.google.com/?q=Dinoyo+Malang" target="_blank" class="inline-flex items-center justify-center gap-1.5 h-9 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold leading-none transition-all shadow-xs border border-slate-700 active:scale-[0.99]">
+                            <i class="fa-solid fa-diamond-turn-right text-sky-400"></i>
+                            <span>Buka Rute Google Maps</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 py-6 border-y border-slate-200 text-center text-xs">
-                <div class="p-2 space-y-1">
-                    <i class="fa-solid fa-shield-halved text-emerald-500 text-xl"></i>
-                    <p class="font-bold text-slate-900">1 Mesin 1 Pelanggan</p>
-                    <p class="text-[11px] text-slate-500">Higienis & tidak dicampur</p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-2.5 py-3 border-y border-slate-200 text-center text-xs">
+                <div class="p-2 sm:p-2.5 rounded-xl bg-slate-50/70 border border-slate-200/70 space-y-0.5 shadow-2xs hover:border-slate-300 transition-all">
+                    <i class="fa-solid fa-shield-halved text-emerald-500 text-base"></i>
+                    <p class="font-bold text-slate-900 text-xs">1 Mesin 1 Pelanggan</p>
+                    <p class="text-[11px] text-slate-500">Higienis &amp; tidak dicampur</p>
                 </div>
-                <div class="p-2 space-y-1">
-                    <i class="fa-solid fa-fire text-orange-500 text-xl"></i>
-                    <p class="font-bold text-slate-900">Gas Dryer 100% Kering</p>
+                <div class="p-2 sm:p-2.5 rounded-xl bg-slate-50/70 border border-slate-200/70 space-y-0.5 shadow-2xs hover:border-slate-300 transition-all">
+                    <i class="fa-solid fa-fire text-orange-500 text-base"></i>
+                    <p class="font-bold text-slate-900 text-xs">Gas Dryer 100% Kering</p>
                     <p class="text-[11px] text-slate-500">Bebas bau apek di segala cuaca</p>
                 </div>
-                <div class="p-2 space-y-1">
-                    <i class="fa-solid fa-rotate-left text-sky-500 text-xl"></i>
-                    <p class="font-bold text-slate-900">Garansi Cuci Bersih</p>
+                <div class="p-2 sm:p-2.5 rounded-xl bg-slate-50/70 border border-slate-200/70 space-y-0.5 shadow-2xs hover:border-slate-300 transition-all">
+                    <i class="fa-solid fa-rotate-left text-sky-500 text-base"></i>
+                    <p class="font-bold text-slate-900 text-xs">Garansi Cuci Bersih</p>
                     <p class="text-[11px] text-slate-500">Cuci ulang gratis jika kurang rapi</p>
                 </div>
-                <div class="p-2 space-y-1">
-                    <i class="fa-solid fa-cubes-stacked text-purple-500 text-xl"></i>
-                    <p class="font-bold text-slate-900">45 Slot Rak Fisik</p>
-                    <p class="text-[11px] text-slate-500">Pakaian aman & terdata barcode</p>
+                <div class="p-2 sm:p-2.5 rounded-xl bg-slate-50/70 border border-slate-200/70 space-y-0.5 shadow-2xs hover:border-slate-300 transition-all">
+                    <i class="fa-solid fa-cubes-stacked text-purple-500 text-base"></i>
+                    <p class="font-bold text-slate-900 text-xs">45 Slot Rak Fisik</p>
+                    <p class="text-[11px] text-slate-500">Pakaian aman &amp; terdata barcode</p>
                 </div>
             </div>
 
-            <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3">
+            <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-2">
                 <p>&copy; {{ date('Y') }} Katara Laundry Malang. Seluruh hak cipta dilindungi.</p>
                 <p class="text-slate-400">Sistem Manajemen Laundry & Pelacakan Mandiri Gerai Dinoyo.</p>
             </div>
         </div>
     </footer>
 
-    <aside aria-label="Aksi Cepat Mobile" class="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#071529]/95 backdrop-blur-md border-t border-sky-950 p-2.5 shadow-2xl">
+    <aside aria-label="Aksi Cepat Mobile" class="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#071529] border-t border-sky-950 p-2.5 shadow-2xl">
         <div class="flex items-center gap-2">
-            <a href="{{ request()->routeIs('home') ? '#lacak' : route('public.lacak') }}" class="nav-lacak-link flex-1 py-2.5 min-h-[44px] rounded-xl bg-sky-950 text-sky-200 border border-sky-700/70 font-bold text-xs flex items-center justify-center gap-2 shadow-xs transition-colors {{ request()->routeIs(['public.lacak', 'tracking.index']) ? 'border-sky-400 text-white font-black bg-sky-900' : '' }}">
+            <a href="{{ route('public.lacak') }}" class="nav-lacak-link flex-1 py-2.5 min-h-[44px] rounded-xl bg-sky-950 text-sky-200 border border-sky-700/70 font-bold text-xs flex items-center justify-center gap-2 shadow-xs transition-colors {{ request()->routeIs(['public.lacak', 'tracking.index']) ? 'border-sky-400 text-white font-black bg-sky-900' : '' }}">
                 <i class="fa-solid fa-magnifying-glass text-sky-400 text-xs"></i>
                 <span>Lacak Nota</span>
             </a>

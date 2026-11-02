@@ -2,9 +2,9 @@
 
 return [
 
-'default' => env('QUEUE_CONNECTION', 'database'),
+    'default' => env('QUEUE_CONNECTION', 'database'),
 
-'connections' => [
+    'connections' => [
 
         'sync' => [
             'driver' => 'sync',
@@ -66,12 +66,12 @@ return [
 
     ],
 
-'batching' => [
+    'batching' => [
         'database' => env('DB_CONNECTION', 'sqlite'),
         'table' => 'job_batches',
     ],
 
-'failed' => [
+    'failed' => [
         'driver' => env('QUEUE_FAILED_DRIVER', 'database-uuids'),
         'database' => env('DB_CONNECTION', 'sqlite'),
         'table' => 'failed_jobs',

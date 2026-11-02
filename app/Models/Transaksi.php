@@ -361,4 +361,3 @@ class Transaksi extends Model
         $this->attributes['wa_pengingat_terkirim'] = (bool) $value;
     }
 }
-

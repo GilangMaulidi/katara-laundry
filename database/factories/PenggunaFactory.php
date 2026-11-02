@@ -34,4 +34,3 @@ class PenggunaFactory extends Factory
         ]);
     }
 }
-

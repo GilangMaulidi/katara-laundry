@@ -52,4 +52,3 @@ class LaporanController extends Controller
         ));
     }
 }
-

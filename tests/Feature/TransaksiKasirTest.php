@@ -176,4 +176,3 @@ class TransaksiKasirTest extends TestCase
         ]);
     }
 }
-

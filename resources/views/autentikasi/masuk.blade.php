@@ -83,6 +83,14 @@
                 </div>
             @endif
 
+            <div id="role-selected-notice" class="hidden mb-2.5 p-2 rounded-xl bg-amber-50 border border-amber-200/80 text-amber-900 text-xs flex items-center justify-between gap-2" role="status">
+                <div class="flex items-center gap-1.5 min-w-0">
+                    <i class="fa-solid fa-key text-amber-600 text-xs shrink-0" aria-hidden="true"></i>
+                    <span class="text-[11px] leading-tight">Akun <strong id="selected-role-name"></strong> dipilih. Wajib isi kata sandi:</span>
+                </div>
+                <span class="text-[10px] text-amber-800 font-mono font-bold bg-white px-1.5 py-0.5 rounded border border-amber-200 shrink-0">password</span>
+            </div>
+
             <form action="{{ route('login.attempt') }}" method="POST" class="space-y-2.5">
                 @csrf
 
@@ -175,48 +183,51 @@
 
             @if(app()->environment('local'))
             <div class="mt-3 pt-2.5 border-t border-slate-200/80">
-                <div class="flex items-center justify-center gap-2 mb-2">
+                <div class="flex items-center justify-center gap-2 mb-1.5">
                     <div class="h-px bg-slate-200 flex-1"></div>
-                    <span class="text-[10px] font-semibold text-slate-400 tracking-wider uppercase">Akses Cepat Pengujian (Lokal)</span>
+                    <span class="text-[10px] font-semibold text-slate-400 tracking-wider uppercase">Pilih Akun Staf (Wajib Masukkan Sandi)</span>
                     <div class="h-px bg-slate-200 flex-1"></div>
                 </div>
 
                 <div class="grid grid-cols-3 gap-2">
-                    <a 
-                        href="{{ route('demo.login', 'owner') }}" 
-                        class="group flex flex-col items-center justify-center py-1.5 px-1 rounded-xl bg-slate-50 hover:bg-sky-50 border border-slate-200 hover:border-sky-300 focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all text-center"
-                        title="Masuk sebagai Owner / Admin"
+                    <button 
+                        type="button" 
+                        onclick="selectRole('Owner', 'admin@kataralaundry.com')" 
+                        class="group flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-slate-50 hover:bg-sky-50 border border-slate-200 hover:border-sky-300 focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all text-center cursor-pointer active:scale-95"
+                        title="Pilih akun Owner / Admin (Wajib Masukkan Password)"
                     >
                         <div class="w-6 h-6 rounded-lg bg-sky-100 group-hover:bg-brand-600 flex items-center justify-center text-brand-600 group-hover:text-white transition-colors mb-0.5">
                             <i class="fa-solid fa-user-tie text-[10px]" aria-hidden="true"></i>
                         </div>
                         <span class="text-[11px] font-bold text-slate-800 group-hover:text-brand-700 transition-colors">Owner</span>
                         <span class="text-[9px] text-slate-500">Admin Gerai</span>
-                    </a>
+                    </button>
 
-                    <a 
-                        href="{{ route('demo.login', 'kasir') }}" 
-                        class="group flex flex-col items-center justify-center py-1.5 px-1 rounded-xl bg-amber-50/50 hover:bg-amber-50 border border-amber-200/70 hover:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-500 transition-all text-center"
-                        title="Masuk sebagai Kasir Dinoyo"
+                    <button 
+                        type="button" 
+                        onclick="selectRole('Kasir', 'kasir@kataralaundry.com')" 
+                        class="group flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-amber-50/50 hover:bg-amber-50 border border-amber-200/70 hover:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-500 transition-all text-center cursor-pointer active:scale-95"
+                        title="Pilih akun Kasir Dinoyo (Wajib Masukkan Password)"
                     >
                         <div class="w-6 h-6 rounded-lg bg-amber-100 group-hover:bg-amber-500 flex items-center justify-center text-amber-600 group-hover:text-white transition-colors mb-0.5">
                             <i class="fa-solid fa-cash-register text-[10px]" aria-hidden="true"></i>
                         </div>
                         <span class="text-[11px] font-bold text-slate-800 group-hover:text-amber-800 transition-colors">Kasir</span>
                         <span class="text-[9px] text-amber-700 font-semibold">Dinoyo</span>
-                    </a>
+                    </button>
 
-                    <a 
-                        href="{{ route('demo.login', 'operator') }}" 
-                        class="group flex flex-col items-center justify-center py-1.5 px-1 rounded-xl bg-slate-50 hover:bg-sky-50 border border-slate-200 hover:border-sky-300 focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all text-center"
-                        title="Masuk sebagai Petugas Cuci & Setrika"
+                    <button 
+                        type="button" 
+                        onclick="selectRole('Petugas', 'operator@kataralaundry.com')" 
+                        class="group flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-slate-50 hover:bg-sky-50 border border-slate-200 hover:border-sky-300 focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all text-center cursor-pointer active:scale-95"
+                        title="Pilih akun Petugas Cuci & Setrika (Wajib Masukkan Password)"
                     >
                         <div class="w-6 h-6 rounded-lg bg-slate-200 group-hover:bg-brand-600 flex items-center justify-center text-slate-700 group-hover:text-white transition-colors mb-0.5">
                             <i class="fa-solid fa-shirt text-[10px]" aria-hidden="true"></i>
                         </div>
                         <span class="text-[11px] font-bold text-slate-800 group-hover:text-brand-700 transition-colors">Petugas</span>
                         <span class="text-[9px] text-slate-500">Cuci & Setrika</span>
-                    </a>
+                    </button>
                 </div>
             </div>
             @endif
@@ -224,11 +235,11 @@
 
         <nav class="mt-2.5 sm:mt-3 text-center" aria-label="Navigasi kembali">
             <a 
-                href="{{ route('tracking.index') }}" 
+                href="{{ route('home') }}" 
                 class="inline-flex items-center gap-1.5 text-[11px] font-medium text-slate-500 hover:text-brand-600 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-500 rounded py-0.5 px-1.5 group"
             >
                 <i class="fa-solid fa-arrow-left text-[10px] group-hover:-translate-x-0.5 transition-transform" aria-hidden="true"></i>
-                <span>Kembali ke Halaman Pelacakan Publik Pelanggan</span>
+                <span>Kembali ke Halaman Utama / Beranda</span>
             </a>
         </nav>
     </main>
@@ -253,6 +264,31 @@
                 eyeIcon.classList.add('fa-eye');
                 toggleBtn.setAttribute('aria-label', 'Tampilkan kata sandi');
                 toggleBtn.setAttribute('title', 'Tampilkan kata sandi');
+            }
+        }
+
+        function selectRole(roleName, email) {
+            const namaInput = document.getElementById('nama');
+            const passInput = document.getElementById('password');
+            const roleNotice = document.getElementById('role-selected-notice');
+            const roleNameEl = document.getElementById('selected-role-name');
+
+            if (namaInput) {
+                namaInput.value = email;
+                namaInput.classList.add('ring-2', 'ring-brand-500/40', 'border-brand-600');
+                setTimeout(() => namaInput.classList.remove('ring-2', 'ring-brand-500/40', 'border-brand-600'), 1500);
+            }
+
+            if (passInput) {
+                passInput.value = '';
+                passInput.focus();
+                passInput.classList.add('ring-2', 'ring-amber-500/40', 'border-amber-500');
+                setTimeout(() => passInput.classList.remove('ring-2', 'ring-amber-500/40', 'border-amber-500'), 1500);
+            }
+
+            if (roleNotice && roleNameEl) {
+                roleNameEl.textContent = roleName;
+                roleNotice.classList.remove('hidden');
             }
         }
     </script>

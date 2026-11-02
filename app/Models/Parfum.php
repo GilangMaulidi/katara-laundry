@@ -80,4 +80,3 @@ class Parfum extends Model
         $this->attributes['aktif'] = (bool) $value;
     }
 }
-

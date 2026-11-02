@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-public function up(): void
+    public function up(): void
     {
         Schema::create('pengguna', function (Blueprint $table) {
             $table->id();
@@ -34,7 +34,7 @@ public function up(): void
         });
     }
 
-public function down(): void
+    public function down(): void
     {
         Schema::dropIfExists('pengguna');
         Schema::dropIfExists('password_reset_tokens');

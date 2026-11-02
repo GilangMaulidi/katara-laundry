@@ -120,4 +120,3 @@ class BarangInventaris extends Model
         $this->attributes['catatan'] = $value;
     }
 }
-

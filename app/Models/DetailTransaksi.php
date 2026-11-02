@@ -105,4 +105,3 @@ class DetailTransaksi extends Model
         $this->attributes['catatan'] = $value;
     }
 }
-

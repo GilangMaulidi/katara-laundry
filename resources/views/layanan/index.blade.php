@@ -83,7 +83,7 @@
         <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-100 gap-3">
             <div>
                 <h3 class="font-bold text-slate-900 text-sm">Pilihan Varian Aroma Parfum Laundry</h3>
-                <p class="text-xs text-slate-500">5 Pilihan aroma parfum finishing standar gerai Dinoyo yang disukai pelanggan</p>
+                <p class="text-xs text-slate-500">Koleksi aroma parfum finishing standar gerai Dinoyo yang disukai pelanggan</p>
             </div>
             <button type="button" onclick="openPerfumeModal()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs shadow-xs transition-colors">
                 <i class="fa-solid fa-spray-can"></i>
@@ -112,7 +112,7 @@
 
 </div>
 
-<div id="service-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 hidden">
+<div id="service-modal" class="fixed inset-0 z-50 bg-slate-900/50 flex items-center justify-center p-4 hidden">
     <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200 animate-in fade-in zoom-in duration-200">
         <div class="flex items-center justify-between pb-3 border-b border-slate-100">
             <h3 class="font-bold text-sm text-slate-900">Tambah Layanan Baru</h3>
@@ -174,7 +174,7 @@
     </div>
 </div>
 
-<div id="edit-service-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 hidden">
+<div id="edit-service-modal" class="fixed inset-0 z-50 bg-slate-900/50 flex items-center justify-center p-4 hidden">
     <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200 animate-in fade-in zoom-in duration-200">
         <div class="flex items-center justify-between pb-3 border-b border-slate-100">
             <h3 class="font-bold text-sm text-slate-900">Ubah Tarif Layanan</h3>
@@ -238,7 +238,7 @@
     </div>
 </div>
 
-<div id="perfume-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 hidden">
+<div id="perfume-modal" class="fixed inset-0 z-50 bg-slate-900/50 flex items-center justify-center p-4 hidden">
     <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200 animate-in fade-in zoom-in duration-200">
         <div class="flex items-center justify-between pb-3 border-b border-slate-100">
             <h3 class="font-bold text-sm text-slate-900">Tambah Varian Aroma Parfum</h3>

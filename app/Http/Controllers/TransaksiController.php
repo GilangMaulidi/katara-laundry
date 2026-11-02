@@ -166,4 +166,3 @@ class TransaksiController extends Controller
         return view('transaksi.struk', compact('transaction'));
     }
 }
-

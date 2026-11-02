@@ -96,4 +96,3 @@ class Pelanggan extends Model
         $this->attributes['total_pesanan'] = (int) $value;
     }
 }
-

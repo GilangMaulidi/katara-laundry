@@ -89,4 +89,3 @@ class RakController extends Controller
         return back()->with('success', "Slot rak {$rackSlot->kode} berhasil dikosongkan.");
     }
 }
-

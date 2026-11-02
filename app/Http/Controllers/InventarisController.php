@@ -89,4 +89,3 @@ class InventarisController extends Controller
         return back()->with('success', "Stok bahan baku {$inventory->nama} berhasil diperbarui.");
     }
 }
-
